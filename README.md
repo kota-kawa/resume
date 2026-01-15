@@ -9,30 +9,49 @@
 - ✉️ Email: <you@example.com>
 
 ## Summary
-<role> focused on <your specialty>.  
-Strengths: <3 strengths>.  
-Looking for: <target roles / domains>.
+Software Engineer focused on **Autonomous AI Agents** and **Privacy-First RAG Systems**.
+Strengths: Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full-Stack Python Development.
+Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## Key Projects (recommended order)
-### 1) <Project A> — <one-line>
-- Problem: <what was hard / what users needed>
-- Solution: <what you built + key idea>
-- Result: <numbers if possible: latency -30%, DAU, cost, accuracy, etc.>
-- Links: Demo <URL> / Repo <URL> / Docs <URL>
-- Tech: <stack>
+### 1) Multi-Agent System — <Autonomous Orchestration Platform>
+- Problem: Complex tasks require coordination between specialized agents (Web, IoT, Scheduling) which is hard to manage manually.
+- Solution: Built a central orchestrator using **LangGraph** to coordinate distinct agents (Browser automation, IoT control, RAG).
+- Result: Achieved seamless interaction between digital web tasks and physical device control.
+- Repo: `Multi-Agent/`
+- Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
+- How to run:
+  - `cd Multi-Agent-Platform`
+  - `docker compose up --build`
+  - open: `http://localhost:5050`
+
+### 2) MemoScribe — <Personal Life Secretary with RAG>
+- Problem: Using AI for personal knowledge management carries privacy risks and "hallucination" issues.
+- Solution: Developed a self-hosted **Django** app with local RAG, PII masking, and strict "evidence-based" citations.
+- Result: Secure, private personal assistance with verifiable answers from own notes/docs.
+- Repo: `MemoScribe/`
+- Tech: Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI.
 - How to run:
   - `cp .env.example .env`
   - `docker compose up --build`
-  - open: `http://localhost:3000`
+  - open: `http://localhost:8000`
 
-### 2) <Project B> — ...
-### 3) <Project C> — ...
+### 3) fs-qr — <Frictionless Local File Sharing>
+- Problem: Sharing files between devices on a local network often requires login or cloud upload.
+- Solution: Created a **FastAPI** service for instant file/note sharing via QR codes and ephemeral rooms.
+- Result: Instant, secure local transfer without account registration.
+- Repo: `fs-qr/`
+- Tech: Python, FastAPI, SQLAlchemy, Docker, Jinja2.
+- How to run:
+  - `docker compose up --build`
+  - open: `http://localhost:5000`
 
 ## Skills (ship-ready)
-- Frontend: <...>
-- Backend: <...>
-- Infra/DevOps: <CI/CD, Docker, cloud, monitoring>
-- Quality: <tests, lint, type, security updates>
+- **AI/Agents**: Multi-Agent Systems (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), Browser Automation (`browser-use`), LLM Integration.
+- **Backend**: Python (Flask, Django, FastAPI), Microservices Architecture, REST/GraphQL.
+- **Frontend**: React (Vite), Jinja2 (SSR), CSS (BEM), Modern JS.
+- **Infra/DevOps**: Docker (Compose), `uv` (Package Management), PostgreSQL, Redis, CI/CD pipelines.
+- **Quality**: `pytest`, `ruff`, `black`, PII Masking/Security-first design.
 
 ## Experience
 - <Company/Team> — <role> (YYYY-MM–YYYY-MM)
@@ -59,30 +78,49 @@ Looking for: <target roles / domains>.
 - ✉️ Email：<you@example.com>
 
 ## サマリー
-<role>。<専門領域>に強み。  
-強み：<強み3つ>。  
-志望：<職種/領域>。
+**自律型AIエージェント**と**プライバシー重視のRAGシステム**に注力するソフトウェアエンジニア。
+強み：マルチエージェントアーキテクチャ設計 (LangGraph)、セキュアな個人知識管理 (PKM)、Pythonフルスタック開発。
+志望：AIアプリケーションエンジニア / バックエンドシステム開発。
 
 ## 主要プロジェクト（おすすめ順）
-### 1) <Project A> — <一行で説明>
-- 課題：<何が難しかった/ユーザーが何を求めていたか>
-- 解決：<何を作ったか + 核となる工夫>
-- 成果：<可能なら数値：遅延-30%、DAU、コスト、精度 など>
-- リンク：Demo <URL> / Repo <URL> / Docs <URL>
-- 技術：<スタック>
+### 1) Multi-Agent System — <自律型エージェントオーケストレーション>
+- 課題：Web操作、IoT制御、スケジュール管理など、異なるドメインのタスクを統合的に自動化する難しさ。
+- 解決：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作や物理デバイス制御を行う専門エージェントを協調動作させるシステムを開発。
+- 成果：デジタル作業と物理的なデバイス制御のシームレスな連携を実現。
+- Repo: `Multi-Agent/`
+- 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
+- 動かし方：
+  - `cd Multi-Agent-Platform`
+  - `docker compose up --build`
+  - open：`http://localhost:5050`
+
+### 2) MemoScribe — <RAG搭載・個人用秘書アプリ>
+- 課題：個人の知識やメモをAIに活用させる際のプライバシーリスクと、ハルシネーション（嘘）の問題。
+- 解決：**Django**製のセルフホスト型アプリを開発。ローカルRAG、PII（個人情報）マスキング、そして回答の根拠を必ず提示する機能を実装。
+- 成果：プライバシーを守りつつ、自分の過去の記録に基づいた正確なアシスタント機能を実現。
+- Repo: `MemoScribe/`
+- 技術：Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI.
 - 動かし方：
   - `cp .env.example .env`
   - `docker compose up --build`
-  - open：`http://localhost:3000`
+  - open：`http://localhost:8000`
 
-### 2) <Project B> — ...
-### 3) <Project C> — ...
+### 3) fs-qr — <ローカル完結型・高速ファイル共有>
+- 課題：クラウドを経由せずに、近くのデバイスと素早くファイルを共有したい（ログイン不要で）。
+- 解決：**FastAPI**を用いた、QRコード生成と使い捨てルームによるファイル共有サービスを構築。
+- 成果：アカウント登録不要で、セキュアかつ瞬時にローカルネットワーク内での共有が可能に。
+- Repo: `fs-qr/`
+- 技術：Python, FastAPI, SQLAlchemy, Docker, Jinja2.
+- 動かし方：
+  - `docker compose up --build`
+  - open：`http://localhost:5000`
 
 ## スキル（実装して出せる）
-- フロント：<...>
-- バック：<...>
-- インフラ/DevOps：<CI/CD、Docker、クラウド、監視>
-- 品質：<テスト、Lint、型、依存更新など>
+- **AI/Agents**: マルチエージェントシステム (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), ブラウザ自動化 (`browser-use`), LLM連携.
+- **Backend**: Python (Flask, Django, FastAPI), マイクロサービスアーキテクチャ, REST/GraphQL.
+- **Frontend**: React (Vite), Jinja2 (SSR), CSS (BEM), Modern JS.
+- **Infra/DevOps**: Docker (Compose), `uv` (パッケージ管理), PostgreSQL, Redis, CI/CDパイプライン.
+- **Quality**: `pytest`, `ruff`, `black`, PIIマスキング/セキュリティ・バイ・デザイン.
 
 ## 経験
 - <Company/Team> — <role>（YYYY-MM–YYYY-MM）
