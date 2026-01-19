@@ -79,7 +79,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - Developed fine-tuned models/adapters using **LoRA SFT** and **DPO** as the final project, achieving a **top 5% ranking** in the competition.
   - **Llama-3.1-8B-Instruct-Freedom_v3**: Llama 3.1 based model trained with LoRA SFT and DPO. [Link](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
   - **llm-jp-3-13b Adapters**: Released adapters for Japanese LLMs.
-    - [Green-Turtle_lora](https://huggingface.co/kota-kawa/llm-jp-3-13b-Green-Turtle_lora) (LoRA)
+    - [MataMata-Turtle_lora](https://huggingface.co/kota-kawa/llm-jp-3-13b-MataMata-Turtle_lora) (LoRA)
     - [Wanigame-Turtle](https://huggingface.co/kota-kawa/llm-jp-3-13b-Wanigame-Turtle) (DPO Adapter)
 - **AI Management Course (Matsuo Lab & PwC)**
   - Studied corporate AI implementation strategies and challenges through case studies from industry leaders like **DENSO** and **Shimizu Corporation**.
@@ -187,7 +187,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - 最終プロジェクトとして**LoRA SFT**および**DPO**を用いたモデルを開発し、コンペティションにて**上位5%**に入賞。
   - **Llama-3.1-8B-Instruct-Freedom_v3**: Llama 3.1をベースにSFTとDPOを適用したモデル。[Link](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
   - **llm-jp-3-13b アダプタ**: 国産LLM向けのアダプタを公開。
-    - [Green-Turtle_lora](https://huggingface.co/kota-kawa/llm-jp-3-13b-Green-Turtle_lora) (LoRA)
+    - [MataMata-Turtle_lora](https://huggingface.co/kota-kawa/llm-jp-3-13b-MataMata-Turtle_lora) (LoRA)
     - [Wanigame-Turtle](https://huggingface.co/kota-kawa/llm-jp-3-13b-Wanigame-Turtle) (DPO Adapter)
 - **AI経営講座（松尾研・PwC主催）**
   - **デンソー**や**清水建設**など、大手企業におけるAI活用事例や導入課題について学習。
