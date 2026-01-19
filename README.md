@@ -83,7 +83,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## Notes
 - Personal data such as full address/phone is intentionally omitted.
-- Last updated: YYYY-MM-DD
+- Last updated: 2026-01-19
 - License: All rights reserved (or CC BY 4.0)
 
 <details>
@@ -172,6 +172,6 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## 補足
 - 住所/電話などの個人情報は意図的に省略しています。
-- 最終更新：YYYY-MM-DD
+- 最終更新：2026-01-19
 - ライセンス：All rights reserved（または CC BY 4.0）
 </details>
