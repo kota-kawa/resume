@@ -65,9 +65,28 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - Alabama, USA | Jun 2023 – May 2024
   - **Honors**: **Dean's List** (Fall 2023, GPA: 3.75/4.0).
   - **Achievement**: Ranked **1st in class** for the final project in the **Artificial Intelligence** course.
+  - **Design Portfolio**: [project-kk.com/design](https://project-kk.com/design) (Works from Design I & II, Layout and Design)
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Layout and Design, Computer Skills for Problem Solving.
 
 ## Achievements & Activities
+- **Matsuo Lab LLM Competition 2025** (2025)
+  - Responsible for dataset creation within the team, focusing on high-difficulty mathematical reasoning.
+  - Leveraged an **H100 cluster** to generate a high-difficulty synthetic dataset using DeepSeek and Llama models.
+  - Achieved measurable performance gains after fine-tuning, demonstrating the effectiveness of the high-quality, small-scale dataset.
+  - Dataset: [difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)
+- **Matsuo Lab LLM Course Final Project & Competition**
+  - Completed a comprehensive course covering LLM fundamentals (pre-training) to AI agent applications.
+  - Developed fine-tuned models/adapters using **LoRA SFT** and **DPO** as the final project, achieving a **top 5% ranking** in the competition.
+  - **Llama-3.1-8B-Instruct-Freedom_v3**: Llama 3.1 based model trained with LoRA SFT and DPO. [Link](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
+  - **llm-jp-3-13b Adapters**: Released adapters for Japanese LLMs.
+    - [Green-Turtle_lora](https://huggingface.co/kota-kawa/llm-jp-3-13b-Green-Turtle_lora) (LoRA)
+    - [Wanigame-Turtle](https://huggingface.co/kota-kawa/llm-jp-3-13b-Wanigame-Turtle) (DPO Adapter)
+- **AI Management Course (Matsuo Lab & PwC)**
+  - Studied corporate AI implementation strategies and challenges through case studies from industry leaders like **DENSO** and **Shimizu Corporation**.
+- **Matsuo Lab Specialized AI Courses**
+  - **GCI (Global Consumer Intelligence)**: Data science and machine learning foundations.
+  - **Deep Learning**: Comprehensive study of neural network architectures and optimization.
+  - **Deep Generative Models**: Advanced techniques in generative AI (VAEs, GANs, Diffusion Models).
 - **FIT 2025 (Forum on Information Technology)** (Scheduled for Sep 2025)
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
@@ -154,9 +173,28 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - アラバマ州, 米国 | 2023年6月 – 2024年5月
   - **栄誉**: **Dean's List** 選出（2023年秋期、GPA: 3.75/4.0）
   - **実績**: **Artificial Intelligence（人工知能）** 授業の最終プロジェクトにて、クラス内 **1位** の評価を獲得。
+  - **デザイン成果物**: [project-kk.com/design](https://project-kk.com/design)（Design I & II, Layout and Design での制作物）
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, レイアウトデザイン, コンピュータ問題解決。
 
 ## 受賞・活動歴
+- **松尾研 LLMコンペ2025** (2025年)
+  - チーム内でデータセット作成を担当。
+  - **H100クラスタ**を活用し、DeepSeekやLlamaモデルを用いた高難易度の数学的推論用合成データセットを構築。
+  - 小規模なデータセットながら、学習後のモデル性能向上を実現し、データの質の重要性を実証。
+  - 公開データセット: [difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)
+- **松尾研 LLM講座 最終プロジェクト & コンペティション**
+  - LLMの基礎（事前学習）からAIエージェントとしての活用までを包括的に学習・修了。
+  - 最終プロジェクトとして**LoRA SFT**および**DPO**を用いたモデルを開発し、コンペティションにて**上位5%**に入賞。
+  - **Llama-3.1-8B-Instruct-Freedom_v3**: Llama 3.1をベースにSFTとDPOを適用したモデル。[Link](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
+  - **llm-jp-3-13b アダプタ**: 国産LLM向けのアダプタを公開。
+    - [Green-Turtle_lora](https://huggingface.co/kota-kawa/llm-jp-3-13b-Green-Turtle_lora) (LoRA)
+    - [Wanigame-Turtle](https://huggingface.co/kota-kawa/llm-jp-3-13b-Wanigame-Turtle) (DPO Adapter)
+- **AI経営講座（松尾研・PwC主催）**
+  - **デンソー**や**清水建設**など、大手企業におけるAI活用事例や導入課題について学習。
+- **松尾研 各種AI講座受講**
+  - **GCI (データサイエンス基礎)**: データ分析および機械学習の基礎を習得。
+  - **深層学習 (Deep Learning)**: ニューラルネットワークの基礎から最新の最適化手法までを学習。
+  - **深層生成モデル**: 生成AI（VAE, GAN, Diffusion Modelなど）の理論と実装を習得。
 - **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表予定）
   - **RAG（検索拡張生成）**に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
