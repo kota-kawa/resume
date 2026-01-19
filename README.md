@@ -6,7 +6,7 @@
 - 📄 Resume (PDF): [JP](./resume_ja.pdf) | [EN](./resume_en.pdf)
 - 🌐 Portfolio: <https://project-kk.com/>
 - 💼 LinkedIn: <URL>
-- ✉️ Email: <you@example.com>
+- ✉️ Email: kota7kawagoe@gmail.com
 
 ## Summary
 Software Engineer focused on **Autonomous AI Agents** and **Privacy-First RAG Systems**.
@@ -87,7 +87,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - **GCI (Global Consumer Intelligence)**: Data science and machine learning foundations.
   - **Deep Learning**: Comprehensive study of neural network architectures and optimization.
   - **Deep Generative Models**: Advanced techniques in generative AI (VAEs, GANs, Diffusion Models).
-- **FIT 2025 (Forum on Information Technology)** (Scheduled for Sep 2025)
+- **FIT 2025 (Forum on Information Technology)** (Sep 2025)
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
 - **Meta Llama Ideathon 2024** (Sep 2024)
@@ -102,7 +102,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## Notes
 - Personal data such as full address/phone is intentionally omitted.
-- Last updated: 2026-01-19
+- Last updated: 2026-01-20
 - License: All rights reserved (or CC BY 4.0)
 
 <details>
@@ -114,7 +114,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 - 📄 Resume（PDF）：[JP](./resume_ja.pdf) | [EN](./resume_en.pdf)
 - 🌐 Portfolio：<URL>
 - 💼 LinkedIn：<URL>
-- ✉️ Email：<you@example.com>
+- ✉️ Email：kota7kawagoe@gmail.com
 
 ## サマリー
 **自律型AIエージェント**と**プライバシー重視のRAGシステム**に注力するソフトウェアエンジニア。
@@ -195,7 +195,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - **GCI (データサイエンス基礎)**: データ分析および機械学習の基礎を習得。
   - **深層学習 (Deep Learning)**: ニューラルネットワークの基礎から最新の最適化手法までを学習。
   - **深層生成モデル**: 生成AI（VAE, GAN, Diffusion Modelなど）の理論と実装を習得。
-- **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表予定）
+- **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
   - **RAG（検索拡張生成）**に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
 - **Meta Llama Ideathon 2024** (2024年9月)
@@ -210,6 +210,6 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## 補足
 - 住所/電話などの個人情報は意図的に省略しています。
-- 最終更新：2026-01-19
+- 最終更新：2026-01-20
 - ライセンス：All rights reserved（または CC BY 4.0）
 </details>
