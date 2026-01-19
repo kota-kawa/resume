@@ -59,7 +59,27 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - <impact bullet 2>
 
 ## Education
-- <University> — <Degree> (YYYY–YYYY)
+- **Kanagawa Institute of Technology** — Bachelor of Science (Expected)
+  - Kanagawa, Japan | Apr 2021 – Mar 2026
+- **University of North Alabama** — International Exchange Program
+  - Alabama, USA | Jun 2023 – May 2024
+  - **Honors**: **Dean's List** (Fall 2023, GPA: 3.75/4.0).
+  - **Achievement**: Ranked **1st in class** for the final project in the **Artificial Intelligence** course.
+  - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Layout and Design, Computer Skills for Problem Solving.
+
+## Achievements & Activities
+- **FIT 2025 (Forum on Information Technology)** (Scheduled for Sep 2025)
+  - Presented research on **RAG (Retrieval-Augmented Generation)**.
+  - Conducted as part of a joint research project with **Manable Inc.**
+- **Meta Llama Ideathon 2024** (Sep 2024)
+  - Selected participant for Meta's official AI hackathon in Tokyo.
+  - Developed a generative AI prototype leveraging Llama 3 models.
+- **Technical Workshops**
+  - Participated in 1-day technical programs at **GMO Internet** and **NTT DATA INTELLILINK**.
+
+## Education
+- **Japanese**: Native
+- **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## Notes
 - Personal data such as full address/phone is intentionally omitted.
@@ -128,7 +148,27 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - <成果2>
 
 ## 学歴
-- <University> — <Degree>（YYYY–YYYY）
+- **神奈川工科大学** — 学士（卒業見込）
+  - 神奈川県 | 2021年4月 – 2026年3月
+- **University of North Alabama** — 交換留学プログラム修了
+  - アラバマ州, 米国 | 2023年6月 – 2024年5月
+  - **栄誉**: **Dean's List** 選出（2023年秋期、GPA: 3.75/4.0）
+  - **実績**: **Artificial Intelligence（人工知能）** 授業の最終プロジェクトにて、クラス内 **1位** の評価を獲得。
+  - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, レイアウトデザイン, コンピュータ問題解決。
+
+## 受賞・活動歴
+- **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表予定）
+  - **RAG（検索拡張生成）**に関する研究成果を発表。
+  - **マナブル株式会社**との共同研究として実施。
+- **Meta Llama Ideathon 2024** (2024年9月)
+  - Meta社主催のAIハッカソンに選抜参加。
+  - Llama 3 モデルを活用した生成AIプロトタイプを開発。
+- **技術ワークショップ / 1-day インターン**
+  - **GMOインターネットグループ**、**NTTデータ先端技術**などの技術体験プログラムに参加。
+
+## 語学
+- **日本語**: ネイティブ
+- **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 補足
 - 住所/電話などの個人情報は意図的に省略しています。
