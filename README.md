@@ -8,7 +8,7 @@
 - 📝 Blog: <https://blog.project-kk.com/>
 - 📘 Zenn: <https://zenn.dev/kota_kawa>
 - 🐦 X (Twitter): <https://x.com/project_kk_ai>
-- 💼 LinkedIn: <URL>
+- 💼 LinkedIn: <https://www.linkedin.com/in/kota-kawagoe-0a22263a7/>
 - ✉️ Email: kota7kawagoe@gmail.com
 
 ## Summary
@@ -119,7 +119,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 - 📝 Blog：<https://blog.project-kk.com/>
 - 📘 Zenn：<https://zenn.dev/kota_kawa>
 - 🐦 X (Twitter)：<https://x.com/project_kk_ai>
-- 💼 LinkedIn：<URL>
+- 💼 LinkedIn：<https://www.linkedin.com/in/kota-kawagoe-0a22263a7/>
 - ✉️ Email：kota7kawagoe@gmail.com
 
 ## サマリー
