@@ -115,7 +115,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## ダウンロード
 - 📄 Resume（PDF）：[JP](./resume_ja.pdf) | [EN](./resume_en.pdf)
-- 🌐 Portfolio：<URL>
+- 🌐 Portfolio：<https://project-kk.com/>
 - 📝 Blog：<https://blog.project-kk.com/>
 - 📘 Zenn：<https://zenn.dev/kota_kawa>
 - 🐦 X (Twitter)：<https://x.com/project_kk_ai>
