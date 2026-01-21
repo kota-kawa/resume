@@ -17,37 +17,17 @@ Strengths: Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Manag
 Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## Key Projects (recommended order)
-### 1) Multi-Agent System — <Autonomous Orchestration Platform>
-- Problem: Complex tasks require coordination between specialized agents (Web, IoT, Scheduling) which is hard to manage manually.
-- Solution: Built a central orchestrator using **LangGraph** to coordinate distinct agents (Browser automation, IoT control, RAG).
-- Result: Achieved seamless interaction between digital web tasks and physical device control.
-- Repo: `Multi-Agent/`
+### 1) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — <Autonomous Orchestration Platform>
+- Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
 - Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
-- How to run:
-  - `cd Multi-Agent-Platform`
-  - `docker compose up --build`
-  - open: `http://localhost:5050`
 
-### 2) MemoScribe — <Personal Life Secretary with RAG>
-- Problem: Using AI for personal knowledge management carries privacy risks and "hallucination" issues.
-- Solution: Developed a self-hosted **Django** app with local RAG, PII masking, and strict "evidence-based" citations.
-- Result: Secure, private personal assistance with verifiable answers from own notes/docs.
-- Repo: `MemoScribe/`
+### 2) [MemoScribe](https://github.com/kota-kawa/MemoScribe) — <Personal Life Secretary with RAG>
+- Summary: A self-hosted **Django** application acting as a personal life secretary. Features local RAG, PII masking, and strict "evidence-based" citations to ensure secure, private assistance without hallucination.
 - Tech: Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI.
-- How to run:
-  - `cp .env.example .env`
-  - `docker compose up --build`
-  - open: `http://localhost:8000`
 
-### 3) fs-qr — <Frictionless Local File Sharing>
-- Problem: Sharing files between devices on a local network often requires login or cloud upload.
-- Solution: Created a **FastAPI** service for instant file/note sharing via QR codes and ephemeral rooms.
-- Result: Instant, secure local transfer without account registration.
-- Repo: `fs-qr/`
-- Tech: Python, FastAPI, SQLAlchemy, Docker, Jinja2.
-- How to run:
-  - `docker compose up --build`
-  - open: `http://localhost:5000`
+### 3) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — <LLM-powered Browser Automation with Web UI>
+- Summary: An LLM-powered browser automation agent wrapping `browser_use` with a **FastAPI** backend and **noVNC** web interface. Supports natural language control, real-time visualization, and WebArena benchmarks.
+- Tech: Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
 ## Skills (ship-ready)
 - **AI/Agents**: Multi-Agent Systems (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), Browser Automation (`browser-use`), LLM Integration.
@@ -105,7 +85,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## Notes
 - Personal data such as full address/phone is intentionally omitted.
-- Last updated: 2026-01-20
+- Last updated: 2026-01-21
 - License: All rights reserved (or CC BY 4.0)
 
 <details>
@@ -128,37 +108,17 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 志望：AIアプリケーションエンジニア / バックエンドシステム開発。
 
 ## 主要プロジェクト（おすすめ順）
-### 1) Multi-Agent System — <自律型エージェントオーケストレーション>
-- 課題：Web操作、IoT制御、スケジュール管理など、異なるドメインのタスクを統合的に自動化する難しさ。
-- 解決：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作や物理デバイス制御を行う専門エージェントを協調動作させるシステムを開発。
-- 成果：デジタル作業と物理的なデバイス制御のシームレスな連携を実現。
-- Repo: `Multi-Agent/`
+### 1) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — <自律型エージェントオーケストレーション>
+- 概要：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作やIoT制御を行う専門エージェントを協調動作させることで、デジタル作業と物理デバイス制御のシームレスな連携を実現。
 - 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
-- 動かし方：
-  - `cd Multi-Agent-Platform`
-  - `docker compose up --build`
-  - open：`http://localhost:5050`
 
-### 2) MemoScribe — <RAG搭載・個人用秘書アプリ>
-- 課題：個人の知識やメモをAIに活用させる際のプライバシーリスクと、ハルシネーション（嘘）の問題。
-- 解決：**Django**製のセルフホスト型アプリを開発。ローカルRAG、PII（個人情報）マスキング、そして回答の根拠を必ず提示する機能を実装。
-- 成果：プライバシーを守りつつ、自分の過去の記録に基づいた正確なアシスタント機能を実現。
-- Repo: `MemoScribe/`
+### 2) [MemoScribe](https://github.com/kota-kawa/MemoScribe) — <RAG搭載・個人用秘書アプリ>
+- 概要：**Django**製のセルフホスト型個人用秘書アプリ。ローカルRAG、個人情報(PII)マスキング、根拠提示機能を備え、プライバシーを保護しつつ正確な知識管理とアシスタント機能を提供。
 - 技術：Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI.
-- 動かし方：
-  - `cp .env.example .env`
-  - `docker compose up --build`
-  - open：`http://localhost:8000`
 
-### 3) fs-qr — <ローカル完結型・高速ファイル共有>
-- 課題：クラウドを経由せずに、近くのデバイスと素早くファイルを共有したい（ログイン不要で）。
-- 解決：**FastAPI**を用いた、QRコード生成と使い捨てルームによるファイル共有サービスを構築。
-- 成果：アカウント登録不要で、セキュアかつ瞬時にローカルネットワーク内での共有が可能に。
-- Repo: `fs-qr/`
-- 技術：Python, FastAPI, SQLAlchemy, Docker, Jinja2.
-- 動かし方：
-  - `docker compose up --build`
-  - open：`http://localhost:5000`
+### 3) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — <Web UI付きブラウザ自動化エージェント>
+- 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作、リアルタイム可視化、WebArenaベンチマーク評価が可能。
+- 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI.
 
 ## スキル（実装して出せる）
 - **AI/Agents**: マルチエージェントシステム (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), ブラウザ自動化 (`browser-use`), LLM連携.
@@ -216,6 +176,6 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## 補足
 - 住所/電話などの個人情報は意図的に省略しています。
-- 最終更新：2026-01-20
+- 最終更新：2026-01-21
 - ライセンス：All rights reserved（または CC BY 4.0）
 </details>
