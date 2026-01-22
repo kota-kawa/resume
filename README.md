@@ -39,6 +39,10 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 <details>
   <summary><b>Other Projects (Click to expand)</b></summary>
 
+### [Strike Chat](https://github.com/kota-kawa/Strike_Chat) — <AI Chat & Prompt Sharing>
+- Summary: An AI chat application built with FastAPI and Next.js. Features email authentication, Groq/Gemini API integration, and prompt sharing/search capabilities.
+- Tech: Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
+
 ### [FS-QR](https://github.com/kota-kawa/fs-qr) — <File Sharing & QR>
 - Summary: A self-hosted file and note sharing tool with QR-based quick transfer, passworded group rooms, and real-time shared notes.
 - Tech: FastAPI, Docker.
@@ -170,6 +174,10 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 
 <details>
   <summary><b>その他のプロジェクト（クリックで展開）</b></summary>
+
+### [Strike Chat](https://github.com/kota-kawa/Strike_Chat) — <AIチャット & プロンプト共有>
+- 概要：FastAPIとNext.jsを用いたAIチャットアプリ。メール認証、Groq/Gemini API連携に加え、ユーザー間でプロンプトを共有・検索できる機能を搭載。
+- 技術：Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
 ### [FS-QR](https://github.com/kota-kawa/fs-qr) — <ファイル共有 & QR>
 - 概要：QRによる即時共有、合言葉付きのグループ共有、リアルタイム共有ノートを備えたセルフホスト型のファイル/メモ共有ツール。
