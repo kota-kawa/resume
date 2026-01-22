@@ -38,6 +38,19 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 - Summary: An LLM-powered browser automation agent wrapping `browser_use` with a **FastAPI** backend and **noVNC** web interface. Supports natural language control, real-time visualization, and WebArena benchmarks.
 - Tech: Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
+<details>
+  <summary><b>Other Projects (Click to expand)</b></summary>
+
+- **File-Sharing & Collab Tool**: A self-hosted file sharing and collaborative editing tool built with **FastAPI**. Features instant mobile transfer via QR codes, password-protected group sharing, and real-time synchronized notes via WebSockets for privacy-focused information sharing.
+  - Tech: FastAPI, MySQL, Redis, WebSockets, SQLAlchemy, Docker, APScheduler.
+- **Personal RAG Secretary**: A self-hosted personal secretary application built with **Django**. Features local RAG, PII masking, and evidence-based responses to provide accurate knowledge management and assistance while protecting privacy.
+  - Tech: Python 3.12, Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI API, Docker.
+- **AI Knowledge Platform**: An integrated platform for AI chat, prompt sharing, and note management built with **FastAPI** and **Next.js**. It features advanced dialogue via Gemini API, community prompt sharing, and personal note functions to balance knowledge sharing with individual productivity.
+  - Tech: FastAPI, Next.js, PostgreSQL, Gemini API (OpenAI SDK), Docker, Tailwind CSS.
+- **Multi-Purpose AI Agent Platform**: A versatile AI agent platform built with **Flask** and **React 19**. Provides domain-optimized AI chat for travel, health, work, and learning, featuring content moderation via Llama Guard and strict security management (CSRF/CSP) for a secure interaction and planning environment.
+  - Tech: Flask, React 19, PostgreSQL, Redis, OpenAI/Groq API (Llama Guard), Docker.
+</details>
+
 ## Skills (ship-ready)
 - **AI/Agents**: Multi-Agent Systems (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), Browser Automation (`browser-use`), LLM Integration.
 - **Backend**: Python (Flask, Django, FastAPI), Microservices Architecture, REST/GraphQL.
@@ -145,6 +158,19 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 ### 3) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — <Web UI付きブラウザ自動化エージェント>
 - 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作、リアルタイム可視化、WebArenaベンチマーク評価が可能。
 - 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI.
+
+<details>
+  <summary><b>その他のプロジェクト（クリックで展開）</b></summary>
+
+- **ファイル共有・共同編集ツール**: **FastAPI**製のセルフホスト型ファイル共有・共同編集ツール。QRコードを用いた即時モバイル転送、パスワード保護されたグループ共有、WebSocketによるリアルタイム同期ノート機能を備え、プライバシー重視の円滑な情報共有を実現。
+  - 技術：FastAPI, MySQL, Redis, WebSockets, SQLAlchemy, Docker, APScheduler.
+- **個人用RAG秘書アプリ**: **Django**製のセルフホスト型個人用秘書アプリ。ローカルRAG、個人情報(PII)マスキング、根拠提示機能を備え、プライバシーを保護しつつ正確な知識管理とアシスタント機能を提供.
+  - 技術：Python 3.12, Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI API, Docker.
+- **AIナレッジプラットフォーム**: **FastAPI**と**Next.js**を組み合わせた、AIチャット・プロンプト共有・メモ管理の統合プラットフォーム。Gemini APIによる高度な対話機能に加え、ユーザー間でのプロンプト共有や個人用メモ機能を備え、知識共有と個人の生産性向上を両立。
+  - 技術：FastAPI, Next.js, PostgreSQL, Gemini API (OpenAI SDK), Docker, Tailwind CSS.
+- **多目的AIエージェントプラットフォーム**: **Flask**と**React 19**製の多目的AIエージェントプラットフォーム。旅行・健康・仕事・学習の各専門ドメインに最適化されたAIチャットを提供し、Llama Guardによるコンテンツ検閲や厳格なセキュリティヘッダー管理（CSRF/CSP）を備えた安全な対話・プランニング環境を実現。
+  - 技術：Flask, React 19, PostgreSQL, Redis, OpenAI/Groq API (Llama Guard), Docker.
+</details>
 
 ## スキル（実装して出せる）
 - **AI/Agents**: マルチエージェントシステム (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), ブラウザ自動化 (`browser-use`), LLM連携.
