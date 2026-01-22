@@ -41,14 +41,21 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 <details>
   <summary><b>Other Projects (Click to expand)</b></summary>
 
-- **File-Sharing & Collab Tool**: A self-hosted file sharing and collaborative editing tool built with **FastAPI**. Features instant mobile transfer via QR codes, password-protected group sharing, and real-time synchronized notes via WebSockets for privacy-focused information sharing.
-  - Tech: FastAPI, MySQL, Redis, WebSockets, SQLAlchemy, Docker, APScheduler.
-- **Personal RAG Secretary**: A self-hosted personal secretary application built with **Django**. Features local RAG, PII masking, and evidence-based responses to provide accurate knowledge management and assistance while protecting privacy.
-  - Tech: Python 3.12, Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI API, Docker.
-- **AI Knowledge Platform**: An integrated platform for AI chat, prompt sharing, and note management built with **FastAPI** and **Next.js**. It features advanced dialogue via Gemini API, community prompt sharing, and personal note functions to balance knowledge sharing with individual productivity.
-  - Tech: FastAPI, Next.js, PostgreSQL, Gemini API (OpenAI SDK), Docker, Tailwind CSS.
-- **Multi-Purpose AI Agent Platform**: A versatile AI agent platform built with **Flask** and **React 19**. Provides domain-optimized AI chat for travel, health, work, and learning, featuring content moderation via Llama Guard and strict security management (CSRF/CSP) for a secure interaction and planning environment.
-  - Tech: Flask, React 19, PostgreSQL, Redis, OpenAI/Groq API (Llama Guard), Docker.
+**File-Sharing & Collab Tool**
+- **Summary**: A self-hosted file sharing and collaborative editing tool built with **FastAPI**. Features instant mobile transfer via QR codes, password-protected group sharing, and real-time synchronized notes via WebSockets for privacy-focused information sharing.
+- **Tech**: FastAPI, MySQL, Redis, WebSockets, SQLAlchemy, Docker, APScheduler.
+
+**Personal RAG Secretary**
+- **Summary**: A self-hosted personal secretary application built with **Django**. Features local RAG, PII masking, and evidence-based responses to provide accurate knowledge management and assistance while protecting privacy.
+- **Tech**: Python 3.12, Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI API, Docker.
+
+**AI Knowledge Platform**
+- **Summary**: An integrated platform for AI chat, prompt sharing, and note management built with **FastAPI** and **Next.js**. It features advanced dialogue via Gemini API, community prompt sharing, and personal note functions to balance knowledge sharing with individual productivity.
+- **Tech**: FastAPI, Next.js, PostgreSQL, Gemini API (OpenAI SDK), Docker, Tailwind CSS.
+
+**Multi-Purpose AI Agent Platform**
+- **Summary**: A versatile AI agent platform built with **Flask** and **React 19**. Provides domain-optimized AI chat for travel, health, work, and learning, featuring content moderation via Llama Guard and strict security management (CSRF/CSP) for a secure interaction and planning environment.
+- **Tech**: Flask, React 19, PostgreSQL, Redis, OpenAI/Groq API (Llama Guard), Docker.
 </details>
 
 ## Skills (ship-ready)
