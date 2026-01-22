@@ -41,6 +41,26 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 <details>
   <summary><b>Other Projects (Click to expand)</b></summary>
 
+**Multi-Agent Orchestrator**
+- **Summary**: A multi-agent orchestrator using **FastAPI** and **LangGraph**. It integrates specialized agents for web automation, IoT control, and schedule management to autonomously plan, execute, and review complex user requests as a personal secretary system.
+- **Tech**: Python (FastAPI), LangGraph, OpenAI, Server-Sent Events (SSE), Docker, Jinja2, Vanilla JS.
+
+**Life Optimization AI Agent**
+- **Summary**: A life optimization support AI agent built with **FastAPI**. It features local RAG (**FAISS**) integrating extensive expertise in careers, finance, cooking, etc., with evidence-based citations and **MCP** support to provide accurate advice and knowledge management tailored to personal life.
+- **Tech**: FastAPI, FAISS, LangChain, HuggingFace, MCP, OpenAI / Gemini / Claude.
+
+**Scheduler Agent**
+- **Summary**: A self-hosted schedule management and personal assistant application built with **FastAPI**. Featuring a natural language chat interface, it allows intuitive operation of daily routines, task management, and logging through dialogue with AI.
+- **Tech**: FastAPI, PostgreSQL (SQLAlchemy), React (Vite), OpenAI / Google Gemini / Anthropic Claude / Groq, Docker.
+
+**Browser Agent**
+- **Summary**: An autonomous web browsing agent based on **browser-use** and **Playwright**. It directly operates the browser from natural language instructions, executing complex tasks such as website exploration, form filling, and data collection just like a human. Features a GUI built with **Flask** and external integration capabilities via **MCP** (Model Context Protocol).
+- **Tech**: Python 3.11+, Flask, browser-use, Playwright, Docker, Model Context Protocol (MCP), OpenAI/Anthropic APIs.
+
+**IoT Agent**
+- **Summary**: A self-hosted IoT management platform based on **FastAPI**. LLMs (OpenAI/Anthropic/Gemini) interpret natural language chat instructions to automate real-time physical control and job execution for edge devices such as Jetson, Raspberry Pi, and Pico W.
+- **Tech**: FastAPI, React (Vite), Python, MicroPython, Docker, Docker Compose, OpenAI/Anthropic/Gemini APIs.
+
 **File-Sharing & Collab Tool**
 - **Summary**: A self-hosted file sharing and collaborative editing tool built with **FastAPI**. Features instant mobile transfer via QR codes, password-protected group sharing, and real-time synchronized notes via WebSockets for privacy-focused information sharing.
 - **Tech**: FastAPI, MySQL, Redis, WebSockets, SQLAlchemy, Docker, APScheduler.
@@ -168,6 +188,26 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 
 <details>
   <summary><b>その他のプロジェクト（クリックで展開）</b></summary>
+
+**マルチエージェント・オーケストレーター**
+- **概要**: **FastAPI**と**LangGraph**を用いたマルチエージェント・オーケストレーター。Web自動化、IoT制御、スケジュール管理などの専門エージェントを統合し、ユーザーの複雑な依頼に対して自律的なプランニング、実行、結果のレビューを一貫して行う個人用秘書システム。
+- **技術**: Python (FastAPI), LangGraph, OpenAI, Server-Sent Events (SSE), Docker, Jinja2, Vanilla JS.
+
+**生活最適化支援AIエージェント**
+- **概要**: **FastAPI**製の生活最適化支援AIエージェント。ローカルRAG（**FAISS**）による広範な専門知識（キャリア・金融・料理等）の統合、根拠提示、**MCP**対応を備え、個人の生活に寄り添った正確なアドバイスと知識管理を提供。
+- **技術**: FastAPI, FAISS, LangChain, HuggingFace, MCP, OpenAI / Gemini / Claude.
+
+**Scheduler Agent**
+- **概要**: **FastAPI**製のセルフホスト型スケジュール管理・個人秘書アプリ。自然言語によるチャットインターフェースを備え、日々のルーティン実行、タスク管理、ログ記録をAIとの対話を通じて直感的に操作可能。
+- **技術**: FastAPI, PostgreSQL (SQLAlchemy), React (Vite), OpenAI / Google Gemini / Anthropic Claude / Groq, Docker.
+
+**Browser Agent**
+- **概要**: **browser-use**と**Playwright**を基盤とした、自律型のウェブブラウジング・エージェント。自然言語の指示からブラウザを直接操作し、ウェブサイトの探索、フォーム入力、データ収集などの複雑なタスクを人間のように実行。**Flask**によるGUIと**MCP**（Model Context Protocol）による外部連携機能を備える。
+- **技術**: Python 3.11+, Flask, browser-use, Playwright, Docker, Model Context Protocol (MCP), OpenAI/Anthropic APIs.
+
+**IoT Agent**
+- **概要**: **FastAPI**ベースのセルフホスト型IoT管理プラットフォーム。自然言語でのチャット指示をLLM（OpenAI/Anthropic/Gemini）が解釈し、JetsonやRaspberry Pi、Pico Wなどのエッジデバイスに対してリアルタイムな物理制御やジョブ実行を自動化。
+- **技術**: FastAPI, React (Vite), Python, MicroPython, Docker, Docker Compose, OpenAI/Anthropic/Gemini APIs.
 
 **ファイル共有・共同編集ツール**
 - **概要**: **FastAPI**製のセルフホスト型ファイル共有・共同編集ツール。QRコードを用いた即時モバイル転送、パスワード保護されたグループ共有、WebSocketによるリアルタイム同期ノート機能を備え、プライバシー重視の円滑な情報共有を実現。
