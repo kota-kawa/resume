@@ -162,14 +162,21 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 <details>
   <summary><b>その他のプロジェクト（クリックで展開）</b></summary>
 
-- **ファイル共有・共同編集ツール**: **FastAPI**製のセルフホスト型ファイル共有・共同編集ツール。QRコードを用いた即時モバイル転送、パスワード保護されたグループ共有、WebSocketによるリアルタイム同期ノート機能を備え、プライバシー重視の円滑な情報共有を実現。
-  - 技術：FastAPI, MySQL, Redis, WebSockets, SQLAlchemy, Docker, APScheduler.
-- **個人用RAG秘書アプリ**: **Django**製のセルフホスト型個人用秘書アプリ。ローカルRAG、個人情報(PII)マスキング、根拠提示機能を備え、プライバシーを保護しつつ正確な知識管理とアシスタント機能を提供.
-  - 技術：Python 3.12, Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI API, Docker.
-- **AIナレッジプラットフォーム**: **FastAPI**と**Next.js**を組み合わせた、AIチャット・プロンプト共有・メモ管理の統合プラットフォーム。Gemini APIによる高度な対話機能に加え、ユーザー間でのプロンプト共有や個人用メモ機能を備え、知識共有と個人の生産性向上を両立。
-  - 技術：FastAPI, Next.js, PostgreSQL, Gemini API (OpenAI SDK), Docker, Tailwind CSS.
-- **多目的AIエージェントプラットフォーム**: **Flask**と**React 19**製の多目的AIエージェントプラットフォーム。旅行・健康・仕事・学習の各専門ドメインに最適化されたAIチャットを提供し、Llama Guardによるコンテンツ検閲や厳格なセキュリティヘッダー管理（CSRF/CSP）を備えた安全な対話・プランニング環境を実現。
-  - 技術：Flask, React 19, PostgreSQL, Redis, OpenAI/Groq API (Llama Guard), Docker.
+**ファイル共有・共同編集ツール**
+- **概要**: **FastAPI**製のセルフホスト型ファイル共有・共同編集ツール。QRコードを用いた即時モバイル転送、パスワード保護されたグループ共有、WebSocketによるリアルタイム同期ノート機能を備え、プライバシー重視の円滑な情報共有を実現。
+- **技術**: FastAPI, MySQL, Redis, WebSockets, SQLAlchemy, Docker, APScheduler.
+
+**個人用RAG秘書アプリ**
+- **概要**: **Django**製のセルフホスト型個人用秘書アプリ。ローカルRAG、個人情報(PII)マスキング、根拠提示機能を備え、プライバシーを保護しつつ正確な知識管理とアシスタント機能を提供。
+- **技術**: Python 3.12, Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI API, Docker.
+
+**AIナレッジプラットフォーム**
+- **概要**: **FastAPI**と**Next.js**を組み合わせた、AIチャット・プロンプト共有・メモ管理の統合プラットフォーム。Gemini APIによる高度な対話機能に加え、ユーザー間でのプロンプト共有や個人用メモ機能を備え、知識共有と個人の生産性向上を両立。
+- **技術**: FastAPI, Next.js, PostgreSQL, Gemini API (OpenAI SDK), Docker, Tailwind CSS.
+
+**多目的AIエージェントプラットフォーム**
+- **概要**: **Flask**と**React 19**製の多目的AIエージェントプラットフォーム。旅行・健康・仕事・学習の各専門ドメインに最適化されたAIチャットを提供し、Llama Guardによるコンテンツ検閲や厳格なセキュリティヘッダー管理（CSRF/CSP）を備えた安全な対話・プランニング環境を実現。
+- **技術**: Flask, React 19, PostgreSQL, Redis, OpenAI/Groq API (Llama Guard), Docker.
 </details>
 
 ## スキル（実装して出せる）
