@@ -1,9 +1,7 @@
-# resume
-
-# Resume — <Your Name>
+# Resume — <Kota Kawagoe>
 
 ## Download
-- 📄 Resume (PDF): [JP](./resume_ja.pdf) | [EN](./resume_en.pdf)
+- 📄 Resume (PDF): [JP](./resume_ja.pdf) | [EN](./resume_en.pdf) - coming soon
 - 🌐 Portfolio: <https://project-kk.com/>
 - 📝 Blog: <https://blog.project-kk.com/>
 - 📘 Zenn: <https://zenn.dev/kota_kawa>
@@ -41,41 +39,25 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 <details>
   <summary><b>Other Projects (Click to expand)</b></summary>
 
-**Multi-Agent Orchestrator**
-- **Summary**: A multi-agent orchestrator using **FastAPI** and **LangGraph**. It integrates specialized agents for web automation, IoT control, and schedule management to autonomously plan, execute, and review complex user requests as a personal secretary system.
-- **Tech**: Python (FastAPI), LangGraph, OpenAI, Server-Sent Events (SSE), Docker, Jinja2, Vanilla JS.
+### [FS-QR](https://github.com/kota-kawa/fs-qr) — <File Sharing & QR>
+- Summary: A self-hosted file and note sharing tool with QR-based quick transfer, passworded group rooms, and real-time shared notes.
+- Tech: FastAPI, Docker.
 
-**Life Optimization AI Agent**
-- **Summary**: A life optimization support AI agent built with **FastAPI**. It features local RAG (**FAISS**) integrating extensive expertise in careers, finance, cooking, etc., with evidence-based citations and **MCP** support to provide accurate advice and knowledge management tailored to personal life.
-- **Tech**: FastAPI, FAISS, LangChain, HuggingFace, MCP, OpenAI / Gemini / Claude.
+### [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — <AI Travel Planning Chat App>
+- Summary: A chat-based travel planner that turns conversations into personalized itineraries with a simple demo UI.
+- Tech: Python, Docker.
 
-**Scheduler Agent**
-- **Summary**: A self-hosted schedule management and personal assistant application built with **FastAPI**. Featuring a natural language chat interface, it allows intuitive operation of daily routines, task management, and logging through dialogue with AI.
-- **Tech**: FastAPI, PostgreSQL (SQLAlchemy), React (Vite), OpenAI / Google Gemini / Anthropic Claude / Groq, Docker.
+### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — <Conversational IoT Control Platform>
+- Summary: A chat-controlled IoT platform with a web dashboard and camera snapshots, supporting Jetson, Raspberry Pi, and Pico W devices via LLM-based intent understanding.
+- Tech: Python, Node.js, Docker, OpenAI/Gemini.
 
-**Browser Agent**
-- **Summary**: An autonomous web browsing agent based on **browser-use** and **Playwright**. It directly operates the browser from natural language instructions, executing complex tasks such as website exploration, form filling, and data collection just like a human. Features a GUI built with **Flask** and external integration capabilities via **MCP** (Model Context Protocol).
-- **Tech**: Python 3.11+, Flask, browser-use, Playwright, Docker, Model Context Protocol (MCP), OpenAI/Anthropic APIs.
+### [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — <AI Schedule Assistant>
+- Summary: A chat-first scheduling assistant with timeline views that can use OpenAI, Gemini, or Anthropic models to manage routines and tasks.
+- Tech: Python, PostgreSQL, Vite, Docker.
 
-**IoT Agent**
-- **Summary**: A self-hosted IoT management platform based on **FastAPI**. LLMs (OpenAI/Anthropic/Gemini) interpret natural language chat instructions to automate real-time physical control and job execution for edge devices such as Jetson, Raspberry Pi, and Pico W.
-- **Tech**: FastAPI, React (Vite), Python, MicroPython, Docker, Docker Compose, OpenAI/Anthropic/Gemini APIs.
-
-**File-Sharing & Collab Tool**
-- **Summary**: A self-hosted file sharing and collaborative editing tool built with **FastAPI**. Features instant mobile transfer via QR codes, password-protected group sharing, and real-time synchronized notes via WebSockets for privacy-focused information sharing.
-- **Tech**: FastAPI, MySQL, Redis, WebSockets, SQLAlchemy, Docker, APScheduler.
-
-**Personal RAG Secretary**
-- **Summary**: A self-hosted personal secretary application built with **Django**. Features local RAG, PII masking, and evidence-based responses to provide accurate knowledge management and assistance while protecting privacy.
-- **Tech**: Python 3.12, Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI API, Docker.
-
-**AI Knowledge Platform**
-- **Summary**: An integrated platform for AI chat, prompt sharing, and note management built with **FastAPI** and **Next.js**. It features advanced dialogue via Gemini API, community prompt sharing, and personal note functions to balance knowledge sharing with individual productivity.
-- **Tech**: FastAPI, Next.js, PostgreSQL, Gemini API (OpenAI SDK), Docker, Tailwind CSS.
-
-**Multi-Purpose AI Agent Platform**
-- **Summary**: A versatile AI agent platform built with **Flask** and **React 19**. Provides domain-optimized AI chat for travel, health, work, and learning, featuring content moderation via Llama Guard and strict security management (CSRF/CSP) for a secure interaction and planning environment.
-- **Tech**: Flask, React 19, PostgreSQL, Redis, OpenAI/Groq API (Llama Guard), Docker.
+### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — <RAG-Powered Lifestyle Assistant>
+- Summary: A multi-domain lifestyle RAG agent with MCP support, a web chat UI, and conversation analysis for proactive assistance.
+- Tech: FastAPI, FAISS, LangChain/LlamaIndex, HuggingFace Embeddings, Docker.
 </details>
 
 ## Skills (ship-ready)
@@ -189,41 +171,25 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 <details>
   <summary><b>その他のプロジェクト（クリックで展開）</b></summary>
 
-**マルチエージェント・オーケストレーター**
-- **概要**: **FastAPI**と**LangGraph**を用いたマルチエージェント・オーケストレーター。Web自動化、IoT制御、スケジュール管理などの専門エージェントを統合し、ユーザーの複雑な依頼に対して自律的なプランニング、実行、結果のレビューを一貫して行う個人用秘書システム。
-- **技術**: Python (FastAPI), LangGraph, OpenAI, Server-Sent Events (SSE), Docker, Jinja2, Vanilla JS.
+### [FS-QR](https://github.com/kota-kawa/fs-qr) — <ファイル共有 & QR>
+- 概要：QRによる即時共有、合言葉付きのグループ共有、リアルタイム共有ノートを備えたセルフホスト型のファイル/メモ共有ツール。
+- 技術：FastAPI, Docker.
 
-**生活最適化支援AIエージェント**
-- **概要**: **FastAPI**製の生活最適化支援AIエージェント。ローカルRAG（**FAISS**）による広範な専門知識（キャリア・金融・料理等）の統合、根拠提示、**MCP**対応を備え、個人の生活に寄り添った正確なアドバイスと知識管理を提供。
-- **技術**: FastAPI, FAISS, LangChain, HuggingFace, MCP, OpenAI / Gemini / Claude.
+### [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — <AI旅行プランニングチャットアプリ>
+- 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。
+- 技術：Python, Docker.
 
-**Scheduler Agent**
-- **概要**: **FastAPI**製のセルフホスト型スケジュール管理・個人秘書アプリ。自然言語によるチャットインターフェースを備え、日々のルーティン実行、タスク管理、ログ記録をAIとの対話を通じて直感的に操作可能。
-- **技術**: FastAPI, PostgreSQL (SQLAlchemy), React (Vite), OpenAI / Google Gemini / Anthropic Claude / Groq, Docker.
+### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — <会話型IoT制御プラットフォーム>
+- 概要：チャット指示でデバイス制御を行い、ダッシュボードやカメラ撮影を備えたIoT管理プラットフォーム。Jetson/Raspberry Pi/Pico Wに対応。
+- 技術：Python, Node.js, Docker, OpenAI/Gemini.
 
-**Browser Agent**
-- **概要**: **browser-use**と**Playwright**を基盤とした、自律型のウェブブラウジング・エージェント。自然言語の指示からブラウザを直接操作し、ウェブサイトの探索、フォーム入力、データ収集などの複雑なタスクを人間のように実行。**Flask**によるGUIと**MCP**（Model Context Protocol）による外部連携機能を備える。
-- **技術**: Python 3.11+, Flask, browser-use, Playwright, Docker, Model Context Protocol (MCP), OpenAI/Anthropic APIs.
+### [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — <AIスケジュール管理アシスタント>
+- 概要：チャットで日々のルーティンやタスクを管理し、タイムライン表示にも対応するスケジュール管理アプリ。
+- 技術：Python, PostgreSQL, Vite, Docker.
 
-**IoT Agent**
-- **概要**: **FastAPI**ベースのセルフホスト型IoT管理プラットフォーム。自然言語でのチャット指示をLLM（OpenAI/Anthropic/Gemini）が解釈し、JetsonやRaspberry Pi、Pico Wなどのエッジデバイスに対してリアルタイムな物理制御やジョブ実行を自動化。
-- **技術**: FastAPI, React (Vite), Python, MicroPython, Docker, Docker Compose, OpenAI/Anthropic/Gemini APIs.
-
-**ファイル共有・共同編集ツール**
-- **概要**: **FastAPI**製のセルフホスト型ファイル共有・共同編集ツール。QRコードを用いた即時モバイル転送、パスワード保護されたグループ共有、WebSocketによるリアルタイム同期ノート機能を備え、プライバシー重視の円滑な情報共有を実現。
-- **技術**: FastAPI, MySQL, Redis, WebSockets, SQLAlchemy, Docker, APScheduler.
-
-**個人用RAG秘書アプリ**
-- **概要**: **Django**製のセルフホスト型個人用秘書アプリ。ローカルRAG、個人情報(PII)マスキング、根拠提示機能を備え、プライバシーを保護しつつ正確な知識管理とアシスタント機能を提供。
-- **技術**: Python 3.12, Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI API, Docker.
-
-**AIナレッジプラットフォーム**
-- **概要**: **FastAPI**と**Next.js**を組み合わせた、AIチャット・プロンプト共有・メモ管理の統合プラットフォーム。Gemini APIによる高度な対話機能に加え、ユーザー間でのプロンプト共有や個人用メモ機能を備え、知識共有と個人の生産性向上を両立。
-- **技術**: FastAPI, Next.js, PostgreSQL, Gemini API (OpenAI SDK), Docker, Tailwind CSS.
-
-**多目的AIエージェントプラットフォーム**
-- **概要**: **Flask**と**React 19**製の多目的AIエージェントプラットフォーム。旅行・健康・仕事・学習の各専門ドメインに最適化されたAIチャットを提供し、Llama Guardによるコンテンツ検閲や厳格なセキュリティヘッダー管理（CSRF/CSP）を備えた安全な対話・プランニング環境を実現。
-- **技術**: Flask, React 19, PostgreSQL, Redis, OpenAI/Groq API (Llama Guard), Docker.
+### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — <生活支援RAGエージェント>
+- 概要：生活領域の多分野知識をRAGで統合し、MCP対応・会話分析機能を備えた生活支援AI。
+- 技術：FastAPI, FAISS, LangChain/LlamaIndex, HuggingFace Embeddings, Docker.
 </details>
 
 ## スキル（実装して出せる）
