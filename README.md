@@ -13,7 +13,16 @@
 
 ## Summary
 Software Engineer focused on **Autonomous AI Agents** and **Privacy-First RAG Systems**.
-Strengths: Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full-Stack Python Development.
+
+**Core Strength: End-to-End Problem Solving**
+I excel at organizing surrounding challenges and user needs, translating them into intuitive UI/UX designs even when requirements are ambiguous, and leading development through to implementation. 
+
+**Experience:**
+In my university lab, I independently identified operational inefficiencies, gathered requirements from peers, and developed custom tools. I continuously refined these through user feedback, demonstrating a proactive approach to system improvement and user-centric development.
+
+**Technical Strengths:**
+Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full-Stack Python Development.
+
 Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## Key Projects (recommended order)
@@ -104,7 +113,17 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## サマリー
 **自律型AIエージェント**と**プライバシー重視のRAGシステム**に注力するソフトウェアエンジニア。
-強み：マルチエージェントアーキテクチャ設計 (LangGraph)、セキュアな個人知識管理 (PKM)、Pythonフルスタック開発。
+
+**強み：課題発見から実装までの完遂力**
+周囲の課題・需要を整理し、ユーザーが迷わず使える形に落とし込んで実装まで持っていけます。
+要件が曖昧な状態からでも、ユーザー行動を想定してUI/導線を設計し、機能実装までを一貫して行うことができます。
+
+**エピソード：**
+大学の研究室内では、自ら必要性を感じて周囲にヒアリングを行い、潜在的な要求を具体化。実際にツールとして実装し、フィードバックを受けて改善するサイクルを回すことで、環境改善に貢献しました。
+
+**技術的強み：**
+マルチエージェントアーキテクチャ設計 (LangGraph)、セキュアな個人知識管理 (PKM)、Pythonフルスタック開発。
+
 志望：AIアプリケーションエンジニア / バックエンドシステム開発。
 
 ## 主要プロジェクト（おすすめ順）
