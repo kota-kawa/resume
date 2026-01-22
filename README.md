@@ -73,12 +73,19 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - **llm-jp-3-13b Adapters**: Released adapters for Japanese LLMs.
     - [MataMata-Turtle_lora](https://huggingface.co/kota-kawa/llm-jp-3-13b-MataMata-Turtle_lora) (LoRA)
     - [Wanigame-Turtle](https://huggingface.co/kota-kawa/llm-jp-3-13b-Wanigame-Turtle) (DPO Adapter)
+
+<details>
+  <summary><b>Matsuo Lab Specialized AI Courses</b></summary>
+
 - **AI Management Course (Matsuo Lab & PwC)**
   - Studied corporate AI implementation strategies and challenges through case studies from industry leaders like **DENSO** and **Shimizu Corporation**.
 - **Matsuo Lab Specialized AI Courses**
+  - **LLM (Large Language Model) Course**: Comprehensive study of LLM fundamentals (pre-training) to AI agent applications.
   - **GCI (Global Consumer Intelligence)**: Data science and machine learning foundations.
   - **Deep Learning**: Comprehensive study of neural network architectures and optimization.
   - **Deep Generative Models**: Advanced techniques in generative AI (VAEs, GANs, Diffusion Models).
+</details>
+
 - **FIT 2025 (Forum on Information Technology)** (Sep 2025)
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
@@ -174,12 +181,19 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - **llm-jp-3-13b アダプタ**: 国産LLM向けのアダプタを公開。
     - [MataMata-Turtle_lora](https://huggingface.co/kota-kawa/llm-jp-3-13b-MataMata-Turtle_lora) (LoRA)
     - [Wanigame-Turtle](https://huggingface.co/kota-kawa/llm-jp-3-13b-Wanigame-Turtle) (DPO Adapter)
+
+<details>
+  <summary><b>松尾研 各種AI講座受講（詳細）</b></summary>
+
 - **AI経営講座（松尾研・PwC主催）**
   - **デンソー**や**清水建設**など、大手企業におけるAI活用事例や導入課題について学習。
 - **松尾研 各種AI講座受講**
+  - **LLM (大規模言語モデル) 講座**: LLMの基礎（事前学習）からAIエージェントとしての活用までを包括的に学習。
   - **GCI (データサイエンス基礎)**: データ分析および機械学習の基礎を習得。
   - **深層学習 (Deep Learning)**: ニューラルネットワークの基礎から最新の最適化手法までを学習。
   - **深層生成モデル**: 生成AI（VAE, GAN, Diffusion Modelなど）の理論と実装を習得。
+</details>
+
 - **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
   - **RAG（検索拡張生成）**に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
