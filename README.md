@@ -12,11 +12,14 @@
 ## Summary
 Software Engineer focused on **Autonomous AI Agents** and **Privacy-First RAG Systems**.
 
+**Core Strength: AI × Design × English**
+My strength lies in the combination of AI, design, and English communication.
+
 **Core Strength: End-to-End Problem Solving**
 I excel at organizing surrounding challenges and user needs, translating them into intuitive UI/UX designs even when requirements are ambiguous, and leading development through to implementation. 
 
 **Experience:**
-In my university lab, I independently identified operational inefficiencies, gathered requirements from peers, and developed custom tools. I continuously refined these through user feedback, demonstrating a proactive approach to system improvement and user-centric development.
+In my university lab, I independently identified operational inefficiencies, gathered requirements from peers, and developed necessary Web services. By iterating on these based on user feedback, I successfully improved work efficiency.
 
 **Technical Strengths:**
 Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full-Stack Python Development.
@@ -65,11 +68,13 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 </details>
 
 ## Skills (ship-ready)
-- **AI/Agents**: Multi-Agent Systems (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), Browser Automation (`browser-use`), LLM Integration.
-- **Backend**: Python (Flask, Django, FastAPI), Microservices Architecture, REST/GraphQL.
-- **Frontend**: React (Vite), Jinja2 (SSR), CSS (BEM), Modern JS.
-- **Infra/DevOps**: Docker (Compose), `uv` (Package Management), PostgreSQL, Redis, CI/CD pipelines.
-- **Quality**: `pytest`, `ruff`, `black`, PII Masking/Security-first design.
+| Category | Skills |
+| :--- | :--- |
+| **AI/Agents** | Multi-Agent Systems (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), Browser Automation (`browser-use`), LLM Integration |
+| **Backend** | Python (Flask, Django, FastAPI), Microservices Architecture, REST/GraphQL |
+| **Frontend** | React (Vite), Jinja2 (SSR), CSS (BEM), Modern JS |
+| **Infra/DevOps** | Docker (Compose), `uv` (Package Management), PostgreSQL, Redis, CI/CD pipelines |
+| **Quality** | `pytest`, `ruff`, `black`, PII Masking/Security-first design |
 
 ## Experience
 - <Company/Team> — <role> (YYYY-MM–YYYY-MM)
@@ -77,7 +82,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - <impact bullet 2>
 
 ## Education
-- **Kanagawa Institute of Technology** — Bachelor of Science (Expected)
+- **Kanagawa Institute of Technology** — B.S. in Information Network and Communication, Faculty of Information Technology (Expected)
   - Kanagawa, Japan | Apr 2021 – Mar 2026
 - **University of North Alabama** — International Exchange Program
   - Alabama, USA | Jun 2023 – May 2024
@@ -119,7 +124,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - Selected participant for Meta's official AI hackathon in Tokyo.
   - Developed a generative AI prototype leveraging Llama 3 models.
 - **Technical Workshops**
-  - Participated in 1-day technical programs at **GMO Internet** and **NTT DATA INTELLILINK**.
+  - Participated in internships at **GMO Internet** and **NTT DATA INTELLILINK**.
 
 ## Education
 - **Japanese**: Native
@@ -147,12 +152,15 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 ## サマリー
 **自律型AIエージェント**と**プライバシー重視のRAGシステム**に注力するソフトウェアエンジニア。
 
+**強み：AI × デザイン × 英語**
+AIとデザインと英語でのコミュニケーションの３つの組み合わせが自分の強みです。
+
 **強み：課題発見から実装までの完遂力**
 周囲の課題・需要を整理し、ユーザーが迷わず使える形に落とし込んで実装まで持っていけます。
 要件が曖昧な状態からでも、ユーザー行動を想定してUI/導線を設計し、機能実装までを一貫して行うことができます。
 
 **エピソード：**
-大学の研究室内では、自ら必要性を感じて周囲にヒアリングを行い、潜在的な要求を具体化。実際にツールとして実装し、フィードバックを受けて改善するサイクルを回すことで、環境改善に貢献しました。
+大学の研究室内では、自ら必要性を感じて周囲にヒアリングを行い、潜在的な要求を具体化。実際に必要とされているWebサービスを開発し、フィードバックを受けて改善するサイクルを回すことで、作業の効率化を実現しました。
 
 **技術的強み：**
 マルチエージェントアーキテクチャ設計 (LangGraph)、セキュアな個人知識管理 (PKM)、Pythonフルスタック開発。
@@ -201,11 +209,13 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 </details>
 
 ## スキル（実装して出せる）
-- **AI/Agents**: マルチエージェントシステム (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), ブラウザ自動化 (`browser-use`), LLM連携.
-- **Backend**: Python (Flask, Django, FastAPI), マイクロサービスアーキテクチャ, REST/GraphQL.
-- **Frontend**: React (Vite), Jinja2 (SSR), CSS (BEM), Modern JS.
-- **Infra/DevOps**: Docker (Compose), `uv` (パッケージ管理), PostgreSQL, Redis, CI/CDパイプライン.
-- **Quality**: `pytest`, `ruff`, `black`, PIIマスキング/セキュリティ・バイ・デザイン.
+| カテゴリ | スキル |
+| :--- | :--- |
+| **AI/Agents** | マルチエージェントシステム (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), ブラウザ自動化 (`browser-use`), LLM連携 |
+| **Backend** | Python (Flask, Django, FastAPI), マイクロサービスアーキテクチャ, REST/GraphQL |
+| **Frontend** | React (Vite), Jinja2 (SSR), CSS (BEM), Modern JS |
+| **Infra/DevOps** | Docker (Compose), `uv` (パッケージ管理), PostgreSQL, Redis, CI/CDパイプライン |
+| **Quality** | `pytest`, `ruff`, `black`, PIIマスキング/セキュリティ・バイ・デザイン |
 
 ## 経験
 - <Company/Team> — <role>（YYYY-MM–YYYY-MM）
@@ -213,7 +223,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - <成果2>
 
 ## 学歴
-- **神奈川工科大学** — 学士（卒業見込）
+- **神奈川工科大学** — 情報学部 情報ネットワークコミュニケーション学科 学士（卒業見込）
   - 神奈川県 | 2021年4月 – 2026年3月
 - **University of North Alabama** — 交換留学プログラム修了
   - アラバマ州, 米国 | 2023年6月 – 2024年5月
@@ -254,7 +264,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 - **Meta Llama Ideathon 2024** (2024年9月)
   - Meta社主催のAIハッカソンに選抜参加。
   - Llama 3 モデルを活用した生成AIプロトタイプを開発。
-- **技術ワークショップ / 1-day インターン**
+- **技術ワークショップ / インターン**
   - **GMOインターネットグループ**、**NTTデータ先端技術**などの技術体験プログラムに参加。
 
 ## 語学
