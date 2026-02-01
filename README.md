@@ -77,9 +77,12 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 | **Quality** | `pytest`, `ruff`, `black`, PII Masking/Security-first design |
 
 ## Experience
-- <Company/Team> — <role> (YYYY-MM–YYYY-MM)
-  - <impact bullet 1>
-  - <impact bullet 2>
+**Manable Inc.** — Joint Researcher / Project Lead
+- **Lead Researcher for RAG System Optimization**: Led a team of three in a joint research project focused on building robust, privacy-first RAG systems for corporate knowledge management.
+- **Privacy-First Architecture**: Designed and implemented a PII (Personally Identifiable Information) masking pipeline to ensure secure data handling before indexing into the vector database.
+- **Data Engineering**: Orchestrated the creation of high-quality structured datasets from fragmented corporate documents to improve retrieval accuracy.
+- **Project Leadership**: Managed the development roadmap and coordinated communication between the company and the research team, ensuring all milestones were met.
+- **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability.
 
 ## Education
 - **Kanagawa Institute of Technology** — B.S. in Information Network and Communication, Faculty of Information Technology (Expected)
@@ -218,9 +221,12 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 | **Quality** | `pytest`, `ruff`, `black`, PIIマスキング/セキュリティ・バイ・デザイン |
 
 ## 経験
-- <Company/Team> — <role>（YYYY-MM–YYYY-MM）
-  - <成果1>
-  - <成果2>
+**マナブル株式会社** — 共同研究員 / プロジェクトリーダー
+- **RAGシステム最適化の共同研究**: 3名のチームリーダーとして、企業内ナレッジを活用するための堅牢でプライバシーに配慮したRAGシステムの構築に従事。
+- **プライバシー重視の設計**: 個人情報（PII）をマスキングして構造化データ化するパイプラインを設計・実装し、セキュリティを担保した状態でのデータ活用を実現。
+- **データ構造化の主導**: 断片的な社内ドキュメントから高精度な検索を可能にするためのデータクレンジングと構造化を指揮し、回答の正確性を向上。
+- **リーダーシップ**: プロジェクト全体の進捗管理および企業との調整を担当。チームの技術的な方向性を決定し、開発を牽引。
+- **研究成果の発表**: **FIT 2025（第24回情報科学技術フォーラム）**にて本研究の成果を発表。
 
 ## 学歴
 - **神奈川工科大学** — 情報学部 情報ネットワークコミュニケーション学科 学士（卒業見込）
