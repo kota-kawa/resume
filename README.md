@@ -74,10 +74,10 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 ## Skills (ship-ready)
 | Category | Skills |
 | :--- | :--- |
-| **AI/Agents** | Multi-Agent Systems (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), Browser Automation (`browser-use`), LLM Integration |
-| **Backend** | Python (Flask, Django, FastAPI), Microservices Architecture, REST/GraphQL |
-| **Frontend** | React (Vite), Jinja2 (SSR), CSS (BEM), Modern JS |
-| **Infra/DevOps** | Docker (Compose), `uv` (Package Management), PostgreSQL, Redis, CI/CD pipelines |
+| **AI/Agents** | Multi-Agent Systems (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), Browser Automation (`browser-use`), MCP (Model Context Protocol) |
+| **Backend** | Python (Flask, Django, FastAPI), Microservices Architecture, Celery (Async Tasks), REST/GraphQL |
+| **Frontend** | React (Vite/Next.js), TypeScript, Tailwind CSS, Jinja2 (SSR) |
+| **Infra/DevOps** | Docker (Compose), `uv` (Package Management), PostgreSQL/MySQL, Redis, CI/CD pipelines |
 | **Quality** | `pytest`, `ruff`, `black`, PII Masking/Security-first design |
 
 ## Experience
@@ -222,10 +222,10 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 ## スキル（実装して出せる）
 | カテゴリ | スキル |
 | :--- | :--- |
-| **AI/Agents** | マルチエージェントシステム (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), ブラウザ自動化 (`browser-use`), LLM連携 |
-| **Backend** | Python (Flask, Django, FastAPI), マイクロサービスアーキテクチャ, REST/GraphQL |
-| **Frontend** | React (Vite), Jinja2 (SSR), CSS (BEM), Modern JS |
-| **Infra/DevOps** | Docker (Compose), `uv` (パッケージ管理), PostgreSQL, Redis, CI/CDパイプライン |
+| **AI/Agents** | マルチエージェントシステム (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), ブラウザ自動化 (`browser-use`), MCP (Model Context Protocol) |
+| **Backend** | Python (Flask, Django, FastAPI), マイクロサービスアーキテクチャ, Celery (非同期タスク), REST/GraphQL |
+| **Frontend** | React (Vite/Next.js), TypeScript, Tailwind CSS, Jinja2 (SSR) |
+| **Infra/DevOps** | Docker (Compose), `uv` (パッケージ管理), PostgreSQL/MySQL, Redis, CI/CDパイプライン |
 | **Quality** | `pytest`, `ruff`, `black`, PIIマスキング/セキュリティ・バイ・デザイン |
 
 ## 経験
