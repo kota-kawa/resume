@@ -65,6 +65,10 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — <RAG-Powered Lifestyle Assistant>
 - Summary: A multi-domain lifestyle RAG agent with MCP support, a web chat UI, and conversation analysis for proactive assistance.
 - Tech: FastAPI, FAISS, LangChain/LlamaIndex, HuggingFace Embeddings, Docker.
+
+### [Ikutoku-sai](https://github.com/kota-kawa/Ikutoku-sai) — <University Festival Website>
+- Summary: The official website for the university festival (Ikutoku-sai). Built with Next.js (App Router) to provide event schedules, campus maps, and real-time announcements.
+- Tech: Next.js, React, TypeScript.
 </details>
 
 ## Skills (ship-ready)
@@ -209,6 +213,10 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — <生活支援RAGエージェント>
 - 概要：生活領域の多分野知識をRAGで統合し、MCP対応・会話分析機能を備えた生活支援AI。
 - 技術：FastAPI, FAISS, LangChain/LlamaIndex, HuggingFace Embeddings, Docker.
+
+### [Ikutoku-sai](https://github.com/kota-kawa/Ikutoku-sai) — <幾徳祭公式サイト>
+- 概要：大学祭（幾徳祭）の公式サイトをNext.js (App Router) で開発。イベントスケジュール、キャンパスマップ、リアルタイムなアナウンス機能などを提供。
+- 技術：Next.js, React, TypeScript.
 </details>
 
 ## スキル（実装して出せる）
