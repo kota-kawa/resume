@@ -108,9 +108,6 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
   - Completed a comprehensive course covering LLM fundamentals (pre-training) to AI agent applications.
   - Developed fine-tuned models/adapters using **LoRA SFT** and **DPO** as the final project, achieving a **top 5% ranking** in the competition.
   - **Llama-3.1-8B-Instruct-Freedom_v3**: Llama 3.1 based model trained with LoRA SFT and DPO. [Link](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
-  - **llm-jp-3-13b Adapters**: Released adapters for Japanese LLMs.
-    - [MataMata-Turtle_lora](https://huggingface.co/kota-kawa/llm-jp-3-13b-MataMata-Turtle_lora) (LoRA)
-    - [Wanigame-Turtle](https://huggingface.co/kota-kawa/llm-jp-3-13b-Wanigame-Turtle) (DPO Adapter)
 
 <details>
   <summary><b>Matsuo Lab Specialized AI Courses</b></summary>
@@ -256,9 +253,6 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
   - LLMの基礎（事前学習）からAIエージェントとしての活用までを包括的に学習・修了。
   - 最終プロジェクトとして**LoRA SFT**および**DPO**を用いたモデルを開発し、コンペティションにて上位5%に入賞。
   - **Llama-3.1-8B-Instruct-Freedom_v3**: Llama 3.1をベースにSFTとDPOを適用したモデル。[Link](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
-  - **llm-jp-3-13b アダプタ**: 国産LLM向けのアダプタを公開。
-    - [MataMata-Turtle_lora](https://huggingface.co/kota-kawa/llm-jp-3-13b-MataMata-Turtle_lora) (LoRA)
-    - [Wanigame-Turtle](https://huggingface.co/kota-kawa/llm-jp-3-13b-Wanigame-Turtle) (DPO Adapter)
 
 <details>
   <summary><b>松尾研 各種AI講座受講（詳細）</b></summary>
