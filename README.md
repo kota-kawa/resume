@@ -9,10 +9,11 @@
 - 💼 LinkedIn: <https://www.linkedin.com/in/kota-kawagoe-0a22263a7/>
 - ✉️ Email: kota7kawagoe@gmail.com
 
-## Summary
-**Looking for: Roles in AI Application Engineering or Backend Systems.**
+### **Looking for: Roles in AI Application Engineering or Backend Systems.**
 
-Software Engineer focused on **Autonomous AI Agents** and **Privacy-First RAG Systems**.
+## Summary
+
+Software Engineer aiming to bring **Autonomous AI Agents** into real-world deployment by leveraging frontend and backend development experience.
 
 **Core Strength: AI × Design × English**
 My strength lies in the combination of AI, design, and English communication.
@@ -150,10 +151,11 @@ Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full
 - 💼 LinkedIn：<https://www.linkedin.com/in/kota-kawagoe-0a22263a7/>
 - ✉️ Email：kota7kawagoe@gmail.com
 
-## サマリー
-**志望：AIアプリケーションエンジニア / バックエンドシステム開発。**
+### **志望：AIアプリケーションエンジニア / バックエンドシステム開発。**
 
-**自律型AIエージェント**と**プライバシー重視のRAGシステム**に注力するソフトウェアエンジニア。
+## サマリー
+
+これまでのフロントエンド/バックエンド開発経験を活かし、**自律型AIエージェント**の社会実装を目指すソフトウェアエンジニア。
 
 **強み：AI × デザイン × 英語**
 AIとデザインと英語でのコミュニケーションの３つの組み合わせが自分の強みです。
