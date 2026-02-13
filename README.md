@@ -127,7 +127,7 @@ Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full
 - **Technical Workshops**
   - Participated in internships at **GMO Internet** and **NTT DATA INTELLILINK**.
 
-## Education
+## Language
 - **Japanese**: Native
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
@@ -139,7 +139,7 @@ Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full
 <details>
   <summary>日本語版（クリックで展開）</summary>
 
-# Resume（職務経歴/履歴書） — <Your Name>
+# Resume（職務経歴/履歴書） — 川越 航太
 
 ## ダウンロード
 - 📄 Resume（PDF）：[JP](./pdf/レジュメ-jp.pdf) | [EN](./pdf/resume-en.pdf)
