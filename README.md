@@ -93,13 +93,12 @@ Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full
   - Alabama, USA | Jun 2023 – May 2024
   - **Honors**: **Dean's List** (Fall 2023, GPA: 3.75/4.0).
   - **Achievement**: Ranked **1st in class** for the final project in the **Artificial Intelligence** course.
-  - **Design Portfolio**: [project-kk.com/design](https://project-kk.com/design) (Works from Design I & II, Layout and Design)
-  - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Layout and Design, Computer Skills for Problem Solving.
+  - **Design Portfolio**: [project-kk.com/design](https://project-kk.com/design) (Works from Design I & II)
+  - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Computer Science Fundamentals.
 
 ## Achievements & Activities
 - **Matsuo Lab LLM Competition 2025** (2025)
-  - Responsible for dataset creation within the team, focusing on high-difficulty mathematical reasoning.
-  - Leveraged an **H100 cluster** to generate a high-difficulty synthetic dataset using DeepSeek and Llama models.
+  - Responsible for dataset creation within the team, building a high-difficulty synthetic dataset for mathematical reasoning using DeepSeek and Llama models.
   - Achieved measurable performance gains after fine-tuning, demonstrating the effectiveness of the high-quality, small-scale dataset.
   - Dataset: [difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)
 - **Matsuo Lab LLM Course Final Project & Competition**
@@ -236,13 +235,12 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
   - アラバマ州, 米国 | 2023年6月 – 2024年5月
   - **栄誉**: **Dean's List** 選出（2023年秋期、GPA: 3.75/4.0）
   - **実績**: **Artificial Intelligence（人工知能）** 授業の最終プロジェクトにて、クラス内 **1位** の評価を獲得。
-  - **デザイン成果物**: [project-kk.com/design](https://project-kk.com/design)（Design I & II, Layout and Design での制作物）
-  - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, レイアウトデザイン, コンピュータ問題解決。
+  - **デザイン成果物**: [project-kk.com/design](https://project-kk.com/design)（Design I & II での制作物）
+  - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ基礎。
 
 ## 受賞・活動歴
 - **松尾研 LLMコンペ2025** (2025年)
-  - チーム内でデータセット作成を担当。
-  - **H100クラスタ**を活用し、DeepSeekやLlamaモデルを用いた高難易度の数学的推論用合成データセットを構築。
+  - チーム内でデータセット作成を担当し、DeepSeekやLlamaモデルを用いた高難易度の数学的推論向け合成データセットを構築。
   - 小規模なデータセットながら、学習後のモデル性能向上を実現し、データの質の重要性を実証。
   - 公開データセット: [difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)
 - **松尾研 LLM講座 最終プロジェクト & コンペティション**
