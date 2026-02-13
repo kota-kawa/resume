@@ -1,7 +1,7 @@
 # Resume — <Kota Kawagoe>
 
 ## Download
-- 📄 Resume (PDF): [JP](./resume_ja.pdf) | [EN](./resume_en.pdf) - coming soon
+- 📄 Resume (PDF): [JP](./pdf/レジュメ-jp.pdf) | [EN](./pdf/resume-en.pdf)
 - 🌐 Portfolio: <https://project-kk.com/>
 - 📝 Blog: <https://blog.project-kk.com/>
 - 📘 Zenn: <https://zenn.dev/kota_kawa>
@@ -10,6 +10,8 @@
 - ✉️ Email: kota7kawagoe@gmail.com
 
 ## Summary
+**Looking for: Roles in AI Application Engineering or Backend Systems.**
+
 Software Engineer focused on **Autonomous AI Agents** and **Privacy-First RAG Systems**.
 
 **Core Strength: AI × Design × English**
@@ -23,8 +25,6 @@ In my university lab, I independently identified operational inefficiencies, gat
 
 **Technical Strengths:**
 Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full-Stack Python Development.
-
-Looking for: Roles in AI Application Engineering or Backend Systems.
 
 ## Key Projects (recommended order)
 ### 1) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — <Autonomous Orchestration Platform>
@@ -83,9 +83,6 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 ## Experience
 **Manable Inc.** — Joint Researcher / Project Lead
 - **Lead Researcher for RAG System Optimization**: Led a team of three in a joint research project focused on building robust, privacy-first RAG systems for corporate knowledge management.
-- **Privacy-First Architecture**: Designed and implemented a PII (Personally Identifiable Information) masking pipeline to ensure secure data handling before indexing into the vector database.
-- **Data Engineering**: Orchestrated the creation of high-quality structured datasets from fragmented corporate documents to improve retrieval accuracy.
-- **Project Leadership**: Managed the development roadmap and coordinated communication between the company and the research team, ensuring all milestones were met.
 - **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability.
 
 ## Education
@@ -145,7 +142,7 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 # Resume（職務経歴/履歴書） — <Your Name>
 
 ## ダウンロード
-- 📄 Resume（PDF）：[JP](./resume_ja.pdf) | [EN](./resume_en.pdf)
+- 📄 Resume（PDF）：[JP](./pdf/レジュメ-jp.pdf) | [EN](./pdf/resume-en.pdf)
 - 🌐 Portfolio：<https://project-kk.com/>
 - 📝 Blog：<https://blog.project-kk.com/>
 - 📘 Zenn：<https://zenn.dev/kota_kawa>
@@ -154,6 +151,8 @@ Looking for: Roles in AI Application Engineering or Backend Systems.
 - ✉️ Email：kota7kawagoe@gmail.com
 
 ## サマリー
+**志望：AIアプリケーションエンジニア / バックエンドシステム開発。**
+
 **自律型AIエージェント**と**プライバシー重視のRAGシステム**に注力するソフトウェアエンジニア。
 
 **強み：AI × デザイン × 英語**
@@ -168,8 +167,6 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 
 **技術的強み：**
 マルチエージェントアーキテクチャ設計 (LangGraph)、セキュアな個人知識管理 (PKM)、Pythonフルスタック開発。
-
-志望：AIアプリケーションエンジニア / バックエンドシステム開発。
 
 ## 主要プロジェクト（おすすめ順）
 ### 1) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — <自律型エージェントオーケストレーション>
@@ -228,9 +225,6 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 ## 経験
 **マナブル株式会社** — 共同研究員 / プロジェクトリーダー
 - **RAGシステム最適化の共同研究**: 3名のチームリーダーとして、企業内ナレッジを活用するための堅牢でプライバシーに配慮したRAGシステムの構築に従事。
-- **プライバシー重視の設計**: 個人情報（PII）をマスキングして構造化データ化するパイプラインを設計・実装し、セキュリティを担保した状態でのデータ活用を実現。
-- **データ構造化の主導**: 断片的な社内ドキュメントから高精度な検索を可能にするためのデータクレンジングと構造化を指揮し、回答の正確性を向上。
-- **リーダーシップ**: プロジェクト全体の進捗管理および企業との調整を担当。チームの技術的な方向性を決定し、開発を牽引。
 - **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表。
 
 ## 学歴
