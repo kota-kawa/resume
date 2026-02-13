@@ -134,7 +134,7 @@ Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full
 ## Notes
 - Personal data such as full address/phone is intentionally omitted.
 - Last updated: 2026-02-13
-- License: All rights reserved (or CC BY 4.0)
+- License: All rights reserved
 
 <details>
   <summary>日本語版（クリックで展開）</summary>
@@ -276,5 +276,5 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 ## 補足
 - 住所/電話などの個人情報は意図的に省略しています。
 - 最終更新：2026-02-13
-- ライセンス：All rights reserved（または CC BY 4.0）
+- ライセンス：All rights reserved
 </details>
