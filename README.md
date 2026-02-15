@@ -94,7 +94,7 @@ Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full
   - **Honors**: **Dean's List** (Fall 2023, GPA: 3.75/4.0).
   - **Achievement**: Ranked **1st in class** for the final project in the **Artificial Intelligence** course.
   - **Design Portfolio**: [project-kk.com/design](https://project-kk.com/design) (Works from Design I & II)
-  - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Computer Science Fundamentals.
+  - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
 ## Achievements & Activities
 - **Matsuo Lab LLM Competition 2025** (2025)
@@ -236,7 +236,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
   - **栄誉**: **Dean's List** 選出（2023年秋期、GPA: 3.75/4.0）
   - **実績**: **Artificial Intelligence（人工知能）** 授業の最終プロジェクトにて、クラス内 **1位** の評価を獲得。
   - **デザイン成果物**: [project-kk.com/design](https://project-kk.com/design)（Design I & II での制作物）
-  - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ基礎。
+  - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
 ## 受賞・活動歴
 - **松尾研 LLMコンペ2025** (2025年)
