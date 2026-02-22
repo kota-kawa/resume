@@ -20,21 +20,25 @@ My strength lies in the combination of AI, design, and English communication.
 **Experience:**
 Even with ambiguous requirements, I identify user needs, design intuitive UI/UX, and drive development end to end. In my university lab, I proactively gathered requirements from peers, built the Web services they needed, and iterated on feedback — measurably improving team efficiency.
 
-## Key Projects(recommended order)
-### 1) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (Autonomous Orchestration Platform)
-- Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
-- Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
-
-### 2) [MemoScribe](https://github.com/kota-kawa/MemoScribe) — (Personal Life Secretary with RAG)
-- Summary: A self-hosted **Django** application acting as a personal life secretary. Features local RAG, PII masking, and strict "evidence-based" citations to ensure secure, private assistance without hallucination.
-- Tech: Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI.
-
-### 3) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
+## Key Projects (recommended order)
+### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
 - Summary: An LLM-powered browser automation agent wrapping `browser_use` with a **FastAPI** backend and **noVNC** web interface. Supports natural language control, real-time visualization, and WebArena benchmarks.
 - Tech: Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
+### 2) [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — (AI Travel Planning Chat App)
+- Summary: A chat-based travel planner that turns conversations into personalized itineraries with a simple demo UI.
+- Tech: Python, Docker.
+
+### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AI Schedule Assistant)
+- Summary: A chat-first scheduling assistant with timeline views that can use OpenAI, Gemini, or Anthropic models to manage routines and tasks.
+- Tech: Python, PostgreSQL, Vite, Docker.
+
 <details>
   <summary><b>Other Projects (Click to expand)</b></summary>
+
+### [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (Autonomous Orchestration Platform)
+- Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
+- Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
 
 ### [Strike Chat](https://github.com/kota-kawa/Strike_Chat) — (AI Chat & Prompt Sharing)
 - Summary: An AI chat application built with FastAPI and Next.js. Features email authentication, Groq/Gemini API integration, and prompt sharing/search capabilities.
@@ -44,17 +48,13 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 - Summary: A self-hosted file and note sharing tool with QR-based quick transfer, passworded group rooms, and real-time shared notes.
 - Tech: FastAPI, Docker.
 
-### [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — (AI Travel Planning Chat App)
-- Summary: A chat-based travel planner that turns conversations into personalized itineraries with a simple demo UI.
-- Tech: Python, Docker.
-
 ### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — (Conversational IoT Control Platform)
 - Summary: A chat-controlled IoT platform with a web dashboard and camera snapshots, supporting Jetson, Raspberry Pi, and Pico W devices via LLM-based intent understanding.
 - Tech: Python, Node.js, Docker, OpenAI/Gemini.
 
-### [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AI Schedule Assistant)
-- Summary: A chat-first scheduling assistant with timeline views that can use OpenAI, Gemini, or Anthropic models to manage routines and tasks.
-- Tech: Python, PostgreSQL, Vite, Docker.
+### [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game) — (AI-powered Mystery Detective Game)
+- Summary: An interactive locked-room mystery game where **Gemini 3** acts as Game Master, dynamically generating unique cases and responding to player questions. Built with **Nano Banana** at the Gemini 3 Tokyo Hackathon 2026.
+- Tech: FastAPI, React, Gemini, Nano Banana, Docker.
 
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (RAG-Powered Lifestyle Assistant)
 - Summary: A multi-domain lifestyle RAG agent with MCP support, a web chat UI, and conversation analysis for proactive assistance.
@@ -63,6 +63,10 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 ### [Ikutoku-sai](https://github.com/kota-kawa/Ikutoku-sai) — (University Festival Website)
 - Summary: The official website for the university festival (Ikutoku-sai). Built with Next.js (App Router) to provide event schedules, campus maps, and real-time announcements.
 - Tech: Next.js, React, TypeScript.
+
+### [MemoScribe](https://github.com/kota-kawa/MemoScribe) — (Personal Life Secretary with RAG)
+- Summary: A self-hosted **Django** application acting as a personal life secretary. Features local RAG, PII masking, and strict "evidence-based" citations to ensure secure, private assistance without hallucination.
+- Tech: Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI.
 </details>
 
 ## Skills (ship-ready)
@@ -155,20 +159,24 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 要件が曖昧な状態からでも、ユーザーの課題を整理し、直感的なUI/導線を設計して実装まで一貫して完遂できます。大学の研究室では自らヒアリングを行い、必要なWebサービスを開発・改善するサイクルを回して作業効率化を実現しました。
 
 ## 主要プロジェクト（おすすめ順）
-### 1) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (自律型エージェントオーケストレーション)
-- 概要：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作やIoT制御を行う専門エージェントを協調動作させることで、デジタル作業と物理デバイス制御のシームレスな連携を実現。
-- 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
-
-### 2) [MemoScribe](https://github.com/kota-kawa/MemoScribe) — (RAG搭載・個人用秘書アプリ)
-- 概要：**Django**製のセルフホスト型個人用秘書アプリ。ローカルRAG、個人情報(PII)マスキング、根拠提示機能を備え、プライバシーを保護しつつ正確な知識管理とアシスタント機能を提供。
-- 技術：Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI.
-
-### 3) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
+### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
 - 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作、リアルタイム可視化、WebArenaベンチマーク評価が可能。
 - 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI.
 
+### 2) [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AI旅行プランニングチャットアプリ)
+- 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。
+- 技術：Python, Docker.
+
+### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AIスケジュール管理アシスタント)
+- 概要：チャットで日々のルーティンやタスクを管理し、タイムライン表示にも対応するスケジュール管理アプリ。
+- 技術：Python, PostgreSQL, Vite, Docker.
+
 <details>
   <summary><b>その他のプロジェクト（クリックで展開）</b></summary>
+
+### [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (自律型エージェントオーケストレーション)
+- 概要：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作やIoT制御を行う専門エージェントを協調動作させることで、デジタル作業と物理デバイス制御のシームレスな連携を実現。
+- 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
 
 ### [Strike Chat](https://github.com/kota-kawa/Strike_Chat) — (AIチャット & プロンプト共有)
 - 概要：FastAPIとNext.jsを用いたAIチャットアプリ。メール認証、Groq/Gemini API連携に加え、ユーザー間でプロンプトを共有・検索できる機能を搭載。
@@ -178,17 +186,13 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 - 概要：QRによる即時共有、合言葉付きのグループ共有、リアルタイム共有ノートを備えたセルフホスト型のファイル/メモ共有ツール。
 - 技術：FastAPI, Docker.
 
-### [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AI旅行プランニングチャットアプリ)
-- 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。
-- 技術：Python, Docker.
-
 ### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — (会話型IoT制御プラットフォーム)
 - 概要：チャット指示でデバイス制御を行い、ダッシュボードやカメラ撮影を備えたIoT管理プラットフォーム。Jetson/Raspberry Pi/Pico Wに対応。
 - 技術：Python, Node.js, Docker, OpenAI/Gemini.
 
-### [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AIスケジュール管理アシスタント)
-- 概要：チャットで日々のルーティンやタスクを管理し、タイムライン表示にも対応するスケジュール管理アプリ。
-- 技術：Python, PostgreSQL, Vite, Docker.
+### [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game) — (AI駆動ミステリー探偵ゲーム)
+- 概要：**Gemini 3** がゲームマスターとなり、密室殺人事件をダイナミックに生成するインタラクティブなミステリーゲーム。**Nano Banana** を活用し、Gemini 3 東京ハッカソン 2026にて開発。
+- 技術：FastAPI, React, Gemini, Nano Banana, Docker.
 
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (生活支援RAGエージェント)
 - 概要：生活領域の多分野知識をRAGで統合し、MCP対応・会話分析機能を備えた生活支援AI。
@@ -197,6 +201,10 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 ### [Ikutoku-sai](https://github.com/kota-kawa/Ikutoku-sai) — (幾徳祭公式サイト)
 - 概要：大学祭（幾徳祭）の公式サイトをNext.js (App Router) で開発。イベントスケジュール、キャンパスマップ、リアルタイムなアナウンス機能などを提供。
 - 技術：Next.js, React, TypeScript.
+
+### [MemoScribe](https://github.com/kota-kawa/MemoScribe) — (RAG搭載・個人用秘書アプリ)
+- 概要：**Django**製のセルフホスト型個人用秘書アプリ。ローカルRAG、個人情報(PII)マスキング、根拠提示機能を備え、プライバシーを保護しつつ正確な知識管理とアシスタント機能を提供。
+- 技術：Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI.
 </details>
 
 ## スキル（実装して出せる）
