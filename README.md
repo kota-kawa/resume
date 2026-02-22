@@ -95,6 +95,14 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
 ## Achievements & Activities
+- **FIT 2025 (Forum on Information Technology)** (Sep 2025)
+  - Presented research on **RAG (Retrieval-Augmented Generation)**.
+  - Conducted as part of a joint research project with **Manable Inc.**
+- **Gemini 3 Tokyo Hackathon 2026** (2026)
+  - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
+- **Meta Llama Ideathon 2024** (Sep 2024)
+  - Selected participant for Meta's official AI hackathon in Tokyo.
+  - Developed a generative AI prototype leveraging Llama 3 models. → [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi)
 - **Matsuo Lab LLM Competition 2025** (2025)
   - Responsible for dataset creation within the team, building a high-difficulty synthetic dataset for mathematical reasoning using DeepSeek and Llama models.
   - Achieved measurable performance gains after fine-tuning, demonstrating the effectiveness of the high-quality, small-scale dataset.
@@ -115,15 +123,6 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
   - **Deep Learning**: Comprehensive study of neural network architectures and optimization.
   - **Deep Generative Models**: Advanced techniques in generative AI (VAEs, GANs, Diffusion Models).
 </details>
-
-- **FIT 2025 (Forum on Information Technology)** (Sep 2025)
-  - Presented research on **RAG (Retrieval-Augmented Generation)**.
-  - Conducted as part of a joint research project with **Manable Inc.**
-- **Gemini 3 Tokyo Hackathon 2026** (2026)
-  - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
-- **Meta Llama Ideathon 2024** (Sep 2024)
-  - Selected participant for Meta's official AI hackathon in Tokyo.
-  - Developed a generative AI prototype leveraging Llama 3 models. → [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi)
 
 ## Language
 - **Japanese**: Native
@@ -233,6 +232,14 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
 ## 受賞・活動歴
+- **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
+  - RAG（検索拡張生成）に関する研究成果を発表。
+  - **マナブル株式会社**との共同研究として実施。
+- **Gemini 3 東京ハッカソン 2026** (2026年)
+  - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
+- **Meta Llama Ideathon 2024** (2024年9月)
+  - Meta社主催のAIハッカソンに選抜参加。
+  - Llama 3 モデルを活用した生成AIプロトタイプを開発。→ [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi)
 - **松尾研 LLMコンペ2025** (2025年)
   - チーム内でデータセット作成を担当し、DeepSeekやLlamaモデルを用いた高難易度の数学的推論向け合成データセットを構築。
   - 小規模なデータセットながら、学習後のモデル性能向上を実現し、データの質の重要性を実証。
@@ -253,15 +260,6 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
   - **深層学習 (Deep Learning)**: ニューラルネットワークの基礎から最新の最適化手法までを学習。
   - **深層生成モデル**: 生成AI（VAE, GAN, Diffusion Modelなど）の理論と実装を習得。
 </details>
-
-- **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
-  - RAG（検索拡張生成）に関する研究成果を発表。
-  - **マナブル株式会社**との共同研究として実施。
-- **Gemini 3 東京ハッカソン 2026** (2026年)
-  - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
-- **Meta Llama Ideathon 2024** (2024年9月)
-  - Meta社主催のAIハッカソンに選抜参加。
-  - Llama 3 モデルを活用した生成AIプロトタイプを開発。→ [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi)
 
 ## 語学
 - **日本語**: ネイティブ
