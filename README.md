@@ -69,8 +69,8 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 | Category | Skills |
 | :--- | :--- |
 | **AI/Agents** | Multi-Agent Systems (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), Browser Automation (`browser-use`), MCP (Model Context Protocol) |
-| **Backend** | Python (Flask, Django, FastAPI), Microservices Architecture, Celery (Async Tasks), REST/GraphQL |
-| **Frontend** | React (Vite/Next.js), TypeScript, Tailwind CSS, Jinja2 (SSR) |
+| **Backend** | Python (Flask, Django, FastAPI), C, C#, Celery (Async Tasks), REST/GraphQL |
+| **Frontend** | HTML, CSS, JavaScript, TypeScript, React (Vite/Next.js), Next.js, Tailwind CSS, Bootstrap |
 | **Infra/DevOps** | Docker (Compose), `uv` (Package Management), PostgreSQL/MySQL, Redis, CI/CD pipelines |
 | **Quality** | `pytest`, `ruff`, `black`, PII Masking/Security-first design |
 
@@ -203,8 +203,8 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 | カテゴリ | スキル |
 | :--- | :--- |
 | **AI/Agents** | マルチエージェントシステム (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), ブラウザ自動化 (`browser-use`), MCP (Model Context Protocol) |
-| **Backend** | Python (Flask, Django, FastAPI), マイクロサービスアーキテクチャ, Celery (非同期タスク), REST/GraphQL |
-| **Frontend** | React (Vite/Next.js), TypeScript, Tailwind CSS, Jinja2 (SSR) |
+| **Backend** | Python (Flask, Django, FastAPI), C, C#, Celery (非同期タスク), REST/GraphQL |
+| **Frontend** | HTML, CSS, JavaScript, TypeScript, React (Vite/Next.js), Next.js, Tailwind CSS, Bootstrap |
 | **Infra/DevOps** | Docker (Compose), `uv` (パッケージ管理), PostgreSQL/MySQL, Redis, CI/CDパイプライン |
 | **Quality** | `pytest`, `ruff`, `black`, PIIマスキング/セキュリティ・バイ・デザイン |
 
