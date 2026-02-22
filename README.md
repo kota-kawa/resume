@@ -15,6 +15,7 @@
 Software Engineer aiming to bring **Autonomous AI Agents** into real-world deployment by leveraging frontend and backend development experience.
 
 **Core Strength: AI × Design × English**
+
 My strength lies in the combination of AI, design, and English communication.
 
 **Experience:**
@@ -152,6 +153,7 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 これまでのフロントエンド/バックエンド開発経験を活かし、**自律型AIエージェント**の社会実装を目指すソフトウェアエンジニア。
 
 **強み：AI × デザイン × 英語**
+
 AIとデザインと英語でのコミュニケーションの３つの組み合わせが自分の強みです。
 
 **エピソード：**
