@@ -17,10 +17,8 @@ Software Engineer aiming to bring **Autonomous AI Agents** into real-world deplo
 **Core Strength: AI × Design × English**
 My strength lies in the combination of AI, design, and English communication.
 
-> From ambiguous requirements, I organize user needs, design intuitive UI/UX, and lead development through to implementation — end to end.
-
 **Experience:**
-In my university lab, I independently identified operational inefficiencies, gathered requirements from peers, and developed necessary Web services. By iterating on these based on user feedback, I successfully improved work efficiency.
+I excel at organizing surrounding challenges and user needs, translating them into intuitive UI/UX designs even when requirements are ambiguous, and leading development through to implementation. In my university lab, I independently identified operational inefficiencies, gathered requirements from peers, and developed necessary Web services. By iterating on these based on user feedback, I successfully improved work efficiency.
 
 **Technical Strengths:**
 Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full-Stack Python Development.
@@ -156,10 +154,8 @@ Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full
 **強み：AI × デザイン × 英語**
 AIとデザインと英語でのコミュニケーションの３つの組み合わせが自分の強みです。
 
-> 要件が曖昧な状態からでも、ユーザー行動を想定してUI/導線を設計し、機能実装までを一貫して完遂できます。
-
 **エピソード：**
-大学の研究室内では、自ら必要性を感じて周囲にヒアリングを行い、潜在的な要求を具体化。実際に必要とされているWebサービスを開発し、フィードバックを受けて改善するサイクルを回すことで、作業の効率化を実現しました。
+周囲の課題・需要を整理し、ユーザーが迷わず使える形に落とし込んで実装まで持っていけます。要件が曖昧な状態からでも、ユーザー行動を想定してUI/導線を設計し、機能実装までを一貫して行うことができます。大学の研究室内では、自ら必要性を感じて周囲にヒアリングを行い、潜在的な要求を具体化。実際に必要とされているWebサービスを開発し、フィードバックを受けて改善するサイクルを回すことで、作業の効率化を実現しました。
 
 **技術領域：**
 マルチエージェントアーキテクチャ設計 (LangGraph)、セキュアな個人知識管理 (PKM)、Pythonフルスタック開発。
