@@ -20,10 +20,7 @@ My strength lies in the combination of AI, design, and English communication.
 **Experience:**
 Even with ambiguous requirements, I identify user needs, design intuitive UI/UX, and drive development end to end. In my university lab, I proactively gathered requirements from peers, built the Web services they needed, and iterated on feedback — measurably improving team efficiency.
 
-**Technical Strengths:**
-Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full-Stack Python Development.
-
-## Key Projects (recommended order)
+## Key Projects(recommended order)
 ### 1) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (Autonomous Orchestration Platform)
 - Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
 - Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
@@ -156,9 +153,6 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 
 **エピソード：**
 要件が曖昧な状態からでも、ユーザーの課題を整理し、直感的なUI/導線を設計して実装まで一貫して完遂できます。大学の研究室では自らヒアリングを行い、必要なWebサービスを開発・改善するサイクルを回して作業効率化を実現しました。
-
-**技術領域：**
-マルチエージェントアーキテクチャ設計 (LangGraph)、セキュアな個人知識管理 (PKM)、Pythonフルスタック開発。
 
 ## 主要プロジェクト（おすすめ順）
 ### 1) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (自律型エージェントオーケストレーション)
