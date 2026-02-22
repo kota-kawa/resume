@@ -25,8 +25,8 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 - Summary: An LLM-powered browser automation agent wrapping `browser_use` with a **FastAPI** backend and **noVNC** web interface. Supports natural language control, real-time visualization, and WebArena benchmarks.
 - Tech: Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
-### 2) [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — (AI Travel Planning Chat App)
-- Summary: A chat-based travel planner that turns conversations into personalized itineraries with a simple demo UI.
+### 2) [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — (AI Travel Planning Chat App) `Meta Llama Ideathon 2024`
+- Summary: A chat-based travel planner that turns conversations into personalized itineraries with a simple demo UI. Developed at the **Meta Llama Ideathon 2024**.
 - Tech: Python, Docker.
 
 ### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AI Schedule Assistant)
@@ -52,8 +52,8 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 - Summary: A chat-controlled IoT platform with a web dashboard and camera snapshots, supporting Jetson, Raspberry Pi, and Pico W devices via LLM-based intent understanding.
 - Tech: Python, Node.js, Docker, OpenAI/Gemini.
 
-### [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game) — (AI-powered Mystery Detective Game)
-- Summary: An interactive locked-room mystery game where **Gemini 3** acts as Game Master, dynamically generating unique cases and responding to player questions. Built with **Nano Banana** at the Gemini 3 Tokyo Hackathon 2026.
+### [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game) — (AI-powered Mystery Detective Game) `Gemini 3 Tokyo Hackathon 2026`
+- Summary: An interactive locked-room mystery game where **Gemini 3** acts as Game Master, dynamically generating unique cases and responding to player questions. Built with **Nano Banana** at the **Gemini 3 Tokyo Hackathon 2026**.
 - Tech: FastAPI, React, Gemini, Nano Banana, Docker.
 
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (RAG-Powered Lifestyle Assistant)
@@ -119,17 +119,16 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
 - **Gemini 3 Tokyo Hackathon 2026** (2026)
-  - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit.
+  - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
 - **Meta Llama Ideathon 2024** (Sep 2024)
   - Selected participant for Meta's official AI hackathon in Tokyo.
-  - Developed a generative AI prototype leveraging Llama 3 models.
+  - Developed a generative AI prototype leveraging Llama 3 models. → [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi)
 
 ## Language
 - **Japanese**: Native
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## Notes
-- Personal data such as full address/phone is intentionally omitted.
 - Last updated: 2026-02-22
 - License: All rights reserved
 
@@ -163,8 +162,8 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 - 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作、リアルタイム可視化、WebArenaベンチマーク評価が可能。
 - 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI.
 
-### 2) [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AI旅行プランニングチャットアプリ)
-- 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。
+### 2) [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AI旅行プランニングチャットアプリ) `Meta Llama Ideathon 2024`
+- 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。**Meta Llama Ideathon 2024** にて開発。
 - 技術：Python, Docker.
 
 ### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AIスケジュール管理アシスタント)
@@ -190,8 +189,8 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 - 概要：チャット指示でデバイス制御を行い、ダッシュボードやカメラ撮影を備えたIoT管理プラットフォーム。Jetson/Raspberry Pi/Pico Wに対応。
 - 技術：Python, Node.js, Docker, OpenAI/Gemini.
 
-### [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game) — (AI駆動ミステリー探偵ゲーム)
-- 概要：**Gemini 3** がゲームマスターとなり、密室殺人事件をダイナミックに生成するインタラクティブなミステリーゲーム。**Nano Banana** を活用し、Gemini 3 東京ハッカソン 2026にて開発。
+### [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game) — (AI駆動ミステリー探偵ゲーム) `Gemini 3 東京ハッカソン 2026`
+- 概要：**Gemini 3** がゲームマスターとなり、密室殺人事件をダイナミックに生成するインタラクティブなミステリーゲーム。**Nano Banana** を活用し、**Gemini 3 東京ハッカソン 2026** にて開発。
 - 技術：FastAPI, React, Gemini, Nano Banana, Docker.
 
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (生活支援RAGエージェント)
@@ -257,17 +256,16 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
   - RAG（検索拡張生成）に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
 - **Gemini 3 東京ハッカソン 2026** (2026年)
-  - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。
+  - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
 - **Meta Llama Ideathon 2024** (2024年9月)
   - Meta社主催のAIハッカソンに選抜参加。
-  - Llama 3 モデルを活用した生成AIプロトタイプを開発。
+  - Llama 3 モデルを活用した生成AIプロトタイプを開発。→ [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi)
 
 ## 語学
 - **日本語**: ネイティブ
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 補足
-- 住所/電話などの個人情報は意図的に省略しています。
 - 最終更新：2026-02-22
 - ライセンス：All rights reserved
 </details>
