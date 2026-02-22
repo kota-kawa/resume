@@ -4,7 +4,6 @@
 - 📄 Resume (PDF): [JP](./pdf/レジュメ-jp.pdf) | [EN](./pdf/resume-en.pdf)
 - 🌐 Portfolio: <https://project-kk.com/>
 - 📝 Blog: <https://blog.project-kk.com/>
-- 📘 Zenn: <https://zenn.dev/kota_kawa>
 - 🐦 X (Twitter): <https://x.com/project_kk_ai>
 - 💼 LinkedIn: <https://www.linkedin.com/in/kota-kawagoe-0a22263a7/>
 - ✉️ Email: kota7kawagoe@gmail.com
@@ -145,7 +144,6 @@ Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full
 - 📄 Resume（PDF）：[JP](./pdf/レジュメ-jp.pdf) | [EN](./pdf/resume-en.pdf)
 - 🌐 Portfolio：<https://project-kk.com/>
 - 📝 Blog：<https://blog.project-kk.com/>
-- 📘 Zenn：<https://zenn.dev/kota_kawa>
 - 🐦 X (Twitter)：<https://x.com/project_kk_ai>
 - 💼 LinkedIn：<https://www.linkedin.com/in/kota-kawagoe-0a22263a7/>
 - ✉️ Email：kota7kawagoe@gmail.com
