@@ -120,11 +120,11 @@ Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full
 - **FIT 2025 (Forum on Information Technology)** (Sep 2025)
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
+- **Gemini 3 Tokyo Hackathon 2026** (2026)
+  - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit.
 - **Meta Llama Ideathon 2024** (Sep 2024)
   - Selected participant for Meta's official AI hackathon in Tokyo.
   - Developed a generative AI prototype leveraging Llama 3 models.
-- **Technical Workshops**
-  - Participated in internships at **GMO Internet** and **NTT DATA INTELLILINK**.
 
 ## Language
 - **Japanese**: Native
@@ -261,11 +261,11 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 - **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
   - RAG（検索拡張生成）に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
+- **Gemini 3 東京ハッカソン 2026** (2026年)
+  - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。
 - **Meta Llama Ideathon 2024** (2024年9月)
   - Meta社主催のAIハッカソンに選抜参加。
   - Llama 3 モデルを活用した生成AIプロトタイプを開発。
-- **技術ワークショップ / インターン**
-  - **GMOインターネットグループ**、**NTTデータ先端技術**などの技術体験プログラムに参加。
 
 ## 語学
 - **日本語**: ネイティブ
