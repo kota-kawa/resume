@@ -41,7 +41,7 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 - Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
 - Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
 
-### [Strike Chat](https://github.com/kota-kawa/Strike_Chat) — (AI Chat & Prompt Sharing)
+### [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AI Chat & Prompt Sharing)
 - Summary: An AI chat application built with FastAPI and Next.js. Features email authentication, Groq/Gemini API integration, and prompt sharing/search capabilities.
 - Tech: Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
@@ -178,7 +178,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 - 概要：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作やIoT制御を行う専門エージェントを協調動作させることで、デジタル作業と物理デバイス制御のシームレスな連携を実現。
 - 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
 
-### [Strike Chat](https://github.com/kota-kawa/Strike_Chat) — (AIチャット & プロンプト共有)
+### [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AIチャット & プロンプト共有)
 - 概要：FastAPIとNext.jsを用いたAIチャットアプリ。メール認証、Groq/Gemini API連携に加え、ユーザー間でプロンプトを共有・検索できる機能を搭載。
 - 技術：Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
