@@ -18,7 +18,7 @@ Software Engineer aiming to bring **Autonomous AI Agents** into real-world deplo
 My strength lies in the combination of AI, design, and English communication.
 
 **Experience:**
-I excel at organizing surrounding challenges and user needs, translating them into intuitive UI/UX designs even when requirements are ambiguous, and leading development through to implementation. In my university lab, I independently identified operational inefficiencies, gathered requirements from peers, and developed necessary Web services. By iterating on these based on user feedback, I successfully improved work efficiency.
+Even with ambiguous requirements, I identify user needs, design intuitive UI/UX, and drive development end to end. In my university lab, I proactively gathered requirements from peers, built the Web services they needed, and iterated on feedback — measurably improving team efficiency.
 
 **Technical Strengths:**
 Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full-Stack Python Development.
@@ -155,7 +155,7 @@ Multi-Agent Architecture (LangGraph), Secure Personal Knowledge Management, Full
 AIとデザインと英語でのコミュニケーションの３つの組み合わせが自分の強みです。
 
 **エピソード：**
-周囲の課題・需要を整理し、ユーザーが迷わず使える形に落とし込んで実装まで持っていけます。要件が曖昧な状態からでも、ユーザー行動を想定してUI/導線を設計し、機能実装までを一貫して行うことができます。大学の研究室内では、自ら必要性を感じて周囲にヒアリングを行い、潜在的な要求を具体化。実際に必要とされているWebサービスを開発し、フィードバックを受けて改善するサイクルを回すことで、作業の効率化を実現しました。
+要件が曖昧な状態からでも、ユーザーの課題を整理し、直感的なUI/導線を設計して実装まで一貫して完遂できます。大学の研究室では自らヒアリングを行い、必要なWebサービスを開発・改善するサイクルを回して作業効率化を実現しました。
 
 **技術領域：**
 マルチエージェントアーキテクチャ設計 (LangGraph)、セキュアな個人知識管理 (PKM)、Pythonフルスタック開発。
