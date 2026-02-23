@@ -1,3 +1,5 @@
+> 一番下に日本語版もあります
+
 # Resume — Kota Kawagoe
 
 ## Download
