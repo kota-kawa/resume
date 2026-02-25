@@ -163,7 +163,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 ## 主要プロジェクト（おすすめ順）
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
 - 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作、リアルタイム可視化、WebArenaベンチマーク評価が可能。
-- 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI.
+- 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
 ### 2) [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AI旅行プランニングチャットアプリ) `Meta Llama Ideathon 2024`
 - 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。**Meta Llama Ideathon 2024** にて開発。
@@ -221,7 +221,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 ## 経験
 **マナブル株式会社** — 共同研究員 / プロジェクトリーダー
 - **RAGシステム最適化の共同研究**: 3名のチームリーダーとして、企業内ナレッジを活用するための堅牢でプライバシーに配慮したRAGシステムの構築に従事。
-- **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表。
+- **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。
 
 ## 学歴
 - **神奈川工科大学** — 情報学部 情報ネットワークコミュニケーション学科 学士（卒業見込）
