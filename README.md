@@ -97,9 +97,10 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
 ## Achievements & Activities
-- **[FIT 2025 (Forum on Information Technology)](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)** (Sep 2025)
+- **FIT 2025 (Forum on Information Technology)** (Sep 2025)
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
+  - Program: → [FIT 2025](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)
 - **Gemini 3 Tokyo Hackathon 2026** (2026)
   - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
 - **Meta Llama Ideathon 2024** (Sep 2024)
@@ -234,9 +235,10 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
 ## 受賞・活動歴
-- **[FIT 2025（第24回情報科学技術フォーラム）](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)**（2025年9月発表）
+- **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
   - RAG（検索拡張生成）に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
+  - プログラム: → [FIT 2025](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)
 - **Gemini 3 東京ハッカソン 2026** (2026年)
   - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
 - **Meta Llama Ideathon 2024** (2024年9月)
