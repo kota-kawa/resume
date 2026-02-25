@@ -97,7 +97,7 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
 ## Achievements & Activities
-- **FIT 2025 (Forum on Information Technology)** (Sep 2025)
+- **[FIT 2025 (Forum on Information Technology)](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)** (Sep 2025)
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
 - **Gemini 3 Tokyo Hackathon 2026** (2026)
@@ -234,7 +234,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
 ## 受賞・活動歴
-- **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
+- **[FIT 2025（第24回情報科学技術フォーラム）](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)**（2025年9月発表）
   - RAG（検索拡張生成）に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
 - **Gemini 3 東京ハッカソン 2026** (2026年)
