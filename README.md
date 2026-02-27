@@ -75,11 +75,13 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 ## Skills (ship-ready)
 | Category | Skills |
 | :--- | :--- |
-| **AI/Agents** | Multi-Agent Systems (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), Browser Automation (`browser-use`), MCP (Model Context Protocol), TensorFlow |
-| **Backend** | Python (Flask, Django, FastAPI), C, C#, Celery (Async Tasks), REST/GraphQL |
-| **Frontend** | HTML, CSS, JavaScript, TypeScript, React (Vite/Next.js), Next.js, Tailwind CSS, Bootstrap |
-| **Infra/DevOps** | Docker (Compose), `uv` (Package Management), PostgreSQL/MySQL, Redis, Nginx, Linux, CI/CD pipelines |
-| **Quality** | `pytest`, `ruff`, `black`, PII Masking/Security-first design |
+| **AI & LLM** | LangChain, LlamaIndex, LangGraph, browser-use, Local LLMs (GGUF/Edge), RAG, Multi-Agent Systems, Hugging Face, TensorFlow, PyTorch, OpenCV. |
+| **Backend** | Python (FastAPI, Flask, Django), TypeScript, JavaScript, C, C#. |
+| **Database** | PostgreSQL (pgvector), MySQL, Redis, TinyDB. |
+| **Frontend** | React, Next.js, Bootstrap, Tailwind CSS, TypeScript. |
+| **IoT & Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W. |
+| **Infrastructure** | Docker, Nginx, Linux, Ubuntu. |
+| **Tools** | Git, codex, claude code. |
 
 ## Experience
 **Manable Inc.** — Joint Researcher / Project Lead
@@ -213,11 +215,13 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 ## スキル（実装して出せる）
 | カテゴリ | スキル |
 | :--- | :--- |
-| **AI/Agents** | マルチエージェントシステム (LangGraph), RAG (LangChain/LlamaIndex, FAISS/pgvector), ブラウザ自動化 (`browser-use`), MCP (Model Context Protocol), TensorFlow |
-| **Backend** | Python (Flask, Django, FastAPI), C, C#, Celery (非同期タスク), REST/GraphQL |
-| **Frontend** | HTML, CSS, JavaScript, TypeScript, React (Vite/Next.js), Next.js, Tailwind CSS, Bootstrap |
-| **Infra/DevOps** | Docker (Compose), `uv` (パッケージ管理), PostgreSQL/MySQL, Redis, Nginx, Linux, CI/CDパイプライン |
-| **Quality** | `pytest`, `ruff`, `black`, PIIマスキング/セキュリティ・バイ・デザイン |
+| **AI & LLM** | LangChain, LlamaIndex, LangGraph, browser-use, Local LLMs (GGUF/Edge), RAG, Multi-Agent Systems, Hugging Face, TensorFlow, PyTorch, OpenCV. |
+| **Backend** | Python (FastAPI, Flask, Django), TypeScript, JavaScript, C, C#. |
+| **Database** | PostgreSQL (pgvector), MySQL, Redis, TinyDB. |
+| **Frontend** | React, Next.js, Bootstrap, Tailwind CSS, TypeScript. |
+| **IoT & Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W. |
+| **Infrastructure** | Docker, Nginx, Linux, Ubuntu. |
+| **Tools** | Git, codex, claude code. |
 
 ## 経験
 **マナブル株式会社** — 共同研究員 / プロジェクトリーダー
