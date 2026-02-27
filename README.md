@@ -36,6 +36,10 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 - Summary: A chat-first scheduling assistant with timeline views that can use OpenAI, Gemini, or Anthropic models to manage routines and tasks.
 - Tech: Python, PostgreSQL, Vite, Docker.
 
+### 4) [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — (AI Travel Planning Chat App) `Meta Llama Ideathon 2024`
+- Summary: A chat-based travel planner that turns conversations into personalized itineraries with a simple demo UI. Developed at the **Meta Llama Ideathon 2024**.
+- Tech: Python, Docker.
+
 <details>
   <summary><b>Other Projects (Click to expand)</b></summary>
 
@@ -169,6 +173,10 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 ### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AIスケジュール管理アシスタント)
 - 概要：チャットで日々のルーティンやタスクを管理し、タイムライン表示にも対応するスケジュール管理アプリ。
 - 技術：Python, PostgreSQL, Vite, Docker.
+
+### 4) [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AI旅行プランニングチャットアプリ) `Meta Llama Ideathon 2024`
+- 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。**Meta Llama Ideathon 2024** にて開発。
+- 技術：Python, Docker.
 
 <details>
   <summary><b>その他のプロジェクト（クリックで展開）</b></summary>
