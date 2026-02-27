@@ -28,9 +28,9 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 - Summary: An LLM-powered browser automation agent wrapping `browser_use` with a **FastAPI** backend and **noVNC** web interface. Supports natural language control, real-time visualization, and WebArena benchmarks.
 - Tech: Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
-### 2) [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — (AI Travel Planning Chat App) `Meta Llama Ideathon 2024`
-- Summary: A chat-based travel planner that turns conversations into personalized itineraries with a simple demo UI. Developed at the **Meta Llama Ideathon 2024**.
-- Tech: Python, Docker.
+### 2) [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AI Chat & Prompt Sharing)
+- Summary: An AI chat application built with FastAPI and Next.js. Features email authentication, Groq/Gemini API integration, and prompt sharing/search capabilities.
+- Tech: Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
 ### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AI Schedule Assistant)
 - Summary: A chat-first scheduling assistant with timeline views that can use OpenAI, Gemini, or Anthropic models to manage routines and tasks.
@@ -42,10 +42,6 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 ### [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (Autonomous Orchestration Platform)
 - Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
 - Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
-
-### [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AI Chat & Prompt Sharing)
-- Summary: An AI chat application built with FastAPI and Next.js. Features email authentication, Groq/Gemini API integration, and prompt sharing/search capabilities.
-- Tech: Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
 ### [FS-QR](https://github.com/kota-kawa/fs-qr) — (File Sharing & QR)
 - Summary: A self-hosted file and note sharing tool with QR-based quick transfer, passworded group rooms, and real-time shared notes.
@@ -166,9 +162,9 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 - 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作、リアルタイム可視化、WebArenaベンチマーク評価が可能。
 - 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
-### 2) [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AI旅行プランニングチャットアプリ) `Meta Llama Ideathon 2024`
-- 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。**Meta Llama Ideathon 2024** にて開発。
-- 技術：Python, Docker.
+### 2) [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AIチャット & プロンプト共有)
+- 概要：FastAPIとNext.jsを用いたAIチャットアプリ。メール認証、Groq/Gemini API連携に加え、ユーザー間でプロンプトを共有・検索できる機能を搭載。
+- 技術：Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
 ### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AIスケジュール管理アシスタント)
 - 概要：チャットで日々のルーティンやタスクを管理し、タイムライン表示にも対応するスケジュール管理アプリ。
@@ -180,10 +176,6 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 ### [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (自律型エージェントオーケストレーション)
 - 概要：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作やIoT制御を行う専門エージェントを協調動作させることで、デジタル作業と物理デバイス制御のシームレスな連携を実現。
 - 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
-
-### [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AIチャット & プロンプト共有)
-- 概要：FastAPIとNext.jsを用いたAIチャットアプリ。メール認証、Groq/Gemini API連携に加え、ユーザー間でプロンプトを共有・検索できる機能を搭載。
-- 技術：Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
 ### [FS-QR](https://github.com/kota-kawa/fs-qr) — (ファイル共有 & QR)
 - 概要：QRによる即時共有、合言葉付きのグループ共有、リアルタイム共有ノートを備えたセルフホスト型のファイル/メモ共有ツール。
