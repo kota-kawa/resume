@@ -61,7 +61,7 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (RAG-Powered Lifestyle Assistant)
 - Summary: A multi-domain lifestyle RAG agent with MCP support, a web chat UI, and conversation analysis for proactive assistance.
-- Tech: FastAPI, FAISS, LangChain/LlamaIndex, HuggingFace Embeddings, Docker.
+- Tech: FastAPI, FAISS, LangChain/LlamaIndex, Embeddings, Docker.
 
 ### [Ikutoku-sai](https://github.com/kota-kawa/Ikutoku-sai) — (University Festival Website)
 - Summary: The official website for the university festival (Ikutoku-sai). Built with Next.js (App Router) to provide event schedules, campus maps, and real-time announcements.
@@ -69,15 +69,15 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 
 ### [MemoScribe](https://github.com/kota-kawa/MemoScribe) — (Personal Life Secretary with RAG)
 - Summary: A self-hosted **Django** application acting as a personal life secretary. Features local RAG, PII masking, and strict "evidence-based" citations to ensure secure, private assistance without hallucination.
-- Tech: Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI.
+- Tech: Django 5, PostgreSQL, Celery, Redis, OpenAI.
 </details>
 
 ## Skills (ship-ready)
 | Category | Skills |
 | :--- | :--- |
-| **AI & LLM** | LangChain, LlamaIndex, LangGraph, browser-use, Local LLMs (GGUF/Edge), RAG, Multi-Agent Systems, Hugging Face, TensorFlow, PyTorch, OpenCV. |
-| **Backend** | Python (FastAPI, Flask, Django), TypeScript, JavaScript, C, C#. |
-| **Database** | PostgreSQL (pgvector), MySQL, Redis, TinyDB. |
+| **AI & LLM** | LangChain, LlamaIndex, LangGraph, browser-use, Local LLMs (GGUF/Edge), RAG, Multi-Agent Systems, TensorFlow, PyTorch, OpenCV. |
+| **Backend** | Python (FastAPI, Flask, Django), TypeScript, JavaScript. |
+| **Database** | PostgreSQL, MySQL, Redis. |
 | **Frontend** | React, Next.js, Bootstrap, Tailwind CSS, TypeScript. |
 | **IoT & Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W. |
 | **Infrastructure** | Docker, Nginx, Linux, Ubuntu. |
@@ -201,7 +201,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (生活支援RAGエージェント)
 - 概要：生活領域の多分野知識をRAGで統合し、MCP対応・会話分析機能を備えた生活支援AI。
-- 技術：FastAPI, FAISS, LangChain/LlamaIndex, HuggingFace Embeddings, Docker.
+- 技術：FastAPI, FAISS, LangChain/LlamaIndex, Embeddings, Docker.
 
 ### [Ikutoku-sai](https://github.com/kota-kawa/Ikutoku-sai) — (幾徳祭公式サイト)
 - 概要：大学祭（幾徳祭）の公式サイトをNext.js (App Router) で開発。イベントスケジュール、キャンパスマップ、リアルタイムなアナウンス機能などを提供。
@@ -209,15 +209,15 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 
 ### [MemoScribe](https://github.com/kota-kawa/MemoScribe) — (RAG搭載・個人用秘書アプリ)
 - 概要：**Django**製のセルフホスト型個人用秘書アプリ。ローカルRAG、個人情報(PII)マスキング、根拠提示機能を備え、プライバシーを保護しつつ正確な知識管理とアシスタント機能を提供。
-- 技術：Django 5, PostgreSQL (pgvector), Celery, Redis, OpenAI.
+- 技術：Django 5, PostgreSQL, Celery, Redis, OpenAI.
 </details>
 
 ## スキル（実装して出せる）
 | カテゴリ | スキル |
 | :--- | :--- |
-| **AI & LLM** | LangChain, LlamaIndex, LangGraph, browser-use, Local LLMs (GGUF/Edge), RAG, Multi-Agent Systems, Hugging Face, TensorFlow, PyTorch, OpenCV. |
-| **Backend** | Python (FastAPI, Flask, Django), TypeScript, JavaScript, C, C#. |
-| **Database** | PostgreSQL (pgvector), MySQL, Redis, TinyDB. |
+| **AI & LLM** | LangChain, LlamaIndex, LangGraph, browser-use, Local LLMs (GGUF/Edge), RAG, Multi-Agent Systems, TensorFlow, PyTorch, OpenCV. |
+| **Backend** | Python (FastAPI, Flask, Django), TypeScript, JavaScript. |
+| **Database** | PostgreSQL, MySQL, Redis. |
 | **Frontend** | React, Next.js, Bootstrap, Tailwind CSS, TypeScript. |
 | **IoT & Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W. |
 | **Infrastructure** | Docker, Nginx, Linux, Ubuntu. |
