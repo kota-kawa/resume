@@ -165,7 +165,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 
 ## 主要プロジェクト（おすすめ順）
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
-- 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作とWebArenaベンチマーク評価に対応。WebArena Shopping task success rate: 32.6% (N=187; max steps=40; retries=4; same prompt setting).
+- 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作とWebArenaベンチマーク評価に対応。WebArena Shoppingタスク成功率: 32.6% (N=187, 最大ステップ数=40, リトライ回数=4, 同一プロンプト設定)。
 - 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
 ### 2) [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AIチャット & プロンプト共有)
@@ -225,7 +225,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 
 ## 経験
 **マナブル株式会社** — 共同研究員 / プロジェクトリーダー
-- **RAGシステム最適化の共同研究**: 3名のチームリーダーとして、企業内ナレッジを活用するための堅牢でプライバシーに配慮したRAGシステムの構築に従事（improved RAG accuracy 1.75× by structuring data）。
+- **RAGシステム最適化の共同研究**: 3名のチームリーダーとして、企業内ナレッジを活用するための堅牢でプライバシーに配慮したRAGシステムの構築に従事（データの構造化によりRAG精度を1.75倍に向上）。
 - **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。
 
 ## 学歴
