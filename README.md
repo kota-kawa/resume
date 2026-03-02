@@ -10,6 +10,11 @@
 - 💼 LinkedIn: <https://www.linkedin.com/in/kota-kawagoe-0a22263a7/>
 - ✉️ Email: kota7kawagoe@gmail.com
 
+## Live Services
+- **Chat-Core**: <https://chatcore-ai.com/> (AI Chat & Prompt Sharing)
+- **FS-QR**: <https://fs-qr.net/> (File Sharing & QR)
+- **Yorozu Madoguchi**: <https://chat.project-kk.com/> (AI Travel Planning)
+
 ### **Looking for: Roles in AI Application Engineering or Backend Systems.**
 
 ## Summary
@@ -30,6 +35,7 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 
 ### 2) [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AI Chat & Prompt Sharing)
 - Summary: An AI chat application built with FastAPI and Next.js. Features email authentication, Groq/Gemini API integration, and prompt sharing/search capabilities.
+- Demo: <https://chatcore-ai.com/>
 - Tech: Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
 ### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AI Schedule Assistant)
@@ -45,6 +51,7 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 
 ### [FS-QR](https://github.com/kota-kawa/fs-qr) — (File Sharing & QR)
 - Summary: A self-hosted file and note sharing tool with QR-based quick transfer, passworded group rooms, and real-time shared notes.
+- Demo: <https://fs-qr.net/>
 - Tech: FastAPI, Docker.
 
 ### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — (Conversational IoT Control Platform)
@@ -57,6 +64,7 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 
 ### [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — (AI Travel Planning Chat App) `Meta Llama Ideathon 2024`
 - Summary: A chat-based travel planner that turns conversations into personalized itineraries with a simple demo UI. Developed at the **Meta Llama Ideathon 2024**.
+- Demo: <https://chat.project-kk.com/>
 - Tech: Python, Docker.
 
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (RAG-Powered Lifestyle Assistant)
@@ -150,6 +158,11 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 - 💼 LinkedIn：<https://www.linkedin.com/in/kota-kawagoe-0a22263a7/>
 - ✉️ Email：kota7kawagoe@gmail.com
 
+## 実際に動いているサービス
+- **Chat-Core**: <https://chatcore-ai.com/> (AIチャット & プロンプト共有)
+- **FS-QR**: <https://fs-qr.net/> (ファイル共有 & QR)
+- **よろず窓口**: <https://chat.project-kk.com/> (AI旅行プランニング)
+
 ### **志望：AIアプリケーションエンジニア / バックエンドシステム開発。**
 
 ## サマリー
@@ -170,6 +183,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 
 ### 2) [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AIチャット & プロンプト共有)
 - 概要：FastAPIとNext.jsを用いたAIチャットアプリ。メール認証、Groq/Gemini API連携に加え、ユーザー間でプロンプトを共有・検索できる機能を搭載。
+- デモ：<https://chatcore-ai.com/>
 - 技術：Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
 ### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AIスケジュール管理アシスタント)
@@ -185,6 +199,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 
 ### [FS-QR](https://github.com/kota-kawa/fs-qr) — (ファイル共有 & QR)
 - 概要：QRによる即時共有、合言葉付きのグループ共有、リアルタイム共有ノートを備えたセルフホスト型のファイル/メモ共有ツール。
+- デモ：<https://fs-qr.net/>
 - 技術：FastAPI, Docker.
 
 ### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — (会話型IoT制御プラットフォーム)
@@ -197,6 +212,7 @@ AIとデザインと英語でのコミュニケーションの３つの組み合
 
 ### [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AI旅行プランニングチャットアプリ) `Meta Llama Ideathon 2024`
 - 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。**Meta Llama Ideathon 2024** にて開発。
+- デモ：<https://chat.project-kk.com/>
 - 技術：Python, Docker.
 
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (生活支援RAGエージェント)
