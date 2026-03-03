@@ -26,7 +26,7 @@ Software Engineer aiming to bring **Autonomous AI Agents** into real-world deplo
 My strength lies in the combination of AI, design, and English communication. These three elements allow me to transform technology into tangible solutions at a high level.
 
 **Experience:**
-In my graduation research, I completed a "Multi-Agent Orchestration System" that integrated five specialized agents (RAG, Web Operation, IoT, Scheduler, and Orchestrator). By centralizing control through an orchestrator and effectively managing long-term and short-term memory, I improved task success rates by 1.7x. This system provides a unified framework for both digital tasks and real-world feedback via IoT hardware.
+In my graduation research, I completed a "Multi-Agent Orchestration System" that integrated five specialized agents (RAG, Web Operation, IoT, Scheduler, and Orchestrator). By centralizing control through an orchestrator and effectively managing long-term and short-term memory, I improved task success rates by 1.7x. This system provides a unified framework for both digital tasks and real-world feedback via IoT hardware. I presented these findings in an English oral session at **NCSP'26 (Honolulu, Hawaii)**.
 
 ## Key Projects (recommended order)
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
@@ -107,6 +107,9 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
 ## Activities
+- **NCSP'26 (2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems)** (Mar 2026)
+  - Presented research on an **AI Multi-Agent Orchestration System** in an English oral session (Honolulu, Hawaii).
+  - Developed a system integrating 5 specialized agents: **RAG**, **Web Operation**, **IoT**, **Scheduler**, and **Orchestrator**.
 - **FIT 2025 (Forum on Information Technology)** (Sep 2025)
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
@@ -158,7 +161,7 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
 AIとデザイン、そして英語でのコミュニケーション。これら3つの要素を高い次元で組み合わせ、技術を形にできることが私の強みです。
 
 **エピソード：**
-卒業研究にて、5種の専門エージェント（RAG、Web操作、IoT、Scheduler、Orchestrator）を統合した「マルチエージェント・オーケストレーションシステム」を完遂しました。中央のオーケストレーターで各エージェントを統合し、長期メモリと短期メモリを適切に組み合わせることで、タスク成功率を1.7倍に改善。Web上の操作に留まらず、ハードウェア（IoT）を介した実世界へのフィードバックまでを一貫したシステムとして統合・評価しています。
+卒業研究にて、5種の専門エージェント（RAG、Web操作、IoT、Scheduler、Orchestrator）を統合した「マルチエージェント・オーケストレーションシステム」を完遂しました。中央のオーケストレーターで各エージェントを統合し、長期メモリと短期メモリを適切に組み合わせることで、タスク成功率を1.7倍に改善。Web上の操作に留まらず、ハードウェア（IoT）を介した実世界へのフィードバックまでを一貫したシステムとして統合・評価しています。本研究成果については、国際会議 **NCSP'26（ハワイ・ホノルル開催）** にて英語での口頭発表を行いました。
 
 ## 主要プロジェクト（おすすめ順）
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
@@ -239,6 +242,9 @@ AIとデザイン、そして英語でのコミュニケーション。これら
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
 ## 活動歴
+- **NCSP'26 (2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems)**（2026年3月）
+  - ハワイ・ホノルルで開催された国際会議にて、「AIマルチエージェント・オーケストレーションシステム」に関する研究成果を英語で口頭発表。
+  - 5種の専門エージェント（**RAG**、**Web操作**、**IoT**、**Scheduler**、**Orchestrator**）を統合した自律型システムを開発。
 - **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
   - RAG（検索拡張生成）に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
