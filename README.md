@@ -23,10 +23,10 @@ Software Engineer aiming to bring **Autonomous AI Agents** into real-world deplo
 
 **Core Strength: AI × Design × English**
 
-My strength lies in the combination of AI, design, and English communication.
+My strength lies in the combination of AI, design, and English communication. These three elements allow me to transform technology into tangible solutions at a high level.
 
 **Experience:**
-Even with ambiguous requirements, I identify user needs, design intuitive UI/UX, and drive development end to end. In my university lab, I proactively gathered requirements from peers, built the Web services they needed, and iterated on feedback — measurably improving team efficiency.
+In my graduation research, I completed a "Multi-Agent Orchestration System" that integrated five specialized agents (RAG, Web Operation, IoT, Scheduler, and Orchestrator). By centralizing control through an orchestrator and effectively managing long-term and short-term memory, I improved task success rates by 1.7x. This system provides a unified framework for both digital tasks and real-world feedback via IoT hardware.
 
 ## Key Projects (recommended order)
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
@@ -171,10 +171,10 @@ Even with ambiguous requirements, I identify user needs, design intuitive UI/UX,
 
 **強み：AI × デザイン × 英語**
 
-AIとデザインと英語でのコミュニケーションの３つの組み合わせが自分の強みです。
+AIとデザイン、そして英語でのコミュニケーション。これら3つの要素を高い次元で組み合わせ、技術を形にできることが私の強みです。
 
 **エピソード：**
-要件が曖昧な状態からでも、ユーザーの課題を整理し、直感的なUI/導線を設計して実装まで一貫して完遂できます。大学の研究室では自らヒアリングを行い、必要なWebサービスを開発・改善するサイクルを回して作業効率化を実現しました。
+卒業研究にて、5種の専門エージェント（RAG、Web操作、IoT、Scheduler、Orchestrator）を統合した「マルチエージェント・オーケストレーションシステム」を完遂しました。中央のオーケストレーターで各エージェントを統合し、長期メモリと短期メモリを適切に組み合わせることで、タスク成功率を1.7倍に改善。Web上の操作に留まらず、ハードウェア（IoT）を介した実世界へのフィードバックまでを一貫したシステムとして統合・評価しています。
 
 ## 主要プロジェクト（おすすめ順）
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
