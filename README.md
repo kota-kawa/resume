@@ -119,7 +119,7 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
 - **Matsuo Lab (The University of Tokyo) Programs & Competitions** (2024 - 2025)
   - **LLM Course Final Project & Competition**: Developed fine-tuned models using **LoRA SFT** and **DPO**, achieving a **top 5% ranking**. Featured model: [Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3).
   - **LLM Competition 2025**: Built and published a high-difficulty synthetic dataset for mathematical reasoning ([difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)).
-  - **Course Completion**: Finished specialized courses including AI Management (PwC joint), LLM, GCI (Data Science), Deep Learning, and Deep Generative Models.
+  - **Specialized Courses**: Took courses including AI Management (PwC joint), LLM, GCI (Data Science), Deep Learning, and Deep Generative Models.
 
 ## Language
 - **Japanese**: Native
@@ -251,7 +251,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - **松尾研究室（東京大学）関連プログラム・コンペティション** (2024年 - 2025年)
   - **LLM講座 最終プロジェクト & コンペティション**: LoRA SFTおよびDPOを用いたモデルを開発し、コンペティションにて上位5%に入賞。開発モデル：[Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
   - **LLMコンペ2025**: 数学的推論向け合成データセットを構築・公開（[difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)）。
-  - **専門講座修了**: AI経営講座（PwC共同開催）、LLM講座、GCI (データサイエンス基礎)、深層学習、深層生成モデルを修了。
+  - **専門講座受講**: AI経営講座（PwC共同開催）、LLM講座、GCI (データサイエンス基礎)、深層学習、深層生成モデル。
 
 ## 語学
 - **日本語**: ネイティブ
