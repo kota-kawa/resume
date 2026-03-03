@@ -26,7 +26,9 @@ Software Engineer aiming to bring **Autonomous AI Agents** into real-world deplo
 My strength lies in the combination of AI, design, and English communication. These three elements allow me to transform technology into tangible solutions at a high level.
 
 **Experience:**
-In my graduation research, I completed a "Multi-Agent Orchestration System" that integrated five specialized agents (RAG, Web Operation, IoT, Scheduler, and Orchestrator). By centralizing control through an orchestrator and effectively managing long-term and short-term memory, I improved task success rates by 1.7x. This system provides a unified framework for both digital tasks and real-world feedback via IoT hardware. I presented these findings in an English oral session at **NCSP'26 (Honolulu, Hawaii)**.
+- Developed a **Multi-Agent Orchestration System** (integrating Browser-Agent, **IoT-Agent**, etc.) to bridge digital tasks with real-world physical feedback.
+- Optimized **long/short-term memory** management, improving task success rates by **1.7x**.
+- Presented research findings in an English oral session at **NCSP'26** (Honolulu, Hawaii).
 
 ## Key Projects (recommended order)
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
@@ -86,7 +88,7 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
 ## Experience
 **Manable Inc.** — Joint Researcher / Project Lead
 - **Lead Researcher for RAG System Optimization**: Led a team of three in a joint research project focused on building robust, privacy-first RAG systems for corporate knowledge management (improved RAG accuracy 1.75× by structuring data).
-- **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability.
+- **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Program](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)
 
 ## Education
 - **Kanagawa Institute of Technology** — B.S. in Information Network and Communication, Faculty of Information Technology (Expected)
@@ -95,7 +97,6 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
   - Alabama, USA | Jun 2023 – May 2024
   - **Honors**: **Dean's List** (Fall 2023, GPA: 3.75/4.0).
   - **Achievement**: Ranked **1st in class** for the final project in the **Artificial Intelligence** course.
-  - **Design Portfolio**: [project-kk.com/design](https://project-kk.com/design) (Works from Design I & II)
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
 ## Activities
@@ -112,10 +113,6 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
 - **Meta Llama Ideathon 2024** (Sep 2024)
   - **Participant** in Meta's official AI hackathon in Tokyo.
   - Developed a generative AI prototype leveraging Llama 3 models. → [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi)
-- **FIT 2025 (Forum on Information Technology)** (Sep 2025)
-  - Presented research on **RAG (Retrieval-Augmented Generation)**.
-  - Conducted as part of a joint research project with **Manable Inc.**
-  - Program: → [FIT 2025](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)
 
 ## Language
 - **Japanese**: Native
@@ -154,7 +151,9 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
 AIとデザイン、そして英語でのコミュニケーション。これら3つの要素を高い次元で組み合わせ、技術を形にできることが私の強みです。
 
 **エピソード：**
-卒業研究にて、5種の専門エージェント（RAG、Web操作、IoT、Scheduler、Orchestrator）を統合した「マルチエージェント・オーケストレーションシステム」を完遂しました。中央のオーケストレーターで各エージェントを統合し、長期メモリと短期メモリを適切に組み合わせることで、タスク成功率を1.7倍に改善。Web上の操作に留まらず、ハードウェア（IoT）を介した実世界へのフィードバックまでを一貫したシステムとして統合・評価しています。本研究成果については、国際会議 **NCSP'26（ハワイ・ホノルル開催）** にて英語での口頭発表を行いました。
+- **マルチエージェント・オーケストレーションシステム**を開発（Browser-Agentや**IoT-Agent**等を統合）。Web完結に留まらず、ハードウェアを介した実世界へのフィードバックまでを実現。
+- **長期・短期メモリの最適化**により、タスク成功率を**1.7倍**に改善。
+- 国際会議 **NCSP'26**（ハワイ）にて、本成果を英語で口頭発表。
 
 ## 主要プロジェクト（おすすめ順）
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
@@ -214,7 +213,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 ## 経験
 **マナブル株式会社** — 共同研究員 / プロジェクトリーダー
 - **RAGシステム最適化の共同研究**: 3名のチームリーダーとして、企業内ナレッジを活用するための堅牢でプライバシーに配慮したRAGシステムの構築に従事（データの構造化によりRAG精度を1.75倍に向上）。
-- **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。
+- **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。 → [プログラム](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)
 
 ## 学歴
 - **神奈川工科大学** — 情報学部 情報ネットワークコミュニケーション学科 学士（卒業見込）
@@ -223,7 +222,6 @@ AIとデザイン、そして英語でのコミュニケーション。これら
   - アラバマ州, 米国 | 2023年6月 – 2024年5月
   - **栄誉**: **Dean's List** 選出（2023年秋期、GPA: 3.75/4.0）
   - **実績**: **Artificial Intelligence（人工知能）** 授業の最終プロジェクトにて、クラス内 **1位** の評価を獲得。
-  - **デザイン成果物**: [project-kk.com/design](https://project-kk.com/design)（Design I & II での制作物）
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
 ## 活動歴
@@ -240,10 +238,6 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - **Meta Llama Ideathon 2024** (2024年9月)
   - Meta社主催のAIハッカソンに参加。
   - Llama 3 モデルを活用した生成AIプロトタイプを開発。→ [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi)
-- **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
-  - RAG（検索拡張生成）に関する研究成果を発表。
-  - **マナブル株式会社**との共同研究として実施。
-  - プログラム: → [FIT 2025](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)
 
 ## 語学
 - **日本語**: ネイティブ
