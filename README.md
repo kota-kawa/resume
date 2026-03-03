@@ -70,14 +70,6 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (RAG-Powered Lifestyle Assistant)
 - Summary: A multi-domain lifestyle RAG agent with MCP support, a web chat UI, and conversation analysis for proactive assistance.
 - Tech: FastAPI, FAISS, LangChain/LlamaIndex, Embeddings, Docker.
-
-### [Ikutoku-sai](https://github.com/kota-kawa/Ikutoku-sai) — (University Festival Website)
-- Summary: The official website for the university festival (Ikutoku-sai). Built with Next.js (App Router) to provide event schedules, campus maps, and real-time announcements.
-- Tech: Next.js, React, TypeScript.
-
-### [MemoScribe](https://github.com/kota-kawa/MemoScribe) — (Personal Life Secretary with RAG)
-- Summary: A self-hosted **Django** application acting as a personal life secretary. Features local RAG, PII masking, and strict "evidence-based" citations to ensure secure, private assistance without hallucination.
-- Tech: Django 5, PostgreSQL, Celery, Redis, OpenAI.
 </details>
 
 ## Skills (ship-ready)
@@ -110,6 +102,7 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
 - **NCSP'26 (2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems)** (Mar 2026)
   - Presented research on an **AI Multi-Agent Orchestration System** in an English oral session (Honolulu, Hawaii).
   - Developed a system integrating 5 specialized agents: **RAG**, **Web Operation**, **IoT**, **Scheduler**, and **Orchestrator**.
+  - Presentation Material: → [NCSP-Presentation-EN.pdf](./pdf/NCSP-Presentation-EN.pdf)
 - **FIT 2025 (Forum on Information Technology)** (Sep 2025)
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
@@ -205,14 +198,6 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (生活支援RAGエージェント)
 - 概要：生活領域の多分野知識をRAGで統合し、MCP対応・会話分析機能を備えた生活支援AI。
 - 技術：FastAPI, FAISS, LangChain/LlamaIndex, Embeddings, Docker.
-
-### [Ikutoku-sai](https://github.com/kota-kawa/Ikutoku-sai) — (幾徳祭公式サイト)
-- 概要：大学祭（幾徳祭）の公式サイトをNext.js (App Router) で開発。イベントスケジュール、キャンパスマップ、リアルタイムなアナウンス機能などを提供。
-- 技術：Next.js, React, TypeScript.
-
-### [MemoScribe](https://github.com/kota-kawa/MemoScribe) — (RAG搭載・個人用秘書アプリ)
-- 概要：**Django**製のセルフホスト型個人用秘書アプリ。ローカルRAG、個人情報(PII)マスキング、根拠提示機能を備え、プライバシーを保護しつつ正確な知識管理とアシスタント機能を提供。
-- 技術：Django 5, PostgreSQL, Celery, Redis, OpenAI.
 </details>
 
 ## スキル（実装して出せる）
@@ -245,6 +230,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - **NCSP'26 (2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems)**（2026年3月）
   - ハワイ・ホノルルで開催された国際会議にて、「AIマルチエージェント・オーケストレーションシステム」に関する研究成果を英語で口頭発表。
   - 5種の専門エージェント（**RAG**、**Web操作**、**IoT**、**Scheduler**、**Orchestrator**）を統合した自律型システムを開発。
+  - 発表した資料：→ [NCSP-Presentation-EN.pdf](./pdf/NCSP-Presentation-EN.pdf)
 - **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
   - RAG（検索拡張生成）に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
