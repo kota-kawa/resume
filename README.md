@@ -49,14 +49,13 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
 - Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
 - Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
 
-### [FS-QR](https://github.com/kota-kawa/fs-qr) — (File Sharing & QR)
-- Summary: A self-hosted file and note sharing tool with QR-based quick transfer, passworded group rooms, and real-time shared notes.
-- Demo: <https://fs-qr.net/>
-- Tech: FastAPI, Docker.
-
 ### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — (Conversational IoT Control Platform)
 - Summary: A chat-controlled IoT platform with a web dashboard and camera snapshots, supporting Jetson, Raspberry Pi, and Pico W devices via LLM-based intent understanding.
 - Tech: Python, Node.js, Docker, OpenAI/Gemini.
+
+### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (RAG-Powered Lifestyle Assistant)
+- Summary: A multi-domain lifestyle RAG agent with MCP support, a web chat UI, and conversation analysis for proactive assistance.
+- Tech: FastAPI, FAISS, LangChain/LlamaIndex, Embeddings, Docker.
 
 ### [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game) — (AI-powered Mystery Detective Game) `Gemini 3 Tokyo Hackathon 2026`
 - Summary: An interactive locked-room mystery game where **Gemini 3** acts as Game Master, dynamically generating unique cases and responding to player questions. Built with **Nano Banana** at the **Gemini 3 Tokyo Hackathon 2026**.
@@ -67,9 +66,10 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
 - Demo: <https://chat.project-kk.com/>
 - Tech: Python, Docker.
 
-### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (RAG-Powered Lifestyle Assistant)
-- Summary: A multi-domain lifestyle RAG agent with MCP support, a web chat UI, and conversation analysis for proactive assistance.
-- Tech: FastAPI, FAISS, LangChain/LlamaIndex, Embeddings, Docker.
+### [FS-QR](https://github.com/kota-kawa/fs-qr) — (File Sharing & QR)
+- Summary: A self-hosted file and note sharing tool with QR-based quick transfer, passworded group rooms, and real-time shared notes.
+- Demo: <https://fs-qr.net/>
+- Tech: FastAPI, Docker.
 </details>
 
 ## Skills (ship-ready)
@@ -99,23 +99,23 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
 ## Activities
+- **Matsuo Lab (The University of Tokyo) Programs & Competitions** (2024 - 2025)
+  - **LLM Course Final Project & Competition**: Developed fine-tuned models using **LoRA SFT** and **DPO**, achieving a **top 4% (70 / 1800) ranking**. Featured model: [Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3).
+  - **LLM Competition 2025**: Built and published a high-difficulty synthetic dataset for mathematical reasoning ([difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)).
+  - **Specialized Courses**: Took courses including AI Management (PwC joint), LLM, GCI (Data Science), Deep Learning, and Deep Generative Models.
 - **NCSP'26 (2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems)** (Mar 2026)
   - Presented research on an **AI Multi-Agent Orchestration System** in an English oral session (Honolulu, Hawaii).
   - Developed a system integrating 5 specialized agents: **RAG**, **Web Operation**, **IoT**, **Scheduler**, and **Orchestrator**.
   - Presentation Material: → [NCSP-Presentation-EN.pdf](./pdf/NCSP-Presentation-EN.pdf)
+- **Gemini 3 Tokyo Hackathon 2026** (2026)
+  - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
+- **Meta Llama Ideathon 2024** (Sep 2024)
+  - **Participant** in Meta's official AI hackathon in Tokyo.
+  - Developed a generative AI prototype leveraging Llama 3 models. → [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi)
 - **FIT 2025 (Forum on Information Technology)** (Sep 2025)
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
   - Program: → [FIT 2025](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)
-- **Gemini 3 Tokyo Hackathon 2026** (2026)
-  - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
-- **Meta Llama Ideathon 2024** (Sep 2024)
-  - Selected participant for Meta's official AI hackathon in Tokyo.
-  - Developed a generative AI prototype leveraging Llama 3 models. → [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi)
-- **Matsuo Lab (The University of Tokyo) Programs & Competitions** (2024 - 2025)
-  - **LLM Course Final Project & Competition**: Developed fine-tuned models using **LoRA SFT** and **DPO**, achieving a **top 5% ranking**. Featured model: [Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3).
-  - **LLM Competition 2025**: Built and published a high-difficulty synthetic dataset for mathematical reasoning ([difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)).
-  - **Specialized Courses**: Took courses including AI Management (PwC joint), LLM, GCI (Data Science), Deep Learning, and Deep Generative Models.
 
 ## Language
 - **Japanese**: Native
@@ -177,14 +177,13 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - 概要：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作やIoT制御を行う専門エージェントを協調動作させることで、デジタル作業と物理デバイス制御のシームレスな連携を実現。
 - 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
 
-### [FS-QR](https://github.com/kota-kawa/fs-qr) — (ファイル共有 & QR)
-- 概要：QRによる即時共有、合言葉付きのグループ共有、リアルタイム共有ノートを備えたセルフホスト型のファイル/メモ共有ツール。
-- デモ：<https://fs-qr.net/>
-- 技術：FastAPI, Docker.
-
 ### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — (会話型IoT制御プラットフォーム)
 - 概要：チャット指示でデバイス制御を行い、ダッシュボードやカメラ撮影を備えたIoT管理プラットフォーム。Jetson/Raspberry Pi/Pico Wに対応。
 - 技術：Python, Node.js, Docker, OpenAI/Gemini.
+
+### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (生活支援RAGエージェント)
+- 概要：生活領域の多分野知識をRAGで統合し、MCP対応・会話分析機能を備えた生活支援AI。
+- 技術：FastAPI, FAISS, LangChain/LlamaIndex, Embeddings, Docker.
 
 ### [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game) — (AI駆動ミステリー探偵ゲーム) `Gemini 3 東京ハッカソン 2026`
 - 概要：**Gemini 3** がゲームマスターとなり、密室殺人事件をダイナミックに生成するインタラクティブなミステリーゲーム。**Nano Banana** を活用し、**Gemini 3 東京ハッカソン 2026** にて開発。
@@ -195,9 +194,10 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - デモ：<https://chat.project-kk.com/>
 - 技術：Python, Docker.
 
-### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (生活支援RAGエージェント)
-- 概要：生活領域の多分野知識をRAGで統合し、MCP対応・会話分析機能を備えた生活支援AI。
-- 技術：FastAPI, FAISS, LangChain/LlamaIndex, Embeddings, Docker.
+### [FS-QR](https://github.com/kota-kawa/fs-qr) — (ファイル共有 & QR)
+- 概要：QRによる即時共有、合言葉付きのグループ共有、リアルタイム共有ノートを備えたセルフホスト型のファイル/メモ共有ツール。
+- デモ：<https://fs-qr.net/>
+- 技術：FastAPI, Docker.
 </details>
 
 ## スキル（実装して出せる）
@@ -227,23 +227,23 @@ AIとデザイン、そして英語でのコミュニケーション。これら
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
 ## 活動歴
+- **松尾研究室（東京大学）関連プログラム・コンペティション** (2024年 - 2025年)
+  - **LLM講座 最終プロジェクト & コンペティション**: LoRA SFTおよびDPOを用いたモデルを開発し、コンペティションにて上位4% (70 / 1800) に入賞。開発モデル：[Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
+  - **LLMコンペ2025**: 数学的推論向け合成データセットを構築・公開（[difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)）。
+  - **専門講座受講**: AI経営講座（PwC共同開催）、LLM講座、GCI (データサイエンス基礎)、深層学習、深層生成モデル。
 - **NCSP'26 (2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems)**（2026年3月）
   - ハワイ・ホノルルで開催された国際会議にて、「AIマルチエージェント・オーケストレーションシステム」に関する研究成果を英語で口頭発表。
   - 5種の専門エージェント（**RAG**、**Web操作**、**IoT**、**Scheduler**、**Orchestrator**）を統合した自律型システムを開発。
   - 発表した資料：→ [NCSP-Presentation-EN.pdf](./pdf/NCSP-Presentation-EN.pdf)
+- **Gemini 3 東京ハッカソン 2026** (2026年)
+  - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
+- **Meta Llama Ideathon 2024** (2024年9月)
+  - Meta社主催のAIハッカソンに参加。
+  - Llama 3 モデルを活用した生成AIプロトタイプを開発。→ [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi)
 - **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
   - RAG（検索拡張生成）に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
   - プログラム: → [FIT 2025](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)
-- **Gemini 3 東京ハッカソン 2026** (2026年)
-  - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
-- **Meta Llama Ideathon 2024** (2024年9月)
-  - Meta社主催のAIハッカソンに選抜参加。
-  - Llama 3 モデルを活用した生成AIプロトタイプを開発。→ [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi)
-- **松尾研究室（東京大学）関連プログラム・コンペティション** (2024年 - 2025年)
-  - **LLM講座 最終プロジェクト & コンペティション**: LoRA SFTおよびDPOを用いたモデルを開発し、コンペティションにて上位5%に入賞。開発モデル：[Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
-  - **LLMコンペ2025**: 数学的推論向け合成データセットを構築・公開（[difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)）。
-  - **専門講座受講**: AI経営講座（PwC共同開催）、LLM講座、GCI (データサイエンス基礎)、深層学習、深層生成モデル。
 
 ## 語学
 - **日本語**: ネイティブ
