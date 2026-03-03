@@ -106,7 +106,7 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
   - **Design Portfolio**: [project-kk.com/design](https://project-kk.com/design) (Works from Design I & II)
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
-## Achievements & Activities
+## Activities
 - **FIT 2025 (Forum on Information Technology)** (Sep 2025)
   - Presented research on **RAG (Retrieval-Augmented Generation)**.
   - Conducted as part of a joint research project with **Manable Inc.**
@@ -116,26 +116,10 @@ In my graduation research, I completed a "Multi-Agent Orchestration System" that
 - **Meta Llama Ideathon 2024** (Sep 2024)
   - Selected participant for Meta's official AI hackathon in Tokyo.
   - Developed a generative AI prototype leveraging Llama 3 models. → [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi)
-- **Matsuo Lab LLM Competition 2025** (2025)
-  - Responsible for dataset creation within the team, building a high-difficulty synthetic dataset for mathematical reasoning using DeepSeek and Llama models.
-  - Achieved measurable performance gains after fine-tuning, demonstrating the effectiveness of the high-quality, small-scale dataset.
-  - Dataset: [difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)
-- **Matsuo Lab LLM Course Final Project & Competition**
-  - Completed a comprehensive course covering LLM fundamentals (pre-training) to AI agent applications.
-  - Developed fine-tuned models/adapters using **LoRA SFT** and **DPO** as the final project, achieving a **top 5% ranking** in the competition.
-  - **Llama-3.1-8B-Instruct-Freedom_v3**: Llama 3.1 based model trained with LoRA SFT and DPO. [Link](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
-
-<details>
-  <summary><b>Matsuo Lab Specialized AI Courses</b></summary>
-
-- **AI Management Course (Matsuo Lab & PwC)**
-  - Studied corporate AI implementation strategies and challenges through case studies from industry leaders like **DENSO** and **Shimizu Corporation**.
-- **Matsuo Lab Specialized AI Courses**
-  - **LLM (Large Language Model) Course**: Comprehensive study of LLM fundamentals (pre-training) to AI agent applications.
-  - **GCI (Global Consumer Intelligence)**: Data science and machine learning foundations.
-  - **Deep Learning**: Comprehensive study of neural network architectures and optimization.
-  - **Deep Generative Models**: Advanced techniques in generative AI (VAEs, GANs, Diffusion Models).
-</details>
+- **Matsuo Lab (The University of Tokyo) Programs & Competitions** (2024 - 2025)
+  - **LLM Course Final Project & Competition**: Developed fine-tuned models using **LoRA SFT** and **DPO**, achieving a **top 5% ranking**. Featured model: [Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3).
+  - **LLM Competition 2025**: Built and published a high-difficulty synthetic dataset for mathematical reasoning ([difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)).
+  - **Course Completion**: Finished specialized courses including AI Management (PwC joint), LLM, GCI (Data Science), Deep Learning, and Deep Generative Models.
 
 ## Language
 - **Japanese**: Native
@@ -254,7 +238,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
   - **デザイン成果物**: [project-kk.com/design](https://project-kk.com/design)（Design I & II での制作物）
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
-## 受賞・活動歴
+## 活動歴
 - **FIT 2025（第24回情報科学技術フォーラム）**（2025年9月発表）
   - RAG（検索拡張生成）に関する研究成果を発表。
   - **マナブル株式会社**との共同研究として実施。
@@ -264,26 +248,10 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - **Meta Llama Ideathon 2024** (2024年9月)
   - Meta社主催のAIハッカソンに選抜参加。
   - Llama 3 モデルを活用した生成AIプロトタイプを開発。→ [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi)
-- **松尾研 LLMコンペ2025** (2025年)
-  - チーム内でデータセット作成を担当し、DeepSeekやLlamaモデルを用いた高難易度の数学的推論向け合成データセットを構築。
-  - 小規模なデータセットながら、学習後のモデル性能向上を実現し、データの質の重要性を実証。
-  - 公開データセット: [difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)
-- **松尾研 LLM講座 最終プロジェクト & コンペティション**
-  - LLMの基礎（事前学習）からAIエージェントとしての活用までを包括的に学習・修了。
-  - 最終プロジェクトとして**LoRA SFT**および**DPO**を用いたモデルを開発し、コンペティションにて上位5%に入賞。
-  - **Llama-3.1-8B-Instruct-Freedom_v3**: Llama 3.1をベースにSFTとDPOを適用したモデル。[Link](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
-
-<details>
-  <summary><b>松尾研 各種AI講座受講（詳細）</b></summary>
-
-- **AI経営講座（松尾研・PwC主催）**
-  - **デンソー**や**清水建設**など、大手企業におけるAI活用事例や導入課題について学習。
-- **松尾研 各種AI講座受講**
-  - **LLM (大規模言語モデル) 講座**: LLMの基礎（事前学習）からAIエージェントとしての活用までを包括的に学習。
-  - **GCI (データサイエンス基礎)**: データ分析および機械学習の基礎を習得。
-  - **深層学習 (Deep Learning)**: ニューラルネットワークの基礎から最新の最適化手法までを学習。
-  - **深層生成モデル**: 生成AI（VAE, GAN, Diffusion Modelなど）の理論と実装を習得。
-</details>
+- **松尾研究室（東京大学）関連プログラム・コンペティション** (2024年 - 2025年)
+  - **LLM講座 最終プロジェクト & コンペティション**: LoRA SFTおよびDPOを用いたモデルを開発し、コンペティションにて上位5%に入賞。開発モデル：[Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
+  - **LLMコンペ2025**: 数学的推論向け合成データセットを構築・公開（[difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)）。
+  - **専門講座修了**: AI経営講座（PwC共同開催）、LLM講座、GCI (データサイエンス基礎)、深層学習、深層生成モデルを修了。
 
 ## 語学
 - **日本語**: ネイティブ
