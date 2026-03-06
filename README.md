@@ -88,7 +88,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 ## Experience
 **Manable Inc.** — Joint Researcher / Project Lead
 - **Lead Researcher for RAG System Optimization**: Led a team of three in a joint research project focused on building robust, privacy-first RAG systems for corporate knowledge management (improved RAG accuracy 1.75× by structuring data).
-- **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Program](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)
+- **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Presentation Slides](./pdf/FIT発表資料.pdf)
 
 ## Education
 - **Kanagawa Institute of Technology** — B.S. in Information Network and Communication, Faculty of Information Technology (Expected)
@@ -213,7 +213,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 ## 経験
 **マナブル株式会社** — 共同研究員 / プロジェクトリーダー
 - **RAGシステム最適化の共同研究**: 3名のチームリーダーとして、企業内ナレッジを活用するための堅牢でプライバシーに配慮したRAGシステムの構築に従事（データの構造化によりRAG精度を1.75倍に向上）。
-- **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。 → [プログラム](https://www.ipsj.or.jp/event/fit/fit2025/abstract/data/html/program/f.html)
+- **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。 → [発表資料](./pdf/FIT発表資料.pdf)
 
 ## 学歴
 - **神奈川工科大学** — 情報学部 情報ネットワークコミュニケーション学科 学士（卒業見込）
