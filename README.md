@@ -74,16 +74,15 @@ My strength lies in the combination of AI, design, and English communication. Th
 - Tech: FastAPI, Docker.
 </details>
 
-## Skills (ship-ready)
-| Category | Skills |
+## Skills
+| Category | Technologies |
 | :--- | :--- |
-| **AI & LLM** | LangChain, LlamaIndex, LangGraph, browser-use, Local LLMs (GGUF/Edge), RAG, Multi-Agent Systems, TensorFlow, PyTorch, OpenCV. |
-| **Backend** | Python (FastAPI, Flask, Django), TypeScript, JavaScript. |
-| **Database** | PostgreSQL, MySQL, Redis. |
-| **Frontend** | React, Next.js, Bootstrap, Tailwind CSS, TypeScript. |
-| **IoT & Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W. |
-| **Infrastructure** | Docker, Nginx, Linux, Ubuntu. |
-| **Tools** | Git, codex, claude code. |
+| **Languages / Backend** | Python, TypeScript, FastAPI |
+| **AI / LLM / RAG** | LangChain, LangGraph, browser-use, RAG, Multi-Agent Systems |
+| **Databases / Infra** | PostgreSQL, Redis, Docker, Nginx, Linux |
+| **Frontend** | React, Next.js, Tailwind CSS |
+| **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
+| **Tools** | Git, Claude Code, Codex |
 
 ## Experience
 **Manable Inc.** — Joint Researcher / Project Lead
@@ -199,16 +198,15 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - 技術：FastAPI, Docker.
 </details>
 
-## スキル（実装して出せる）
-| カテゴリ | スキル |
+## スキル
+| カテゴリ | 技術 |
 | :--- | :--- |
-| **AI & LLM** | LangChain, LlamaIndex, LangGraph, browser-use, Local LLMs (GGUF/Edge), RAG, Multi-Agent Systems, TensorFlow, PyTorch, OpenCV. |
-| **Backend** | Python (FastAPI, Flask, Django), TypeScript, JavaScript. |
-| **Database** | PostgreSQL, MySQL, Redis. |
-| **Frontend** | React, Next.js, Bootstrap, Tailwind CSS, TypeScript. |
-| **IoT & Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W. |
-| **Infrastructure** | Docker, Nginx, Linux, Ubuntu. |
-| **Tools** | Git, codex, claude code. |
+| **Languages / Backend** | Python, TypeScript, FastAPI |
+| **AI / LLM / RAG** | LangChain, LangGraph, browser-use, RAG, Multi-Agent Systems |
+| **Databases / Infra** | PostgreSQL, Redis, Docker, Nginx, Linux |
+| **Frontend** | React, Next.js, Tailwind CSS |
+| **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
+| **Tools** | Git, Claude Code, Codex |
 
 ## 経験
 **マナブル株式会社** — 共同研究員 / プロジェクトリーダー
