@@ -77,7 +77,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 ## Skills
 | Category | Technologies |
 | :--- | :--- |
-| **Programming Languages** | Python, TypeScript |
+| **Programming Languages** | Python, TypeScript, SQL |
 | **Backend / API** | FastAPI, Node.js |
 | **AI / LLM Engineering** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
 | **Databases** | PostgreSQL, Redis |
@@ -202,7 +202,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 ## スキル
 | カテゴリ | 技術 |
 | :--- | :--- |
-| **使用言語** | Python, TypeScript |
+| **使用言語** | Python, TypeScript, SQL |
 | **バックエンド / API** | FastAPI, Node.js |
 | **AI / LLM開発** | RAG, マルチエージェントシステム, LangChain, LangGraph, browser-use |
 | **データベース** | PostgreSQL, Redis |
