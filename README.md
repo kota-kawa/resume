@@ -7,7 +7,7 @@
 - 🌐 Portfolio: <https://project-kk.com/>
 - 📝 Blog: <https://blog.project-kk.com/>
 - 🐦 X (Twitter): <https://x.com/project_kk_ai>
-- 💼 LinkedIn: <https://www.linkedin.com/in/kota-kawagoe-0a22263a7/>
+- 💼 LinkedIn: <https://www.linkedin.com/in/kota-kawa/>
 - ✉️ Email: kota7kawagoe@gmail.com
 
 ## Live Services
@@ -132,7 +132,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - 🌐 Portfolio：<https://project-kk.com/>
 - 📝 Blog：<https://blog.project-kk.com/>
 - 🐦 X (Twitter)：<https://x.com/project_kk_ai>
-- 💼 LinkedIn：<https://www.linkedin.com/in/kota-kawagoe-0a22263a7/>
+- 💼 LinkedIn：<https://www.linkedin.com/in/kota-kawa/>
 - ✉️ Email：kota7kawagoe@gmail.com
 
 ## 実際に動いているサービス
