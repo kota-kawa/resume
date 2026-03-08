@@ -77,12 +77,13 @@ My strength lies in the combination of AI, design, and English communication. Th
 ## Skills
 | Category | Technologies |
 | :--- | :--- |
-| **Languages / Backend** | Python, TypeScript, FastAPI |
-| **AI / LLM / RAG** | LangChain, LangGraph, browser-use, RAG, Multi-Agent Systems |
-| **Databases / Infra** | PostgreSQL, Redis, Docker, Nginx, Linux |
+| **Programming Languages** | Python, TypeScript |
+| **Backend / API** | FastAPI, Node.js |
+| **AI / LLM Engineering** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
+| **Databases** | PostgreSQL, Redis |
+| **Infrastructure / DevOps** | Docker, Linux, Nginx, Git, GitHub Actions, pytest |
 | **Frontend** | React, Next.js, Tailwind CSS |
 | **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
-| **Tools** | Git, pytest, GitHub Actions, Claude Code, Codex |
 
 ## Experience
 **Manable Inc.** — Joint Researcher / Project Lead
@@ -201,12 +202,13 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 ## スキル
 | カテゴリ | 技術 |
 | :--- | :--- |
-| **Languages / Backend** | Python, TypeScript, FastAPI |
-| **AI / LLM / RAG** | LangChain, LangGraph, browser-use, RAG, Multi-Agent Systems |
-| **Databases / Infra** | PostgreSQL, Redis, Docker, Nginx, Linux |
-| **Frontend** | React, Next.js, Tailwind CSS |
-| **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
-| **Tools** | Git, pytest, GitHub Actions, Claude Code, Codex |
+| **使用言語** | Python, TypeScript |
+| **バックエンド / API** | FastAPI, Node.js |
+| **AI / LLM開発** | RAG, マルチエージェントシステム, LangChain, LangGraph, browser-use |
+| **データベース** | PostgreSQL, Redis |
+| **インフラ / DevOps** | Docker, Linux, Nginx, Git, GitHub Actions, pytest |
+| **フロントエンド** | React, Next.js, Tailwind CSS |
+| **IoT / ハードウェア** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
 
 ## 経験
 **マナブル株式会社** — 共同研究員 / プロジェクトリーダー
