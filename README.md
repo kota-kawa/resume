@@ -76,11 +76,9 @@ My strength lies in the combination of AI, design, and English communication. Th
 | Category | Technologies |
 | :--- | :--- |
 | **Programming Languages** | Python, TypeScript, SQL |
-| **Backend / API** | FastAPI, Node.js |
+| **Web / Application Platform** | FastAPI, React, Next.js, Tailwind CSS |
 | **AI / LLM Engineering** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
-| **Databases** | PostgreSQL, Redis |
-| **Infrastructure / DevOps** | Docker, Linux, Nginx, Git, GitHub Actions, pytest |
-| **Frontend** | React, Next.js, Tailwind CSS |
+| **Data / Infrastructure** | PostgreSQL, Redis, Docker, Linux, Nginx, Git, GitHub Actions, pytest |
 | **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
 
 ## Experience
@@ -198,12 +196,10 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 ## スキル
 | カテゴリ | 技術 |
 | :--- | :--- |
-| **使用言語** | Python, TypeScript, SQL |
-| **バックエンド / API** | FastAPI, Node.js |
-| **AI / LLM開発** | RAG, マルチエージェントシステム, LangChain, LangGraph, browser-use |
-| **データベース** | PostgreSQL, Redis |
-| **インフラ / DevOps** | Docker, Linux, Nginx, Git, GitHub Actions, pytest |
-| **フロントエンド** | React, Next.js, Tailwind CSS |
+| **プログラミング言語** | Python, TypeScript, SQL |
+| **Web / アプリケーション基盤** | FastAPI, React, Next.js, Tailwind CSS |
+| **AI / LLM エンジニアリング** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
+| **データ / インフラ** | PostgreSQL, Redis, Docker, Linux, Nginx, Git, GitHub Actions, pytest |
 | **IoT / ハードウェア** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
 
 ## 経験
