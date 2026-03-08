@@ -82,7 +82,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 | **Databases / Infra** | PostgreSQL, Redis, Docker, Nginx, Linux |
 | **Frontend** | React, Next.js, Tailwind CSS |
 | **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
-| **Tools** | Git, Claude Code, Codex |
+| **Tools** | Git, pytest, GitHub Actions, Claude Code, Codex |
 
 ## Experience
 **Manable Inc.** — Joint Researcher / Project Lead
@@ -206,7 +206,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 | **Databases / Infra** | PostgreSQL, Redis, Docker, Nginx, Linux |
 | **Frontend** | React, Next.js, Tailwind CSS |
 | **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
-| **Tools** | Git, Claude Code, Codex |
+| **Tools** | Git, pytest, GitHub Actions, Claude Code, Codex |
 
 ## 経験
 **マナブル株式会社** — 共同研究員 / プロジェクトリーダー
