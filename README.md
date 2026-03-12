@@ -9,7 +9,7 @@
 - ✉️ Email: kota7kawagoe@gmail.com
 
 ## Live Services
-- **Chat-Core**: <https://chatcore-ai.com/> (AI Chat & Prompt Sharing)
+- **ChatCore-AI**: <https://chatcore-ai.com/> (AI Chat & Prompt Sharing)
 - **FS-QR**: <https://fs-qr.net/> (File Sharing & QR)
 - **Yorozu Madoguchi**: <https://chat.project-kk.com/> (AI Travel Planning)
 
@@ -33,7 +33,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - Summary: An LLM-powered browser automation agent wrapping `browser_use` with a **FastAPI** backend and **noVNC** web interface. Supports natural language control and WebArena benchmarking. WebArena Shopping task success rate: 32.6% (N=187; max steps=40; retries=4; same prompt setting).
 - Tech: Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
-### 2) [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AI Chat & Prompt Sharing)
+### 2) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (AI Chat & Prompt Sharing)
 - Summary: An AI chat application built with FastAPI and Next.js. Features email authentication, Groq/Gemini API integration, and prompt sharing/search capabilities.
 - Demo: <https://chatcore-ai.com/>
 - Tech: Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
@@ -130,7 +130,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - ✉️ Email：kota7kawagoe@gmail.com
 
 ## 実際に動いているサービス
-- **Chat-Core**: <https://chatcore-ai.com/> (AIチャット & プロンプト共有)
+- **ChatCore-AI**: <https://chatcore-ai.com/> (AIチャット & プロンプト共有)
 - **FS-QR**: <https://fs-qr.net/> (ファイル共有 & QR)
 - **よろず窓口**: <https://chat.project-kk.com/> (AI旅行プランニング)
 
@@ -154,7 +154,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作とWebArenaベンチマーク評価に対応。WebArena Shoppingタスク成功率: 32.6% (N=187, 最大ステップ数=40, リトライ回数=4, 同一プロンプト設定)。
 - 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
-### 2) [Chat-Core](https://github.com/kota-kawa/Chat-Core) — (AIチャット & プロンプト共有)
+### 2) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (AIチャット & プロンプト共有)
 - 概要：FastAPIとNext.jsを用いたAIチャットアプリ。メール認証、Groq/Gemini API連携に加え、ユーザー間でプロンプトを共有・検索できる機能を搭載。
 - デモ：<https://chatcore-ai.com/>
 - 技術：Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
