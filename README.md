@@ -92,7 +92,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - **University of North Alabama** — International Exchange Program
   - Alabama, USA | Jun 2023 – May 2024
   - **Honors**: **Dean's List** (Fall 2023, GPA: 3.75/4.0).
-  - **Achievement**: Ranked **1st out of 30 students** for the final project in the **Artificial Intelligence** course — built a **face recognition login system** using OpenCV and **TensorFlow**, enabling password-free authentication via real-time facial identification.
+  - **Achievement**: **1st out of 30** in the **AI (Artificial Intelligence)** course final project — built a face recognition login system using OpenCV & TensorFlow.
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
 ## Activities
@@ -115,7 +115,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## Notes
-- Last updated: 2026-02-22
+- Last updated: 2026-03-13
 - License: All rights reserved
 
 <details>
@@ -214,7 +214,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
   - アラバマ州, 米国 | 2023年6月 – 2024年5月
   - **栄誉**: **成績優秀者（Dean's
   List）** 選出（2023年秋期、GPA: 3.75/4.0）
-  - **実績**: **Artificial Intelligence（人工知能）** 授業の最終プロジェクトにて、クラス30人中 **1位** の評価を獲得。OpenCVと**TensorFlow**を用いた**顔認証ログインシステム**を構築し、リアルタイムの顔認識によるパスワード不要の認証を実現。
+  - **実績**: **AI（人工知能）** 授業の最終プロジェクトでクラス**1位**（30人中）。OpenCV・TensorFlowで顔認証ログインシステムを開発。
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
 ## 活動歴
