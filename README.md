@@ -88,7 +88,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 
 ## Education
 - **Kanagawa Institute of Technology** — B.S. in Information Network and Communication, Faculty of Information Technology (Expected)
-  - Kanagawa, Japan | Apr 2021 – Mar 2026
+  - Kanagawa, Japan | Apr 2021 – Mar 2026 (including 1 year leave of absence)
 - **University of North Alabama** — International Exchange Program
   - Alabama, USA | Jun 2023 – May 2024
   - **Honors**: **Dean's List** (Fall 2023, GPA: 3.75/4.0).
@@ -209,7 +209,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 
 ## 学歴
 - **神奈川工科大学** — 情報学部 情報ネットワークコミュニケーション学科 学士（卒業見込）
-  - 神奈川県 | 2021年4月 – 2026年3月
+  - 神奈川県 | 2021年4月 – 2026年3月（うち1年休学）
 - **University of North Alabama** — 交換留学プログラム修了
   - アラバマ州, 米国 | 2023年6月 – 2024年5月
   - **栄誉**: **成績優秀者（Dean's
