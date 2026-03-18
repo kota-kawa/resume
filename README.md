@@ -76,9 +76,9 @@ My strength lies in the combination of AI, design, and English communication. Th
 | Category | Technologies |
 | :--- | :--- |
 | **Programming Languages** | Python, TypeScript, SQL |
-| **Web / Application Platform** | FastAPI, React, Next.js, Tailwind CSS |
+| **Web / Application Frameworks** | FastAPI, React, Next.js, Tailwind CSS, PostgreSQL, Redis |
 | **AI / LLM Engineering** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
-| **Data / Infrastructure** | PostgreSQL, Redis, Docker, Linux, Nginx, Git, GitHub Actions, pytest |
+| **Infrastructure** | Docker, AWS (EC2, VPC, Systems Manager), Linux, Nginx, Git, GitHub Actions, pytest |
 | **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
 
 ## Experience
@@ -198,9 +198,9 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 | カテゴリ | 技術 |
 | :--- | :--- |
 | **プログラミング言語** | Python, TypeScript, SQL |
-| **Web / アプリケーション基盤** | FastAPI, React, Next.js, Tailwind CSS |
+| **Web / アプリケーションフレームワーク** | FastAPI, React, Next.js, Tailwind CSS, PostgreSQL, Redis |
 | **AI / LLM エンジニアリング** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
-| **データ / インフラ** | PostgreSQL, Redis, Docker, Linux, Nginx, Git, GitHub Actions, pytest |
+| **インフラ** | Docker, AWS (EC2, VPC, Systems Manager), Linux, Nginx, Git, GitHub Actions, pytest |
 | **IoT / ハードウェア** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
 
 ## 経験
