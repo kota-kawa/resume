@@ -116,7 +116,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## Notes
-- Last updated: 2026-03-13
+- Last updated: 2026-03-19
 - License: All rights reserved
 
 <details>
@@ -239,6 +239,6 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 補足
-- 最終更新：2026-02-22
+- 最終更新：2026-03-19
 - ライセンス：All rights reserved
 </details>
