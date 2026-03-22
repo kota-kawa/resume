@@ -3,7 +3,7 @@
 # Resume — Kota Kawagoe
 
 ## Download
-- 📄 Resume (PDF): [JP](./pdf/レジュメ-jp.pdf) | [EN](./pdf/resume-en.pdf)
+- 📄 Resume (PDF): [JP](https://project-kk.com/static/pdf/レジュメ-jp.pdf) | [EN](https://project-kk.com/static/pdf/resume-en.pdf)
 - 🌐 Portfolio: <https://project-kk.com/>
 - 💼 LinkedIn: <https://www.linkedin.com/in/kota-kawa/>
 - ✉️ Email: kota7kawagoe@gmail.com
@@ -85,12 +85,12 @@ My strength lies in the combination of AI, design, and English communication. Th
 **EdTech Company** — Joint Researcher / Project Lead
 - **Lead Researcher for RAG System Optimization**: Led a team of three in a joint research project focused on building robust, privacy-first RAG systems for corporate knowledge management (improved RAG accuracy 1.75× by structuring data).
 - **Intern (2 months)**: Built a RAG-based chat system on AWS through repeated communication with internal team members, iteratively refining requirements, data structuring, prompt design, and response quality to deliver a practical and reliable system.
-- **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Presentation Slides](./pdf/FIT発表資料.pdf)
+- **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Presentation Slides](https://project-kk.com/static/research/FIT発表資料.pdf)
 
 ## Education
 - **Kanagawa Institute of Technology** — B.S. in Information Network and Communication, Faculty of Information Technology (Expected)
   - Kanagawa, Japan | Apr 2021 – Mar 2026 (including 1 year leave of absence)
-  - **Graduation Research**: [EN](./pdf/Graduation-Research-Paper-en.pdf) | [JP](./pdf/Graduation-Research-Paper-ja.pdf)
+  - **Graduation Research**: [EN](https://project-kk.com/static/research/Graduation-Research-Paper-en.pdf) | [JP](https://project-kk.com/static/research/Graduation-Research-Paper-ja.pdf)
 - **University of North Alabama** — International Exchange Program
   - Alabama, USA | Jun 2023 – May 2024
   - **Honors**: **Dean's List** (Fall 2023, GPA: 3.75/4.0).
@@ -105,7 +105,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - **NCSP'26 (2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems)** (Mar 2026)
   - Presented research on an **AI Multi-Agent Orchestration System** in an English oral session (Honolulu, Hawaii).
   - Developed a system integrating 5 specialized agents: **RAG**, **Web Operation**, **IoT**, **Scheduler**, and **Orchestrator**.
-  - Presentation Material: → [NCSP-Presentation-EN.pdf](./pdf/NCSP-Presentation-EN.pdf)
+  - Presentation Material: → [NCSP-Presentation-EN.pdf](https://project-kk.com/static/research/NCSP-Presentation-EN.pdf)
 - **Gemini 3 Tokyo Hackathon 2026** (2026)
   - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
 - **Meta Llama Ideathon 2024** (Sep 2024)
@@ -126,7 +126,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 # Resume（職務経歴/履歴書） — 川越 航太
 
 ## ダウンロード
-- 📄 Resume（PDF）：[JP](./pdf/レジュメ-jp.pdf) | [EN](./pdf/resume-en.pdf)
+- 📄 Resume（PDF）：[JP](https://project-kk.com/static/pdf/レジュメ-jp.pdf) | [EN](https://project-kk.com/static/pdf/resume-en.pdf)
 - 🌐 Portfolio：<https://project-kk.com/>
 - 💼 LinkedIn：<https://www.linkedin.com/in/kota-kawa/>
 - ✉️ Email：kota7kawagoe@gmail.com
@@ -208,12 +208,12 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 **教育系IT企業** — 共同研究員 / プロジェクトリーダー
 - **RAGシステム最適化の共同研究**: 3名のチームリーダーとして、企業内ナレッジを活用するための堅牢でプライバシーに配慮したRAGシステムの構築に従事（データの構造化によりRAG精度を1.75倍に向上）。
 - **インターン（2か月）**: 社内メンバーとのコミュニケーションを繰り返しながら、AWS上にRAGベースのチャットシステムを構築。要件定義、データ構造化、プロンプト設計、応答品質の改善を反復的に行い、実用性の高いシステムを実現した。
-- **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。 → [発表資料](./pdf/FIT発表資料.pdf)
+- **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。 → [発表資料](https://project-kk.com/static/research/FIT発表資料.pdf)
 
 ## 学歴
 - **神奈川工科大学** — 情報学部 情報ネットワークコミュニケーション学科 学士（卒業見込）
   - 神奈川県 | 2021年4月 – 2026年3月（うち1年休学）
-  - **卒業論文**：[EN](./pdf/Graduation-Research-Paper-en.pdf) | [JP](./pdf/Graduation-Research-Paper-ja.pdf)
+  - **卒業論文**：[EN](https://project-kk.com/static/research/Graduation-Research-Paper-en.pdf) | [JP](https://project-kk.com/static/research/Graduation-Research-Paper-ja.pdf)
 - **University of North Alabama** — 交換留学プログラム修了
   - アラバマ州, 米国 | 2023年6月 – 2024年5月
   - **栄誉**: **成績優秀者（Dean's
@@ -229,7 +229,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - **NCSP'26 (2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems)**（2026年3月）
   - ハワイ・ホノルルで開催された国際会議にて、「AIマルチエージェント・オーケストレーションシステム」に関する研究成果を英語で口頭発表。
   - 5種の専門エージェント（**RAG**、**Web操作**、**IoT**、**Scheduler**、**Orchestrator**）を統合した自律型システムを開発。
-  - 発表した資料：→ [NCSP-Presentation-EN.pdf](./pdf/NCSP-Presentation-EN.pdf)
+  - 発表した資料：→ [NCSP-Presentation-EN.pdf](https://project-kk.com/static/research/NCSP-Presentation-EN.pdf)
 - **Gemini 3 東京ハッカソン 2026** (2026年)
   - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
 - **Meta Llama Ideathon 2024** (2024年9月)
