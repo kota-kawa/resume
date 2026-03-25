@@ -3,7 +3,7 @@
 # Resume — Kota Kawagoe
 
 ## Download
-- 📄 Resume (PDF): [JP](https://project-kk.com/static/pdf/レジュメ-jp.pdf) | [EN](https://project-kk.com/static/pdf/resume-en.pdf)
+- 📄 Resume (PDF): [JP](https://project-kk.com/static/pdf/resume-jp.pdf) | [EN](https://project-kk.com/static/pdf/resume-en.pdf)
 - 🌐 Portfolio: <https://project-kk.com/>
 - 💼 LinkedIn: <https://www.linkedin.com/in/kota-kawa/>
 - ✉️ Email: kota7kawagoe@gmail.com
@@ -128,7 +128,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 # Resume（職務経歴/履歴書） — 川越 航太
 
 ## ダウンロード
-- 📄 Resume（PDF）：[JP](https://project-kk.com/static/pdf/レジュメ-jp.pdf) | [EN](https://project-kk.com/static/pdf/resume-en.pdf)
+- 📄 Resume（PDF）：[JP](https://project-kk.com/static/pdf/resume-jp.pdf) | [EN](https://project-kk.com/static/pdf/resume-en.pdf)
 - 🌐 Portfolio：<https://project-kk.com/>
 - 💼 LinkedIn：<https://www.linkedin.com/in/kota-kawa/>
 - ✉️ Email：kota7kawagoe@gmail.com
