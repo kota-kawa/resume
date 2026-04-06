@@ -11,7 +11,7 @@
 ## Live Services
 - **ChatCore-AI**: <https://chatcore-ai.com/> (AI Chat & Prompt Sharing)
 - **FS-QR**: <https://fs-qr.net/> (File Sharing & QR)
-- **Yorozu Madoguchi**: <https://chat.project-kk.com/> (AI Travel Planning)
+- **Yorozu Madoguchi**: <https://chat.project-kk.com/> (AI Concierge (Multi-Agent))
 
 ### **Looking for: Roles in AI Application Engineering or Backend Systems.**
 
@@ -61,7 +61,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - Summary: An interactive locked-room mystery game where **Gemini 3** acts as Game Master, dynamically generating unique cases and responding to player questions. Built with **Nano Banana** at the **Gemini 3 Tokyo Hackathon 2026**.
 - Tech: FastAPI, React, Gemini, Nano Banana, Docker.
 
-### [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — (AI Travel Planning Chat App) `Meta Llama Ideathon 2024`
+### [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — (AI Concierge (Multi-Agent)) `Meta Llama Ideathon 2024`
 - Summary: A chat-based travel planner that turns conversations into personalized itineraries with a simple demo UI. Developed at the **Meta Llama Ideathon 2024**.
 - Demo: <https://chat.project-kk.com/>
 - Tech: Python, Docker.
@@ -119,7 +119,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## Notes
-- Last updated: 2026-04-01
+- Last updated: 2026-04-06
 - License: All rights reserved
 
 <details>
@@ -136,7 +136,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 ## 実際に動いているサービス
 - **ChatCore-AI**: <https://chatcore-ai.com/> (AIチャット & プロンプト共有)
 - **FS-QR**: <https://fs-qr.net/> (ファイル共有 & QR)
-- **よろず窓口**: <https://chat.project-kk.com/> (AI旅行プランニング)
+- **よろず窓口**: <https://chat.project-kk.com/> (AIコンシェルジュ（マルチエージェント）)
 
 ### **志望：AIアプリケーションエンジニア / バックエンドシステム開発。**
 
@@ -186,7 +186,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - 概要：**Gemini 3** がゲームマスターとなり、密室殺人事件をダイナミックに生成するインタラクティブなミステリーゲーム。**Nano Banana** を活用し、**Gemini 3 東京ハッカソン 2026** にて開発。
 - 技術：FastAPI, React, Gemini, Nano Banana, Docker.
 
-### [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AI旅行プランニングチャットアプリ) `Meta Llama Ideathon 2024`
+### [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AIコンシェルジュ（マルチエージェント）) `Meta Llama Ideathon 2024`
 - 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。**Meta Llama Ideathon 2024** にて開発。
 - デモ：<https://chat.project-kk.com/>
 - 技術：Python, Docker.
@@ -245,6 +245,6 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 補足
-- 最終更新：2026-04-01
+- 最終更新：2026-04-06
 - ライセンス：All rights reserved
 </details>
