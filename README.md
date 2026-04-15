@@ -88,7 +88,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Presentation Slides](https://project-kk.com/static/research/FIT発表資料.pdf)
 
 ## Education
-- **Keio University SFC (Shonan Fujisawa Campus)** — M.S. in Cyber Informatics, Graduate School of Media and Governance
+- **Keio University Graduate School, SFC (Shonan Fujisawa Campus)** — M.S. in Cyber Informatics, Graduate School of Media and Governance
   - Kanagawa, Japan | Apr 2026 –
 - **Kanagawa Institute of Technology** — B.S. in Information Network and Communication, Faculty of Information Technology
   - Kanagawa, Japan | Apr 2021 – Mar 2026 (including 1 year leave of absence)
@@ -213,7 +213,7 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。 → [発表資料](https://project-kk.com/static/research/FIT発表資料.pdf)
 
 ## 学歴
-- **慶應義塾大学 湘南藤沢キャンパス（SFC）** — 政策・メディア研究科 サイバーインフォマティクス専攻 修士課程
+- **慶應義塾大学大学院 湘南藤沢キャンパス（SFC）** — 政策・メディア研究科 サイバーインフォマティクス専攻 修士課程
   - 神奈川県 | 2026年4月 –
 - **神奈川工科大学** — 情報学部 情報ネットワークコミュニケーション学科 学士
   - 神奈川県 | 2021年4月 – 2026年3月（うち1年休学）
