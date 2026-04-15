@@ -38,16 +38,16 @@ My strength lies in the combination of AI, design, and English communication. Th
 - Demo: <https://chatcore-ai.com/>
 - Tech: Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
-### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AI Schedule Assistant)
-- Summary: A chat-first scheduling assistant with timeline views that can use OpenAI, Gemini, or Anthropic models to manage routines and tasks.
-- Tech: Python, PostgreSQL, Vite, Docker.
+### 3) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (Autonomous Orchestration Platform)
+- Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
+- Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
 
 <details>
   <summary><b>Other Projects (Click to expand)</b></summary>
 
-### [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (Autonomous Orchestration Platform)
-- Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
-- Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
+### [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AI Schedule Assistant)
+- Summary: A chat-first scheduling assistant with timeline views that can use OpenAI, Gemini, or Anthropic models to manage routines and tasks.
+- Tech: Python, PostgreSQL, Vite, Docker.
 
 ### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — (Conversational IoT Control Platform)
 - Summary: A chat-controlled IoT platform with a web dashboard and camera snapshots, supporting Jetson, Raspberry Pi, and Pico W devices via LLM-based intent understanding.
@@ -119,7 +119,7 @@ My strength lies in the combination of AI, design, and English communication. Th
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## Notes
-- Last updated: 2026-04-06
+- Last updated: 2026-04-15
 - License: All rights reserved
 
 <details>
@@ -163,16 +163,16 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - デモ：<https://chatcore-ai.com/>
 - 技術：Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
-### 3) [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AIスケジュール管理アシスタント)
-- 概要：チャットで日々のルーティンやタスクを管理し、タイムライン表示にも対応するスケジュール管理アプリ。
-- 技術：Python, PostgreSQL, Vite, Docker.
+### 3) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (自律型エージェントオーケストレーション)
+- 概要：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作やIoT制御を行う専門エージェントを協調動作させることで、デジタル作業と物理デバイス制御のシームレスな連携を実現。
+- 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
 
 <details>
   <summary><b>その他のプロジェクト（クリックで展開）</b></summary>
 
-### [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (自律型エージェントオーケストレーション)
-- 概要：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作やIoT制御を行う専門エージェントを協調動作させることで、デジタル作業と物理デバイス制御のシームレスな連携を実現。
-- 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
+### [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AIスケジュール管理アシスタント)
+- 概要：チャットで日々のルーティンやタスクを管理し、タイムライン表示にも対応するスケジュール管理アプリ。
+- 技術：Python, PostgreSQL, Vite, Docker.
 
 ### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — (会話型IoT制御プラットフォーム)
 - 概要：チャット指示でデバイス制御を行い、ダッシュボードやカメラ撮影を備えたIoT管理プラットフォーム。Jetson/Raspberry Pi/Pico Wに対応。
@@ -245,6 +245,6 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 補足
-- 最終更新：2026-04-06
+- 最終更新：2026-04-15
 - ライセンス：All rights reserved
 </details>
