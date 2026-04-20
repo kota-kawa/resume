@@ -87,25 +87,30 @@ My strength lies in the combination of AI, design, and English communication. Th
 
 This created a clear separation of concerns: the LLM handles natural language interpretation (mapping "next Friday" to a weekday number and week offset), while deterministic code handles the actual calculation. Validated via a benchmark of 9 models (OpenAI, Anthropic, Gemini, Groq) across 10 tasks — a mid-tier model (Qwen3 32B) outperformed several frontier models, confirming that **reliability through design beats relying solely on model capability**.
 
-### 2. SSE Streaming Not Working in Production
-([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | Python / FastAPI / Next.js / nginx / Docker | Solo
+### 2. Production-Only nginx Proxy Bugs — SSE Buffering & WebSocket Upgrade
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI), [FS-QR](https://github.com/kota-kawa/fs-qr)) | Python / FastAPI / Next.js / Redis / nginx / Docker | Solo
 
-**Challenge**: Implemented SSE (Server-Sent Events) for token-by-token LLM streaming. Worked perfectly locally, but in production all tokens arrived buffered and displayed at once.
+Encountered two separate production failures caused by the same root pattern: **nginx sits between client and server in production but is bypassed in local dev**, making the bugs invisible until deployment.
 
-**Solution**: nginx's default response buffering was the culprit. Local dev bypassed nginx, making this a production-only issue. Fixed by adding `proxy_buffering off` and `X-Accel-Buffering: no` to the nginx config. Also added a blue-green deployment setup (`nginx_bootstrap` container) to `docker-compose.yml` for more robust production config management.
+**SSE (ChatCore-AI)**: Token-by-token LLM streaming worked locally but arrived as a single block in production. nginx's default response buffering was swallowing the stream. Fixed with `proxy_buffering off` and `X-Accel-Buffering: no`.
 
-### 3. WebSocket Real-Time Sync Not Working in Production
-([FS-QR](https://github.com/kota-kawa/fs-qr)) | Python / FastAPI / Redis / nginx | Solo
+**WebSocket (FS-QR)**: Real-time text sync across clients worked locally but WebSocket connections failed to establish in production. nginx defaults to HTTP/1.0, which drops the `Upgrade` header required for the WebSocket handshake. Fixed by adding a `location` block with `proxy_http_version 1.1`, `proxy_set_header Upgrade $http_upgrade`, `proxy_set_header Connection "upgrade"`, and extended timeouts. Also adopted Redis Pub/Sub to broadcast updates across multiple instances.
 
-**Challenge**: Implemented real-time text sync across clients via WebSocket. Worked locally but WebSocket connections failed to establish in production.
+Hitting the same class of bug twice — different protocols, different projects — made the underlying pattern stick: **always validate streaming and persistent-connection features behind a production-equivalent nginx proxy, not just locally**.
 
-**Solution**: nginx defaults to HTTP/1.0, which does not forward the `Upgrade` header required for the WebSocket handshake. Added a `location` block with:
-- `proxy_http_version 1.1` — enables HTTP/1.1 and the `Upgrade` header
-- `proxy_set_header Upgrade $http_upgrade` — forwards the WebSocket upgrade request
-- `proxy_set_header Connection "upgrade"` — explicitly signals connection upgrade
-- `proxy_read_timeout 3600` / `proxy_send_timeout 3600` — maintains long-lived connections
+### 4. OSS Internal State Corruption — EventBus Pollution Across Tasks
+([Browser-Agent](https://github.com/kota-kawa/Browser-Agent)) | Python / FastAPI / Docker / browser_use / noVNC | Solo
 
-Used Redis Pub/Sub to broadcast updates across multiple instances. Shared a key pattern with the SSE issue: **production-only bugs caused by nginx sitting between client and server, invisible in local dev**.
+**Challenge**: Designed the system to reuse browser sessions across tasks (`keep_alive=True`) for efficiency. However, residual events from a completed task remained in the `browser_use` library's internal EventBus, interfering with the next task. Simply calling `session.stop()` killed the session entirely; doing nothing caused events to accumulate until a crash.
+
+**Solution**: Since `browser_use` provided no public API for this, I dug into the library's internals and implemented `drain_event_bus()` to flush the EventBus between tasks. Because the target method didn't exist in all library versions, I added a multi-step fallback: check for the method's existence → if absent, swap out the `EventBus()` instance and manually null the Watchdog → re-sync the Agent object's own EventBus reference via a custom `_resync_agent_event_bus()`. This absorbed version differences without breaking on any supported release. The experience reinforced the importance of **reading library source code rather than relying solely on documentation** when hitting the edge of a public API.
+
+### 5. LLM-Generated Content Self-Contradiction — Dual-LLM Verification Loop
+([Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)) | Python / FastAPI / React / Gemini / Nano Banana / Docker | Solo (7-hour hackathon)
+
+**Challenge**: Had Gemini generate a mystery case as structured JSON (characters, alibis, evidence, timeline), then act as Game Master responding to player questions. The problem: Gemini would contradict its own generated case — for example, accurately revealing the culprit's alibi, or having a lying character speak the truth — making the game unsolvable.
+
+**Solution**: Within the 7-hour hackathon constraint, implemented a two-stage response pipeline: (1) generate the player-facing answer normally, then (2) invoke a **second LLM call dedicated solely to contradiction detection** (`contradiction_check()`), cross-referencing the answer against the original `CASE_JSON`. If a contradiction was detected, a `fixed_answer` was substituted before delivery. Added Pydantic `CaseFile` schema validation on case generation with up to 2 automatic retries (`_generate_validated_case()`). The key insight: **LLMs cannot reliably self-censor based on structured data they generated earlier in the same context** — a verification layer outside the generation call is necessary.
 
 </details>
 
@@ -249,25 +254,30 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 
 LLMは自然言語の解釈（曜日番号・week_offsetへの変換）のみを担い、実際の計算はコードが行う明確な役割分担を実現した。OpenAI・Anthropic・Gemini・Groqの9モデルで10タスクのベンチマーク評価を実施し、中堅モデル（Qwen3 32B）が複数のフロンティアモデルを上回る精度を出せることも確認。**「モデルの性能だけに頼らず、設計で信頼性を担保する」** という判断の正しさを実証できた。
 
-### 2. 本番環境でSSEストリーミングが動作しない問題
-([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | Python / FastAPI / Next.js / nginx / Docker | 個人開発
+### 2. 本番環境特有のnginxプロキシ問題 — SSEバッファリングとWebSocketアップグレード
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI), [FS-QR](https://github.com/kota-kawa/fs-qr)) | Python / FastAPI / Next.js / Redis / nginx / Docker | 個人開発
 
-**苦労したこと**: LLMの応答をSSEでトークン逐次配信するストリーミング機能を実装した際、ローカルでは正常に動作したが、本番環境ではレスポンスがバッファリングされ全文が届いてから一括表示される問題が発生した。
+異なるプロジェクトで同じ根本パターンの障害を2度経験した。**ローカル開発ではnginxを経由しないため発覚せず、本番デプロイ後に初めて顕在化する問題**という共通構造だった。
 
-**解決策**: 原因はnginxのデフォルトのレスポンスバッファリングだった。ローカルではnginxを経由しないため本番特有の問題として顕在化していなかった。`proxy_buffering off` および `X-Accel-Buffering: no` の設定を追加することで解決。また `docker-compose.yml` にnginxのblue-greenデプロイ構成（`nginx_bootstrap`コンテナ）を組み込み、本番環境の構成管理も整備した。
+**SSE（ChatCore-AI）**: LLMのトークン逐次配信をSSEで実装したところ、本番環境ではレスポンスがバッファリングされ全文一括表示になった。原因はnginxのデフォルトのレスポンスバッファリング。`proxy_buffering off`と`X-Accel-Buffering: no`の追加で解決。
 
-### 3. 本番環境でWebSocketによるリアルタイム共有が動作しない問題
-([FS-QR](https://github.com/kota-kawa/fs-qr)) | Python / FastAPI / Redis / nginx | 個人開発
+**WebSocket（FS-QR）**: テキストのリアルタイム同期をWebSocketで実装したところ、本番環境でWebSocket接続が確立できなかった。nginxがデフォルトでHTTP/1.0を使用しており、WebSocketハンドシェイクに必要な`Upgrade`ヘッダーが転送されていなかったことが原因。`location`ブロックに`proxy_http_version 1.1`・`proxy_set_header Upgrade $http_upgrade`・`proxy_set_header Connection "upgrade"`・タイムアウト延長を追加して解決。複数インスタンス間のブロードキャストにはRedis Pub/Subを採用した。
 
-**苦労したこと**: テキストをWebSocketで複数クライアント間にリアルタイム同期する機能を実装した際、ローカルでは正常に動作したが、本番環境ではWebSocket接続が確立できない問題が発生した。
+異なるプロトコル・異なるプロジェクトで同じクラスのバグを踏んだことで、**ストリーミングや持続接続の機能は本番相当のnginx構成で検証する**という習慣が身についた。
 
-**解決策**: nginxがデフォルトでHTTP/1.0を使用しており、WebSocketのハンドシェイクに必要な`Upgrade`ヘッダーがバックエンドに転送されていなかったことが原因。`location`ブロックに以下を設定して解決した。
-- `proxy_http_version 1.1` — HTTP/1.1を有効化しUpgradeヘッダーを使用可能に
-- `proxy_set_header Upgrade $http_upgrade` — WebSocketのUpgradeリクエストを転送
-- `proxy_set_header Connection "upgrade"` — 接続のアップグレードを明示
-- `proxy_read_timeout 3600` / `proxy_send_timeout 3600` — 長時間接続の維持
+### 4. OSSの内部状態汚染 — タスク間でのEventBusへの干渉問題
+([Browser-Agent](https://github.com/kota-kawa/Browser-Agent)) | Python / FastAPI / Docker / browser_use / noVNC | 個人開発
 
-複数インスタンス間のブロードキャストにはRedis Pub/Subを採用。SSEの問題と共通して **「ローカルではnginxを経由しないため発覚しない本番特有の問題」** というパターンを学んだ。
+**苦労したこと**: 効率化のためブラウザセッションをタスク間で使い回す設計（`keep_alive=True`）を採用したところ、前のタスクが終了した後も`browser_use`ライブラリ内部のEventBusに未処理イベントが残留し、次のタスクの実行に干渉するという問題が発生した。`session.stop()`を呼ぶとセッション自体が終了してしまい、何もしなければイベントが積み上がってクラッシュする。
+
+**解決策**: `browser_use`にはこの用途向けの公開APIが存在しなかったため、ライブラリの内部実装を読み込み、タスク終了ごとにEventBusを掃除する`drain_event_bus()`を独自実装した。対象メソッドが存在しないライブラリバージョンへの対応も必要だったため、メソッドの存在チェック → 存在しない場合は`EventBus()`インスタンスの差し替えとWatchdogの手動null化 → AgentオブジェクトのEventBus参照を再同期する`_resync_agent_event_bus()`、という多段階フォールバックを実装した。この経験から、**公開APIの限界に当たったときはドキュメントではなくソースコードを読む** という判断の重要性を学んだ。
+
+### 5. LLMが自分で生成した内容に矛盾する問題 — 二重LLM検証ループ
+([Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)) | Python / FastAPI / React / Gemini / Nano Banana / Docker | 個人開発（7時間ハッカソン）
+
+**苦労したこと**: GeminiにJSON形式でミステリーの事件データ（登場人物・アリバイ・証拠・タイムライン）を生成させ、そのデータをもとにゲームマスターとして回答させたところ、Geminiが自分で生成した事件と矛盾した回答を返す問題が多発した。例えば犯人のアリバイを正確に話してしまう、嘘つき設定のキャラクターが正直に答えてしまうなど、ゲームとして成立しなくなるケースが続出した。
+
+**解決策**: 7時間というハッカソンの制約の中で、二段構えの回答パイプラインを実装した。①通常通り回答を生成、②**矛盾検出専用の2回目のLLM呼び出し**（`contradiction_check()`）で回答を`CASE_JSON`と照合し、矛盾があれば`fixed_answer`に差し替えてから返す。また、事件データ生成時にPydanticの`CaseFile`スキーマでバリデーションし、スキーマ違反なら最大2回再生成する`_generate_validated_case()`も実装した。この経験から、**LLMは同じコンテキスト内で自分が生成した構造化データを参照して自己検閲することが苦手** であり、生成と検証を別の呼び出しに分離する設計が有効だという知見を得た。
 
 </details>
 
