@@ -107,6 +107,13 @@ Hitting the same class of bug twice — different protocols, different projects 
 
 **Solution**: Within the 7-hour hackathon constraint, implemented a two-stage response pipeline: generate the answer first, then pass it through a separate verification step where a second LLM call cross-checks the answer against the original case data and corrects any contradictions before delivery. Also added automatic retry logic on case generation to reject structurally malformed outputs. The key insight: **LLMs cannot reliably self-censor based on structured data they generated earlier in the same context** — a verification layer outside the generation call is necessary.
 
+### 5. Shell Script Execute Permission Error Causing GitHub Actions CD Failure
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | GitHub Actions / Docker / Linux / Bash | Solo
+
+**Challenge**: The automated deployment pipeline via GitHub Actions kept failing at the step that invoked the deploy script (`./deploy.sh`). The script ran without issue when executed manually on the server with `bash deploy.sh`, so the error was not caught during local testing. The CI/CD runner was exiting with a "Permission denied" error, and the root cause was not immediately obvious because the file existed and the content was correct.
+
+**Solution**: The issue was that the execute permission bit (`+x`) had not been set in git's index — only the file content was tracked, not the permission. Running `chmod +x deploy.sh` locally changes the filesystem but is not recorded by git unless explicitly staged with `git update-index --chmod=+x deploy.sh`. After staging and committing that change, GitHub Actions correctly inherited the execute bit and the deployment succeeded. The distinction between **filesystem permissions and git-tracked permissions** is easy to miss precisely because local `bash script.sh` invocations bypass the execute bit entirely, making the problem invisible until the CI runner tries direct execution.
+
 </details>
 
 ## Skills
@@ -157,7 +164,7 @@ Hitting the same class of bug twice — different protocols, different projects 
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## Notes
-- Last updated: 2026-04-15
+- Last updated: 2026-05-18
 - License: All rights reserved
 
 <details>
@@ -270,6 +277,13 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 
 **解決策**: 7時間というハッカソンの制約の中で、二段構えの回答パイプラインを実装した。①まず通常通り回答を生成し、②別のLLM呼び出しで回答と事件データを照合して矛盾を検出・修正してからプレイヤーに届ける。また、事件データ生成時に構造的に不正な出力を自動的に検出してやり直す仕組みも追加した。この経験から、**LLMは同じコンテキスト内で自分が生成した情報を参照して自己検閲することが苦手** であり、生成と検証を別の呼び出しに分離する設計が有効だという知見を得た。
 
+### 5. デプロイ用シェルスクリプトの実行権限問題によるGitHub Actions CDの失敗
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | GitHub Actions / Docker / Linux / Bash | 個人開発
+
+**苦労したこと**: GitHub Actionsによる自動デプロイパイプラインが、デプロイスクリプト（`./deploy.sh`）の呼び出しステップで毎回失敗するという問題が発生した。ローカルで`bash deploy.sh`と実行すると問題なく動作するためエラーの原因が掴めず、CIランナー上での"Permission denied"エラーを見てもすぐにはピンとこなかった。
+
+**解決策**: 原因は、実行権限（`+x`）のビットがgitのインデックスに記録されていなかったことだった。ローカルで`chmod +x deploy.sh`を実行してもgitはファイルの内容だけを追跡しており、権限ビットは`git update-index --chmod=+x deploy.sh`で明示的にステージングしなければgitに反映されない。この変更をコミットすることで、GitHub ActionsのランナーにもCHMOD後の実行権限が正しく継承され、デプロイが成功するようになった。ローカルでの`bash script.sh`実行は実行権限ビットをそもそも要求しないため問題が顕在化せず、**「ファイルシステムのパーミション」と「gitが追跡するパーミション」の違い**がCIランナーによる直接実行で初めて露見するという構造を学んだ。
+
 </details>
 
 ## スキル
@@ -321,6 +335,6 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 補足
-- 最終更新：2026-04-15
+- 最終更新：2026-05-18
 - ライセンス：All rights reserved
 </details>
