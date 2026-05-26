@@ -114,6 +114,13 @@ Hitting the same class of bug twice — different protocols, different projects 
 
 **Solution**: The issue was that the execute permission bit (`+x`) had not been set in git's index — only the file content was tracked, not the permission. Running `chmod +x deploy.sh` locally changes the filesystem but is not recorded by git unless explicitly staged with `git update-index --chmod=+x deploy.sh`. After staging and committing that change, GitHub Actions correctly inherited the execute bit and the deployment succeeded. The distinction between **filesystem permissions and git-tracked permissions** is easy to miss precisely because local `bash script.sh` invocations bypass the execute bit entirely, making the problem invisible until the CI runner tries direct execution.
 
+### 6. Face-Recognition Login Accuracy — The Bottleneck Was the Data, Not Model Capacity
+ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study abroad)
+
+**Challenge**: Built a face-recognition login system with ResNet and TensorFlow, but recognition accuracy fell short of expectations. My first instinct was that the model lacked representational power, so I **added hidden layers to increase network capacity**. Accuracy barely improved — and increasing capacity against a limited dataset risked overfitting, pushing in the wrong direction entirely.
+
+**Solution**: I reframed the plateau as a problem of **insufficient training data volume and diversity**, not model expressiveness. By applying data augmentation — rotating the face images and adjusting their brightness — I introduced variation in camera angle and lighting conditions into the training set. The model became robust to those variations and recognition accuracy improved. The lesson: **don't equate "low accuracy" with "make the model bigger"** — first determine whether the bottleneck lies on the model side (expressiveness) or the data side (volume and diversity).
+
 </details>
 
 ## Skills
@@ -283,6 +290,13 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 **苦労したこと**: GitHub Actionsによる自動デプロイパイプラインが、デプロイスクリプト（`./deploy.sh`）の呼び出しステップで毎回失敗するという問題が発生した。ローカルで`bash deploy.sh`と実行すると問題なく動作するためエラーの原因が掴めず、CIランナー上での"Permission denied"エラーを見てもすぐにはピンとこなかった。
 
 **解決策**: 原因は、実行権限（`+x`）のビットがgitのインデックスに記録されていなかったことだった。ローカルで`chmod +x deploy.sh`を実行してもgitはファイルの内容だけを追跡しており、権限ビットは`git update-index --chmod=+x deploy.sh`で明示的にステージングしなければgitに反映されない。この変更をコミットすることで、GitHub ActionsのランナーにもCHMOD後の実行権限が正しく継承され、デプロイが成功するようになった。ローカルでの`bash script.sh`実行は実行権限ビットをそもそも要求しないため問題が顕在化せず、**「ファイルシステムのパーミション」と「gitが追跡するパーミション」の違い**がCIランナーによる直接実行で初めて露見するという構造を学んだ。
+
+### 6. 顔認証ログインの精度不足 — モデルの容量ではなく学習データがボトルネックだった
+ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロジェクト）
+
+**苦労したこと**: ResNetとTensorFlowで顔認証ログインシステムを構築したが、認証精度が想定より上がらなかった。最初の打ち手として**モデルの表現力が足りないと考え、隠れ層を追加してネットワークの容量を増やした**。しかし精度はほとんど改善せず、むしろ限られた学習データに対して容量だけを増やすことは過学習を招きかねない逆効果の方向だった。
+
+**解決策**: 精度の頭打ちはモデルの表現力ではなく**学習データの量と多様性の不足**側にあると切り分けた。顔画像を回転させたり明るさを調整したりしてデータ拡張（Data Augmentation）を行い、撮影角度や照明条件のばらつきを学習データに与えたところ、モデルがそれらの変動に対して頑健になり認証精度が向上した。この経験から、**「精度が低い＝モデルを大きくする」と短絡せず、ボトルネックがモデル側（表現力）にあるのかデータ側（量・多様性）にあるのかをまず切り分ける**という判断の重要性を学んだ。
 
 </details>
 
