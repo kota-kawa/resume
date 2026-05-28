@@ -134,7 +134,7 @@ ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study 
 
 ## Experience
 **EdTech Company** — Joint Researcher / Project Lead
-- **Lead Researcher for RAG System Optimization**: Led a team of three in a joint research project focused on building robust, privacy-first RAG systems for corporate knowledge management (improved RAG accuracy 1.75× by structuring data).
+- **Lead Researcher for RAG System Optimization**: Led a team of three and collaborated via GitHub (Issues/Projects for task tracking, feature branches, PR reviews, Actions CI) to build a robust, privacy-first RAG system for corporate knowledge management (improved RAG accuracy 1.75× by structuring data). Also managed a web app repository on GitHub to test the RAG system.
 - **Intern (2 months)**: Built a RAG-based chat system on AWS through repeated communication with internal team members, iteratively refining requirements, data structuring, prompt design, and response quality to deliver a practical and reliable system.
 - **Patent Pending**: Co-filed a patent based on findings from this research.
 - **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Presentation Slides](https://project-kk.com/static/research/FIT発表資料.pdf)
@@ -311,7 +311,7 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 
 ## 経験
 **教育系IT企業** — 共同研究員 / プロジェクトリーダー
-- **RAGシステム最適化の共同研究**: 3名のチームリーダーとして、企業内ナレッジを活用するための堅牢でプライバシーに配慮したRAGシステムの構築に従事（データの構造化によりRAG精度を1.75倍に向上）。
+- **RAGシステム最適化の共同研究**: 3名のチームリーダーとして、GitHub Issues/Projectsでタスク管理し、feature branch → PRレビュー → Actionsでの自動テストを経てmainへ統合するフローで共同開発。企業内ナレッジを活用するための堅牢でプライバシーに配慮したRAGシステムの構築に従事（データの構造化によりRAG精度を1.75倍に向上）。RAGシステムのテストとして、GitHubでWebアプリのリポジトリ管理も担当。
 - **インターン（2か月）**: 社内メンバーとのコミュニケーションを繰り返しながら、AWS上にRAGベースのチャットシステムを構築。要件定義、データ構造化、プロンプト設計、応答品質の改善を反復的に行い、実用性の高いシステムを実現した。
 - **特許出願中**: 本研究の成果をもとに特許を共同出願。
 - **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。 → [発表資料](https://project-kk.com/static/research/FIT発表資料.pdf)
