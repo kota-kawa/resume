@@ -139,7 +139,7 @@ ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study 
 - **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Presentation Slides](https://project-kk.com/static/research/FIT発表資料.pdf)
 
 **EdTech Company** — Software Engineering Intern (2 months)
-- Designed and developed an in-house AI agent system for the customer support team on **AWS**.
+- After completing the joint research, joined as an intern to bring its findings into production; designed and developed an in-house AI agent system for the customer support team on **AWS**.
 - Converted and **structured** Jira operations manuals into Markdown, then built a **hybrid RAG pipeline** (BM25 + vector search) with **gpt-5.1-mini**; iterated on **prompt design** to deliver accurate natural language Q&A via a chat UI.
 - Extended beyond simple RAG chat to a full **customer support agent** with: automatic Jira ticket creation via Jira API integration, and auto-generation of customer-facing email drafts alongside RAG answers.
 - Ran daily discussions with the customer support team to iteratively refine **requirements and response quality** end-to-end.
@@ -321,7 +321,7 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 - **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。 → [発表資料](https://project-kk.com/static/research/FIT発表資料.pdf)
 
 **教育系IT企業** — ソフトウェアエンジニアインターン（2か月）
-- カスタマーサポートチーム向けの社内AIエージェントシステムを**AWS上**で設計・開発。
+- 共同研究終了後、その成果を実際のプロダクトに落とし込むためにインターンとして参加。カスタマーサポートチーム向けの社内AIエージェントシステムを**AWS上**で設計・開発。
 - Jira上に蓄積された操作マニュアルをMarkdown形式に**変換・構造化**し、BM25とベクトル検索を組み合わせた**ハイブリッド検索RAGパイプライン**を構築。**gpt-5.1-mini**を用いた**プロンプト設計**を重ね、チャットUIから自然言語で問い合わせに回答できるシステムを実装。
 - 単純なRAGチャットにとどまらず、Jira API連携による問い合わせチケットの自動起票、RAG回答に加えた顧客向けメール文案の自動生成まで機能を拡張した**カスタマーサポートエージェント**として開発。
 - 実際にカスタマーサポートチームに使ってもらいながら、毎日ディスカッションを重ねて**要件定義から応答品質の改善**までを反復的に実施。
