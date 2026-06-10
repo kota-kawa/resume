@@ -134,7 +134,7 @@ ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study 
 
 ## Experience
 **EdTech Company** — Joint Researcher / Project Lead
-- **Lead Researcher for RAG System Optimization**: Led a team of three and collaborated via GitHub (Issues/Projects for task tracking, feature branches, PR reviews, Actions CI) to build a robust, privacy-first RAG system for corporate knowledge management (improved RAG accuracy 1.75× by structuring data). Also managed a web app repository on GitHub to test the RAG system.
+- **Lead Researcher for RAG System Optimization**: In the joint research team's development process, we divided the work into three steps: masking personally identifiable information in Q&A data, validating consecutive masked data by comparing results across multiple LLMs, and evaluating data storage formats for RAG. Each step was assigned to one team member. As project lead, I applied my prior experience developing RAG chat systems to support each member's implementation, design, and validation direction across the project. I also used GitHub to version-control code and experiment details, reviewed each member's changes, and aligned the team's overall implementation direction.
 - **Patent Pending**: Co-filed a patent based on findings from this research.
 - **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Presentation Slides](https://project-kk.com/static/research/FIT発表資料.pdf)
 
