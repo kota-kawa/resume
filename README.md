@@ -23,6 +23,10 @@ Software Engineer aiming to bring **Autonomous AI Agents** into real-world deplo
 
 My strength lies in the combination of AI, design, and English communication. These three elements allow me to transform technology into tangible solutions at a high level.
 
+**Beyond Engineering: A Business-Minded Builder**
+
+My value isn't just writing code — it's thinking through the business behind it: where real-world demand exists, what it costs to run and sustain a service, and how to turn that into a viable product. This makes me well-suited to launching new ventures from zero to one, owning the full range from **hackathon-speed prototyping to stable, reliable production operation** (as shown by my live services still running today).
+
 **Experience:**
 - Developed a **Multi-Agent Orchestration System** (integrating Browser-Agent, **IoT-Agent**, etc.) to bridge digital tasks with real-world physical feedback.
 - Optimized **long/short-term memory** management, improving task success rates by **1.7x**.
@@ -204,6 +208,10 @@ ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study 
 **強み：AI × デザイン × 英語**
 
 AIとデザイン、そして英語でのコミュニケーション。これら3つの要素を高い次元で組み合わせ、技術を形にできることが私の強みです。
+
+**エンジニアリングを超えて：ビジネス視点を持つ開発者**
+
+私の価値は、ただコードを書くことではなく、その先にあるビジネスを考えられることにあります。世の中のどこに本当の需要があるのか、サービスの運用・維持にどれだけのコストがかかるのか、それをいかに成立するプロダクトへ落とし込むかまでを見据えます。だからこそゼロからの**新規事業の立ち上げ**を得意とし、**ハッカソン的な素早いプロトタイピングから、安定した本番運用まで**を一気通貫で担えます（現在も稼働を続ける各サービスがその実績です）。
 
 **エピソード：**
 - **マルチエージェント・オーケストレーションシステム**を開発（Browser-Agentや**IoT-Agent**等を統合）。Web完結に留まらず、ハードウェアを介した実世界へのフィードバックまでを実現。
