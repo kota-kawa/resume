@@ -125,6 +125,13 @@ ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study 
 
 **Solution**: I reframed the plateau as a problem of **insufficient training data volume and diversity**, not model expressiveness. By applying data augmentation — rotating the face images and adjusting their brightness — I introduced variation in camera angle and lighting conditions into the training set. The model became robust to those variations and recognition accuracy improved. The lesson: **don't equate "low accuracy" with "make the model bigger"** — first determine whether the bottleneck lies on the model side (expressiveness) or the data side (volume and diversity).
 
+### 7. Blue-Green Deployment Timing Issue — Momentary 500 Errors During Switch
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | GitHub Actions / Docker / nginx / Linux | Solo
+
+**Challenge**: Implemented Blue-Green deployment using GitHub Actions and nginx to achieve zero-downtime updates. However, during the deployment switch, users occasionally encountered 500 errors for a split second. The automation script was switching the nginx traffic to the new "Green" environment before the container's application process was fully ready to accept connections, even though the container itself was "running" from Docker's perspective.
+
+**Solution**: Identified that the health check within the deployment script was too superficial (only checking if the container was up) or missing a sufficient "warm-up" wait. I improved the deployment flow by adding a robust health check loop that polls the specific application endpoint (e.g., `/health`) of the new container. Only after receiving a successful 200 OK response from the application itself does the script update the nginx configuration and reload the service. This ensured that traffic is only routed to fully initialized instances, eliminating the momentary 500 errors. The experience highlighted that **"container ready" does not mean "application ready"** and reinforced the need for application-level health validation in CI/CD pipelines.
+
 </details>
 
 ## Skills
@@ -180,7 +187,7 @@ ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study 
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## Notes
-- Last updated: 2026-05-18
+- Last updated: 2026-06-15
 - License: All rights reserved
 
 <details>
@@ -311,6 +318,13 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 
 **解決策**: 精度の頭打ちはモデルの表現力ではなく**学習データの量と多様性の不足**側にあると切り分けた。顔画像を回転させたり明るさを調整したりしてデータ拡張（Data Augmentation）を行い、撮影角度や照明条件のばらつきを学習データに与えたところ、モデルがそれらの変動に対して頑健になり認証精度が向上した。この経験から、**「精度が低い＝モデルを大きくする」と短絡せず、ボトルネックがモデル側（表現力）にあるのかデータ側（量・多様性）にあるのかをまず切り分ける**という判断の重要性を学んだ。
 
+### 7. Blue-Greenデプロイの切り替えタイミング不備による瞬間的な500エラー
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | GitHub Actions / Docker / nginx / Linux | 個人開発
+
+**苦労したこと**: ゼロダウンタイムでの更新を目指し、GitHub Actionsとnginxを組み合わせたBlue-Greenデプロイを導入した。しかし、デプロイの切り替え時に一瞬だけ500エラーが発生するという問題に直面した。原因を調査したところ、Dockerコンテナ自体は起動しているものの、その内部でアプリケーションプロセスが完全に立ち上がりリクエストを受け付けられる状態になる前に、nginxの向き先を新しい（Green）環境に切り替えてしまっていたことが判明した。
+
+**解決策**: デプロイスクリプトに、アプリケーションレベルでのヘルスチェック待ち処理を追加した。単にコンテナの起動を待つのではなく、アプリケーションが提供する特定のヘルスチェックエンドポイント（`/health`など）に対してポーリングを行い、実際に200 OKが返ってくることを確認してからnginxの向き先を切り替えるようにフローを改善した。これにより、完全に準備が整ったインスタンスのみにトラフィックが流れるようになり、切り替え時のエラーを完全に解消できた。**「コンテナの起動」と「アプリケーションの準備完了」は別物である**という教訓を得るとともに、CI/CDパイプラインにおける実用的なヘルスチェックの重要性を再認識した。
+
 </details>
 
 ## スキル
@@ -367,6 +381,6 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 補足
-- 最終更新：2026-05-18
+- 最終更新：2026-06-15
 - ライセンス：All rights reserved
 </details>
