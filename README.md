@@ -54,8 +54,8 @@ My value isn't just writing code — it's thinking through the business behind i
 - Tech: Python, PostgreSQL, Vite, Docker.
 
 ### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — (Conversational IoT Control Platform)
-- Summary: A chat-controlled IoT platform with a web dashboard and camera snapshots, supporting Jetson, Raspberry Pi, and Pico W devices via LLM-based intent understanding.
-- Tech: Python, Node.js, Docker, OpenAI/Gemini.
+- Summary: A chat-controlled IoT platform with a web dashboard and camera snapshots, supporting Jetson, Raspberry Pi, and Pico W devices via LLM-based intent understanding. This project serves as a **precursor to Physical AI** — running a **local LLM on an edge device** (NVIDIA Jetson Orin Nano) to enable autonomous, low-latency intelligence at the physical layer.
+- Tech: Python, Node.js, Docker, OpenAI/Gemini, Local LLM (Jetson Orin Nano).
 
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (RAG-Powered Lifestyle Assistant)
 - Summary: A multi-domain lifestyle RAG agent with MCP support, a web chat UI, and conversation analysis for proactive assistance.
@@ -142,6 +142,8 @@ ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study 
 | **AI / LLM Engineering** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
 | **Infrastructure** | Docker, AWS (EC2, VPC, Systems Manager), Linux, Nginx, Git, GitHub Actions, pytest |
 | **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
+| **AI Tools** | Codex, Claude Code, NotebookLM, Antigravity, Gemini, ChatGPT, Claude |
+
 
 ## Experience
 **EdTech Company** — Joint Researcher / Project Lead
@@ -247,8 +249,8 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - 技術：Python, PostgreSQL, Vite, Docker.
 
 ### [IoT Agent](https://github.com/kota-kawa/IoT-Agent) — (会話型IoT制御プラットフォーム)
-- 概要：チャット指示でデバイス制御を行い、ダッシュボードやカメラ撮影を備えたIoT管理プラットフォーム。Jetson/Raspberry Pi/Pico Wに対応。
-- 技術：Python, Node.js, Docker, OpenAI/Gemini.
+- 概要：チャット指示でデバイス制御を行い、ダッシュボードやカメラ撮影を備えたIoT管理プラットフォーム。Jetson/Raspberry Pi/Pico Wに対応。**NVIDIA Jetson Orin Nano** 上でローカルLLMを動作させ、低遅延かつオフライン対応のエッジインテリジェンスを実現。このアーキテクチャは **Physical AI の前身** にあたる取り組みである。
+- 技術：Python, Node.js, Docker, OpenAI/Gemini, ローカルLLM（Jetson Orin Nano）.
 
 ### [Life-Style-Agent](https://github.com/kota-kawa/Life-Style-Agent) — (生活支援RAGエージェント)
 - 概要：生活領域の多分野知識をRAGで統合し、MCP対応・会話分析機能を備えた生活支援AI。
@@ -335,6 +337,7 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 | **AI / LLM エンジニアリング** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
 | **インフラ** | Docker, AWS (EC2, VPC, Systems Manager), Linux, Nginx, Git, GitHub Actions, pytest |
 | **IoT / ハードウェア** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
+| **AIツール** | Codex, Claude Code, NotebookLM, Antigravity, Gemini, ChatGPT, Claude |
 
 ## 経験
 **教育系IT企業** — 共同研究員 / プロジェクトリーダー
