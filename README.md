@@ -144,7 +144,9 @@ ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study 
 | **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
 | **AI Tools** | Codex, Claude Code, NotebookLM, Antigravity, Gemini, ChatGPT, Claude |
 
-### How I Use AI Tools
+<details>
+<summary><strong>How I Use AI Tools</strong></summary>
+
 I integrate AI tools across the full workflow — from research to documentation to implementation:
 
 | Phase | Tool | How I Use It |
@@ -153,6 +155,8 @@ I integrate AI tools across the full workflow — from research to documentation
 | **Documentation & Presentation** | Claude | Draft and iteratively refine PowerPoint slides, Word documents, and technical reports. Use it as a writing partner to improve clarity, structure, and persuasiveness of deliverables. |
 | **Coding & Development** | Codex, Claude Code, Antigravity | Accelerate development with AI-assisted coding — from scaffolding new features and debugging complex issues to writing tests and refactoring. Leverage agentic coding tools for multi-file changes across full-stack projects. |
 | **Ideation & Problem Solving** | Gemini, ChatGPT, Claude | Brainstorm architecture decisions, explore design trade-offs, and validate technical approaches through conversational reasoning. |
+
+</details>
 
 
 ## Experience
@@ -350,7 +354,9 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 | **IoT / ハードウェア** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
 | **AIツール** | Codex, Claude Code, NotebookLM, Antigravity, Gemini, ChatGPT, Claude |
 
-### AIツールの活用方法
+<details>
+<summary><strong>AIツールの活用方法</strong></summary>
+
 リサーチからドキュメント作成、実装まで、ワークフロー全体にAIツールを統合して活用しています：
 
 | フェーズ | ツール | 活用方法 |
@@ -359,6 +365,8 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 | **資料作成・プレゼン** | Claude | パワーポイントスライドやWordドキュメント、技術レポートの作成・改善を反復的に実施。構成・明瞭さ・説得力の向上にライティングパートナーとして活用。 |
 | **コーディング・開発** | Codex, Claude Code, Antigravity | 新機能のスキャフォールディング、複雑なデバッグ、テスト作成、リファクタリングまでAI支援コーディングで開発を加速。エージェント型コーディングツールを活用し、フルスタックプロジェクトの複数ファイルにまたがる変更を効率的に実施。 |
 | **アイデア出し・問題解決** | Gemini, ChatGPT, Claude | アーキテクチャの意思決定、設計トレードオフの検討、技術的アプローチの妥当性検証を対話的に実施。 |
+
+</details>
 
 ## 経験
 **教育系IT企業** — 共同研究員 / プロジェクトリーダー
