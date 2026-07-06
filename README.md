@@ -194,7 +194,7 @@ I integrate AI tools across the full workflow — from research to documentation
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## Notes
-- Last updated: 2026-06-15
+- Last updated: 2026-07-06
 - License: All rights reserved
 
 <details>
@@ -394,6 +394,6 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 補足
-- 最終更新：2026-06-15
+- 最終更新：2026-07-06
 - ライセンス：All rights reserved
 </details>
