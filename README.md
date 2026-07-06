@@ -11,7 +11,6 @@
 ## Live Services
 - **ChatCore-AI**: <https://chatcore-ai.com/> (AI Chat & Prompt Sharing)
 - **FS-QR**: <https://fs-qr.net/> (File Sharing & QR)
-- **Yorozu Madoguchi**: <https://chat.project-kk.com/> (AI Concierge (Multi-Agent))
 
 ### **Looking for: Roles in AI Application Engineering or Backend Systems.**
 
@@ -64,11 +63,6 @@ My value isn't just writing code — it's thinking through the business behind i
 ### [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game) — (AI-powered Mystery Detective Game) `Gemini 3 Tokyo Hackathon 2026`
 - Summary: An interactive locked-room mystery game where **Gemini 3** acts as Game Master, dynamically generating unique cases and responding to player questions. Built with **Nano Banana** at the **Gemini 3 Tokyo Hackathon 2026**.
 - Tech: FastAPI, React, Gemini, Nano Banana, Docker.
-
-### [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi) — (AI Concierge (Multi-Agent)) `Meta Llama Ideathon 2024`
-- Summary: A chat-based travel planner that turns conversations into personalized itineraries with a simple demo UI. Developed at the **Meta Llama Ideathon 2024**.
-- Demo: <https://chat.project-kk.com/>
-- Tech: Python, Docker.
 
 ### [FS-QR](https://github.com/kota-kawa/fs-qr) — (File Sharing & QR)
 - Summary: A self-hosted file and note sharing tool with QR-based quick transfer, passworded group rooms, and real-time shared notes.
@@ -195,10 +189,6 @@ I integrate AI tools across the full workflow — from research to documentation
   - Presentation Material: → [NCSP-Presentation-EN.pdf](https://project-kk.com/static/research/NCSP-Presentation-EN.pdf)
 - **Gemini 3 Tokyo Hackathon 2026** (2026)
   - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
-- **Meta Llama Ideathon 2024** (Sep 2024)
-  - **Participant** in Meta's official AI hackathon in Tokyo.
-  - Developed a generative AI prototype leveraging Llama 3 models. → [Yorozu Madoguchi](https://github.com/kota-kawa/yorozu_madoguchi)
-
 ## Language
 - **Japanese**: Native
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
@@ -221,7 +211,6 @@ I integrate AI tools across the full workflow — from research to documentation
 ## 実際に動いているサービス
 - **ChatCore-AI**: <https://chatcore-ai.com/> (AIチャット & プロンプト共有)
 - **FS-QR**: <https://fs-qr.net/> (ファイル共有 & QR)
-- **よろず窓口**: <https://chat.project-kk.com/> (AIコンシェルジュ（マルチエージェント）)
 
 ### **志望：AIアプリケーションエンジニア / バックエンドシステム開発。**
 
@@ -274,11 +263,6 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 ### [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game) — (AI駆動ミステリー探偵ゲーム) `Gemini 3 東京ハッカソン 2026`
 - 概要：**Gemini 3** がゲームマスターとなり、密室殺人事件をダイナミックに生成するインタラクティブなミステリーゲーム。**Nano Banana** を活用し、**Gemini 3 東京ハッカソン 2026** にて開発。
 - 技術：FastAPI, React, Gemini, Nano Banana, Docker.
-
-### [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi) — (AIコンシェルジュ（マルチエージェント）) `Meta Llama Ideathon 2024`
-- 概要：AIとのチャット相談から旅行プランを自動生成するシンプルなデモアプリ。**Meta Llama Ideathon 2024** にて開発。
-- デモ：<https://chat.project-kk.com/>
-- 技術：Python, Docker.
 
 ### [FS-QR](https://github.com/kota-kawa/fs-qr) — (ファイル共有 & QR)
 - 概要：QRによる即時共有、合言葉付きのグループ共有、リアルタイム共有ノートを備えたセルフホスト型のファイル/メモ共有ツール。
@@ -405,10 +389,6 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
   - 発表した資料：→ [NCSP-Presentation-EN.pdf](https://project-kk.com/static/research/NCSP-Presentation-EN.pdf)
 - **Gemini 3 東京ハッカソン 2026** (2026年)
   - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
-- **Meta Llama Ideathon 2024** (2024年9月)
-  - Meta社主催のAIハッカソンに参加。
-  - Llama 3 モデルを活用した生成AIプロトタイプを開発。→ [よろず窓口](https://github.com/kota-kawa/yorozu_madoguchi)
-
 ## 語学
 - **日本語**: ネイティブ
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
