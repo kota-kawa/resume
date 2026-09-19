@@ -41,12 +41,16 @@ My value isn't just writing code — it's thinking through the business behind i
 - Demo: <https://chatcore-ai.com/>
 - Tech: Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
-### 3) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (Autonomous Orchestration Platform)
-- Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
-- Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
+### 3) [Marmo-Core](https://github.com/kota-kawa/Marmo-Core) — (AI-Agent Resource Kernel)
+- Summary: A lightweight Python kernel for registering, retrieving, selecting, and safely executing AI-agent resources. Includes policy-gated execution, audit trails, deterministic mock runs, CLI tooling, and OpenAI-compatible/Anthropic LLM providers.
+- Tech: Python, resource registry, policy layer, lexical/HyDE retrieval, CLI, OpenAI/Anthropic APIs.
 
 <details>
   <summary><b>Other Projects (Click to expand)</b></summary>
+
+### [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (Autonomous Orchestration Platform)
+- Summary: An autonomous orchestration platform using **LangGraph** to coordinate specialized agents (Browser automation, IoT control, RAG) for seamless interaction between digital tasks and physical device control.
+- Tech: Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
 
 ### [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AI Schedule Assistant)
 - Summary: A chat-first scheduling assistant with timeline views that can use OpenAI, Gemini, or Anthropic models to manage routines and tasks.
@@ -241,12 +245,16 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - デモ：<https://chatcore-ai.com/>
 - 技術：Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
 
-### 3) [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (自律型エージェントオーケストレーション)
-- 概要：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作やIoT制御を行う専門エージェントを協調動作させることで、デジタル作業と物理デバイス制御のシームレスな連携を実現。
-- 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
+### 3) [Marmo-Core](https://github.com/kota-kawa/Marmo-Core) — (AIエージェント向けリソースカーネル)
+- 概要：AIエージェント向けリソースの登録・検索・選択・安全な実行を担う軽量なPythonカーネル。ポリシーによる実行制御、監査ログ、決定論的なモック実行、CLIツール、OpenAI互換／Anthropic LLMプロバイダーを備える。
+- 技術：Python, リソースレジストリ, ポリシーレイヤー, Lexical/HyDE検索, CLI, OpenAI/Anthropic API.
 
 <details>
   <summary><b>その他のプロジェクト（クリックで展開）</b></summary>
+
+### [Symphony Agent Conductor](https://github.com/kota-kawa/Symphony-Agent-Conductor) — (自律型エージェントオーケストレーション)
+- 概要：**LangGraph**を用いた中央オーケストレーターを構築し、ブラウザ操作やIoT制御を行う専門エージェントを協調動作させることで、デジタル作業と物理デバイス制御のシームレスな連携を実現。
+- 技術：Python, Flask, LangGraph, `browser-use`, IoT (Jetson/Pi), OpenAI/Gemini.
 
 ### [Scheduler Agent](https://github.com/kota-kawa/Scheduler-Agent) — (AIスケジュール管理アシスタント)
 - 概要：チャットで日々のルーティンやタスクを管理し、タイムライン表示にも対応するスケジュール管理アプリ。
