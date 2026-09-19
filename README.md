@@ -164,12 +164,12 @@ I integrate AI tools across the full workflow — from research to documentation
 - **Job-side concurrency control**: Without changing the infrastructure configuration, limited simultaneous execution by counting active chat turns. When the limit was reached, the job was re-enqueued after 10 seconds without holding the thread, reserving capacity for email delivery and LINE Webhooks.
 - Used real usage data to identify issues and implemented conversation control, state management, error recovery, and cost control for free-form AI chat. Designed beyond answer quality to include failure recovery, usage limits, coexistence with existing systems, and continuous evaluation through KPI/KGI definitions and aggregation SQL, productizing the AI feature.
 
-**EdTech Company** — Joint Researcher / Project Lead
+**Manaable Inc.** — Joint Researcher / Project Lead
 - **Lead Researcher for RAG System Optimization**: In the joint research team's development process, we divided the work into three steps: masking personally identifiable information in Q&A data, validating consecutive masked data by comparing results across multiple LLMs, and evaluating data storage formats for RAG. Each step was assigned to one team member. As project lead, I applied my prior experience developing RAG chat systems to support each member's implementation, design, and validation direction across the project. I also used GitHub to version-control code and experiment details, reviewed each member's changes, and aligned the team's overall implementation direction.
 - **Patent Pending**: Co-filed a patent based on findings from this research.
 - **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Presentation Slides](https://project-kk.com/static/research/FIT発表資料.pdf)
 
-**EdTech Company** — Software Engineering Intern (2 months)
+**Manaable Inc.** — Software Engineering Intern (2 months)
 - After completing the joint research, joined as an intern to bring its findings into production; designed and developed an in-house AI agent system for the customer support team on **AWS**.
 - Converted and **structured** Jira operations manuals into Markdown, then built a **hybrid RAG pipeline** (BM25 + vector search) with **gpt-5.1-mini**; iterated on **prompt design** to deliver accurate natural language Q&A via a chat UI.
 - Extended beyond simple RAG chat to a full **customer support agent** with: automatic Jira ticket creation via Jira API integration, and auto-generation of customer-facing email drafts alongside RAG answers.
@@ -373,12 +373,12 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 - **ジョブ側での同時実行数制御**: インフラ構成には手を入れず、実行中のチャットターン数を数えて同時実行数に上限を設定。上限到達時はスレッドを保持せず、10秒後に再エンキューすることで、メール送信やLINE Webhook用の実行枠を確保。
 - **実利用データに基づくAI機能のプロダクト化**: 自由入力型AIチャットの会話制御、状態管理、エラー復旧、コスト制御を実装。回答品質だけでなく失敗時の復旧性、利用上限、既存システムとの共存まで設計し、KPI/KGIの定義と集計SQLによる継続評価まで含めてAI機能をプロダクト化。
 
-**教育系IT企業** — 共同研究員 / プロジェクトリーダー
+**Manaable 株式会社** — 共同研究員 / プロジェクトリーダー
 - **RAGシステム最適化の共同研究**: 共同研究のチーム開発では、Q&Aデータの個人情報部分のマスキング、連続した複数のマスキング済みデータを複数LLMで比較する検証、RAG用データ保存形式の検討という3ステップに分け、それぞれを1人ずつ担当して開発を進めた。自分はプロジェクトリードとして、これまでのRAGチャット開発の経験を活かし、3人それぞれの実装・設計・検証方針を横断的にサポートした。GitHubを使ってコードと実験内容をバージョン管理し、各担当の変更内容を確認しながら、チーム全体の実装方針をそろえた。
 - **特許出願中**: 本研究の成果をもとに特許を共同出願。
 - **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。 → [発表資料](https://project-kk.com/static/research/FIT発表資料.pdf)
 
-**教育系IT企業** — ソフトウェアエンジニアインターン（2か月）
+**Manaable 株式会社** — ソフトウェアエンジニアインターン（2か月）
 - 共同研究終了後、その成果を実際のプロダクトに落とし込むためにインターンとして参加。カスタマーサポートチーム向けの社内AIエージェントシステムを**AWS上**で設計・開発。
 - Jira上に蓄積された操作マニュアルをMarkdown形式に**変換・構造化**し、BM25とベクトル検索を組み合わせた**ハイブリッド検索RAGパイプライン**を構築。**gpt-5.1-mini**を用いた**プロンプト設計**を重ね、チャットUIから自然言語で問い合わせに回答できるシステムを実装。
 - 単純なRAGチャットにとどまらず、Jira API連携による問い合わせチケットの自動起票、RAG回答に加えた顧客向けメール文案の自動生成まで機能を拡張した**カスタマーサポートエージェント**として開発。
