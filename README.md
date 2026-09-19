@@ -164,6 +164,10 @@ I integrate AI tools across the full workflow — from research to documentation
 - **Job-side concurrency control**: Without changing the infrastructure configuration, limited simultaneous execution by counting active chat turns. When the limit was reached, the job was re-enqueued after 10 seconds without holding the thread, reserving capacity for email delivery and LINE Webhooks.
 - Used real usage data to identify issues and implemented conversation control, state management, error recovery, and cost control for free-form AI chat. Designed beyond answer quality to include failure recovery, usage limits, coexistence with existing systems, and continuous evaluation through KPI/KGI definitions and aggregation SQL, productizing the AI feature.
 
+**kubell** — Summer Intern
+- Experienced the full product development cycle, from identifying user problems and defining requirements through implementation and validation.
+- Used AI not merely for code generation but as a development method to accelerate implementation and verification, practicing user-value-driven MVP development.
+
 **Manaable Inc.** — Joint Researcher / Project Lead
 - **Lead Researcher for RAG System Optimization**: In the joint research team's development process, we divided the work into three steps: masking personally identifiable information in Q&A data, validating consecutive masked data by comparing results across multiple LLMs, and evaluating data storage formats for RAG. Each step was assigned to one team member. As project lead, I applied my prior experience developing RAG chat systems to support each member's implementation, design, and validation direction across the project. I also used GitHub to version-control code and experiment details, reviewed each member's changes, and aligned the team's overall implementation direction.
 - **Patent Pending**: Co-filed a patent based on findings from this research.
@@ -372,6 +376,10 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 - 本番環境のリポジトリで、専用ブランチを切ったチーム開発とコードレビューを行い、本番環境へのデプロイまで担当。
 - **ジョブ側での同時実行数制御**: インフラ構成には手を入れず、実行中のチャットターン数を数えて同時実行数に上限を設定。上限到達時はスレッドを保持せず、10秒後に再エンキューすることで、メール送信やLINE Webhook用の実行枠を確保。
 - **実利用データに基づくAI機能のプロダクト化**: 自由入力型AIチャットの会話制御、状態管理、エラー復旧、コスト制御を実装。回答品質だけでなく失敗時の復旧性、利用上限、既存システムとの共存まで設計し、KPI/KGIの定義と集計SQLによる継続評価まで含めてAI機能をプロダクト化。
+
+**kubell** — サマーインターン
+- ユーザー課題の特定から要件定義、実装、検証まで一貫して経験。
+- AIを単なるコード生成ではなく、実装・検証を高速化する開発手段として活用し、ユーザー価値を起点としたMVP開発を実践。
 
 **Manaable 株式会社** — 共同研究員 / プロジェクトリーダー
 - **RAGシステム最適化の共同研究**: 共同研究のチーム開発では、Q&Aデータの個人情報部分のマスキング、連続した複数のマスキング済みデータを複数LLMで比較する検証、RAG用データ保存形式の検討という3ステップに分け、それぞれを1人ずつ担当して開発を進めた。自分はプロジェクトリードとして、これまでのRAGチャット開発の経験を活かし、3人それぞれの実装・設計・検証方針を横断的にサポートした。GitHubを使ってコードと実験内容をバージョン管理し、各担当の変更内容を確認しながら、チーム全体の実装方針をそろえた。
