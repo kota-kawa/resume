@@ -159,7 +159,7 @@ I integrate AI tools across the full workflow — from research to documentation
 
 ## Experience
 **GMO Media** — AI Engineering Intern
-- Added a chat-based interaction format to an existing **AI butler** that supports users with account creation and operational questions.
+- Added a chat-based interaction format to an existing **AI butler** that supports users with course creation and operational questions.
 - Developed the feature as a team in the production repository using dedicated branches and collaborative code reviews, and deployed it to the production environment.
 - **Job-side concurrency control**: Without changing the infrastructure configuration, limited simultaneous execution by counting active chat turns. When the limit was reached, the job was re-enqueued after 10 seconds without holding the thread, reserving capacity for email delivery and LINE Webhooks.
 - Used real usage data to identify issues and implemented conversation control, state management, error recovery, and cost control for free-form AI chat. Designed beyond answer quality to include failure recovery, usage limits, coexistence with existing systems, and continuous evaluation through KPI/KGI definitions and aggregation SQL, productizing the AI feature.
@@ -372,7 +372,7 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 
 ## 経験
 **GMOメディア** — AIエンジニアインターン
-- ユーザーの口座作成や操作に関する質問をサポートする既存の**AI執事**に、チャット形式のインターフェースを追加。
+- ユーザーの講座作成や操作に関する質問をサポートする既存の**AI執事**に、チャット形式のインターフェースを追加。
 - 本番環境のリポジトリで、専用ブランチを切ったチーム開発とコードレビューを行い、本番環境へのデプロイまで担当。
 - **ジョブ側での同時実行数制御**: インフラ構成には手を入れず、実行中のチャットターン数を数えて同時実行数に上限を設定。上限到達時はスレッドを保持せず、10秒後に再エンキューすることで、メール送信やLINE Webhook用の実行枠を確保。
 - **実利用データに基づくAI機能のプロダクト化**: 自由入力型AIチャットの会話制御、状態管理、エラー復旧、コスト制御を実装。回答品質だけでなく失敗時の復旧性、利用上限、既存システムとの共存まで設計し、KPI/KGIの定義と集計SQLによる継続評価まで含めてAI機能をプロダクト化。
