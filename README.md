@@ -9,7 +9,7 @@
 - ✉️ Email: kota7kawagoe@gmail.com
 
 ## Live Services
-- **ChatCore-AI**: <https://chatcore-ai.com/> (AI Chat & Prompt Sharing)
+- **ChatCore-AI**: <https://chatcore-ai.com/> (Production AI Chat Platform & Prompt Sharing)
 - **FS-QR**: <https://fs-qr.net/> (File Sharing & QR)
 
 ### **Looking for: Roles in AI Application Engineering or Backend Systems.**
@@ -36,10 +36,10 @@ My value isn't just writing code — it's thinking through the business behind i
 - Summary: An LLM-powered browser automation agent wrapping `browser_use` with a **FastAPI** backend and **noVNC** web interface. Supports natural language control and WebArena benchmarking. WebArena Shopping task success rate: 32.6% (N=187; max steps=40; retries=4; same prompt setting).
 - Tech: Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
-### 2) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (AI Chat & Prompt Sharing)
-- Summary: An AI chat application built with FastAPI and Next.js. Features email authentication, Groq/Gemini API integration, and prompt sharing/search capabilities.
+### 2) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (Production AI Chat Platform)
+- Summary: A production AI chat platform built with FastAPI and Next.js and deployed at chatcore-ai.com. Implements streaming responses from multiple LLMs, web research and tool use, Tasks and Skills, persistent context, prompt sharing, and generative UI. Designed for production operation with Redis-backed session management, usage and cost controls, SSE error recovery, testing, and CI/CD.
 - Demo: <https://chatcore-ai.com/>
-- Tech: Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
+- Tech: Python, FastAPI, Next.js, React, TypeScript, PostgreSQL, Redis, Docker, Nginx, GitHub Actions, OpenAI/Anthropic/Groq APIs.
 
 ### 3) [Marmo-Core](https://github.com/kota-kawa/Marmo-Core) — (AI-Agent Resource Kernel)
 - Summary: A lightweight Python kernel for registering, retrieving, selecting, and safely executing AI-agent resources. Includes policy-gated execution, audit trails, deterministic mock runs, CLI tooling, and OpenAI-compatible/Anthropic LLM providers.
@@ -224,7 +224,7 @@ I integrate AI tools across the full workflow — from research to documentation
 - ✉️ Email：kota7kawagoe@gmail.com
 
 ## 実際に動いているサービス
-- **ChatCore-AI**: <https://chatcore-ai.com/> (AIチャット & プロンプト共有)
+- **ChatCore-AI**: <https://chatcore-ai.com/> (本番運用AIチャットプラットフォーム & プロンプト共有)
 - **FS-QR**: <https://fs-qr.net/> (ファイル共有 & QR)
 
 ### **志望：AIアプリケーションエンジニア / バックエンドシステム開発。**
@@ -251,10 +251,10 @@ AIとデザイン、そして英語でのコミュニケーション。これら
 - 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作とWebArenaベンチマーク評価に対応。WebArena Shoppingタスク成功率: 32.6% (N=187, 最大ステップ数=40, リトライ回数=4, 同一プロンプト設定)。
 - 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
-### 2) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (AIチャット & プロンプト共有)
-- 概要：FastAPIとNext.jsを用いたAIチャットアプリ。メール認証、Groq/Gemini API連携に加え、ユーザー間でプロンプトを共有・検索できる機能を搭載。
+### 2) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (本番運用AIチャットプラットフォーム)
+- 概要：FastAPIとNext.jsで構築し、実際に公開・運用しているAIチャットプラットフォーム。複数LLMのストリーミング応答、Web調査・ツール利用、Task / Skill、永続コンテキスト、プロンプト共有、生成UIを実装。Redisによるセッション管理、利用量・コスト制御、SSE障害時の復旧、テスト、CI/CDまで含め、本番運用を前提に設計・改善。
 - デモ：<https://chatcore-ai.com/>
-- 技術：Python (FastAPI), Next.js, PostgreSQL, Docker, Groq/Gemini API.
+- 技術：Python, FastAPI, Next.js, React, TypeScript, PostgreSQL, Redis, Docker, Nginx, GitHub Actions, OpenAI / Anthropic / Groq.
 
 ### 3) [Marmo-Core](https://github.com/kota-kawa/Marmo-Core) — (AIエージェント向けリソースカーネル)
 - 概要：AIエージェント向けリソースの登録・検索・選択・安全な実行を担う軽量なPythonカーネル。ポリシーによる実行制御、監査ログ、決定論的なモック実行、CLIツール、OpenAI互換／Anthropic LLMプロバイダーを備える。
