@@ -77,7 +77,7 @@ Through internships and independently operated services, I have worked across pr
 
 **Challenge**: The LLM agent frequently miscalculated dates and weekdays. For example, "Schedule lunch next Friday" would often be saved on the wrong day. Since LLMs are probabilistic text generators, even deterministic calculations like "how many days until next Friday" can vary with subtle differences in context. Prompt engineering alone hit a clear ceiling.
 
-**Solution**: Rather than having the LLM calculate dates by reasoning, I separated responsibilities: the LLM's role was narrowed to interpreting the user's natural language intent (e.g. identifying "next Friday" as a target weekday), while all actual date arithmetic was delegated to dedicated deterministic functions that always return the correct result. This made date handling reliable regardless of which model was used. Validated via a benchmark of 9 models (OpenAI, Anthropic, Gemini, Groq) across 10 tasks — a mid-tier model outperformed several frontier models, confirming that **reliability through design beats relying solely on model capability**.
+**Solution**: Rather than having the LLM calculate dates by reasoning, I separated responsibilities: the LLM's role was narrowed to interpreting the user's natural language intent (e.g. identifying "next Friday" as a target weekday), while all actual date arithmetic was delegated to dedicated deterministic functions that always return the correct result. This removed date arithmetic from the model's responsibilities. I also benchmarked 9 models (OpenAI, Anthropic, Gemini, Groq) across 10 tasks; a mid-tier model outperformed several frontier models under the same setup.
 
 ### 2. Production Failures — nginx Proxy Behavior and Deployment Readiness
 ([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI), [FS-QR](https://github.com/kota-kawa/fs-qr)) | Python / FastAPI / Next.js / Redis / nginx / Docker / GitHub Actions | Solo
@@ -132,9 +132,11 @@ This reinforced that **LLM cost optimization depends on prompt structure and the
 | Category | Technologies |
 | :--- | :--- |
 | **Programming Languages** | Python, TypeScript, SQL |
-| **Web / Application Frameworks** | FastAPI, React, Next.js, Tailwind CSS, PostgreSQL, Redis |
+| **Web / Application Frameworks** | FastAPI, React, Next.js, Tailwind CSS |
+| **Data Stores** | PostgreSQL, Redis |
 | **AI / LLM Engineering** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
-| **Infrastructure** | Docker, AWS (EC2, VPC, Systems Manager), Linux, Nginx, Git, GitHub Actions, pytest |
+| **Infrastructure** | Docker, AWS (EC2, VPC, Systems Manager), Linux, Nginx |
+| **Development / Testing** | Git, GitHub Actions, pytest |
 | **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
 | **AI Tools** | Codex, Claude Code, NotebookLM, Antigravity, Gemini, ChatGPT, Claude |
 
@@ -227,7 +229,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## 📝 Notes
-- Last updated: 2026-09-19
+- Last updated: 2026-09-23
 - License: All rights reserved
 
 <details>
@@ -310,7 +312,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 
 **苦労したこと**: LLMエージェントが日付・曜日の計算を頻繁に誤るという問題が発生した。「来週の金曜日にランチを入れて」と指示しても、別の日に登録されるケースが多発した。LLMは確率的なテキスト生成をベースにしており、「今日から何日後が来週の金曜か」という決定論的な計算でさえ文脈のゆれで答えがぶれる。プロンプト改善だけでは限界があり、根本的な設計変更が必要と判断した。
 
-**解決策**: LLMに日付を計算させるのをやめ、役割を分離した。LLMの担当はユーザーの自然言語の意図を読み取ること（「来週の金曜」がどの曜日を指すかを判断すること）に限定し、実際の日付計算は常に正しい結果を返す専用の決定論的な関数群に委ねる設計に変更した。これによりどのモデルを使っても日付処理が安定するようになった。OpenAI・Anthropic・Gemini・Groqの9モデルで10タスクのベンチマーク評価を実施し、中堅モデルが複数のフロンティアモデルを上回る精度を出せることも確認。**「モデルの性能だけに頼らず、設計で信頼性を担保する」** という判断の正しさを実証できた。
+**解決策**: LLMに日付を計算させるのをやめ、役割を分離した。LLMの担当はユーザーの自然言語の意図を読み取ること（「来週の金曜」がどの曜日を指すかを判断すること）に限定し、実際の日付計算は常に正しい結果を返す専用の決定論的な関数群に委ねる設計に変更した。これにより日付計算をモデルの役割から切り離した。また、OpenAI・Anthropic・Gemini・Groqの9モデルで10タスクのベンチマーク評価を実施し、同一条件下で中堅モデルが複数のフロンティアモデルを上回る精度を出した。
 
 ### 2. 本番環境で発覚した障害 — nginxの通信設定とデプロイ時の準備確認
 ([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI), [FS-QR](https://github.com/kota-kawa/fs-qr)) | Python / FastAPI / Next.js / Redis / nginx / Docker / GitHub Actions | 個人開発
@@ -365,9 +367,11 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 | カテゴリ | 技術 |
 | :--- | :--- |
 | **プログラミング言語** | Python, TypeScript, SQL |
-| **Web / アプリケーションフレームワーク** | FastAPI, React, Next.js, Tailwind CSS, PostgreSQL, Redis |
+| **Web / アプリケーションフレームワーク** | FastAPI, React, Next.js, Tailwind CSS |
+| **データストア** | PostgreSQL, Redis |
 | **AI / LLM エンジニアリング** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
-| **インフラ** | Docker, AWS (EC2, VPC, Systems Manager), Linux, Nginx, Git, GitHub Actions, pytest |
+| **インフラ** | Docker, AWS (EC2, VPC, Systems Manager), Linux, Nginx |
+| **開発・テスト** | Git, GitHub Actions, pytest |
 | **IoT / ハードウェア** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
 | **AIツール** | Codex, Claude Code, NotebookLM, Antigravity, Gemini, ChatGPT, Claude |
 
@@ -410,8 +414,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
   - **卒業論文**：[EN](https://project-kk.com/static/research/Graduation-Research-Paper-en.pdf) | [JP](https://project-kk.com/static/research/Graduation-Research-Paper-ja.pdf)
 - **University of North Alabama** — 交換留学プログラム修了
   - アラバマ州, 米国 | 2023年6月 – 2024年5月
-  - **栄誉**: **成績優秀者（Dean's
-  List）** 選出（2023年秋期、GPA: 3.75/4.0）
+  - **栄誉**: **成績優秀者（Dean's List）** 選出（2023年秋期、GPA: 3.75/4.0）
   - **実績**: **AI（人工知能）** 授業の最終プロジェクトでクラス**1位**（30人中）。OpenCV・TensorFlowで顔認証ログインシステムを開発。
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
@@ -460,6 +463,6 @@ Q&Aデータの個人情報マスキング、マスキング済みデータの�
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 📝 補足
-- 最終更新：2026-09-19
+- 最終更新：2026-09-23
 - ライセンス：All rights reserved
 </details>
