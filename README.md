@@ -164,11 +164,6 @@ I integrate AI tools across the full workflow — from research to documentation
 - Aimed to minimize report-writing time by breaking the reporting burden into four stages. Wrote and prioritized user stories, then reviewed and refined the problem and features in daily sprints. As a team, built report templates, AI-generated drafts from chat history, voice input, task management with assignees, deadlines, and progress tracking, and AI-generated image descriptions; then demoed the product.
 - Used AI not merely for code generation but also to accelerate implementation and verification, gaining end-to-end product development experience from discovering user problems through requirements definition, implementation, and validation.
 
-**Manaable Inc.** — Joint Researcher / Project Lead
-- **Lead Researcher for RAG System Optimization**: In the joint research team's development process, we divided the work into three steps: masking personally identifiable information in Q&A data, validating consecutive masked data by comparing results across multiple LLMs, and evaluating data storage formats for RAG. Each step was assigned to one team member. As project lead, I applied my prior experience developing RAG chat systems to support each member's implementation, design, and validation direction across the project. I also used GitHub to version-control code and experiment details, reviewed each member's changes, and aligned the team's overall implementation direction.
-- **Patent Pending**: Co-filed a patent based on findings from this research.
-- **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Presentation Slides](https://project-kk.com/static/research/FIT発表資料.pdf)
-
 **Manaable Inc.** — Software Engineering Intern
 - After completing the joint research, joined as an intern to bring its findings into production; designed and developed an in-house AI agent system for the customer support team on **AWS**.
 - Converted and **structured** Jira operations manuals into Markdown, then built a **hybrid RAG pipeline** (BM25 + vector search) with **gpt-5.1-mini**; iterated on **prompt design** to deliver accurate natural language Q&A via a chat UI.
@@ -208,6 +203,13 @@ I study how AI agents can select a task-relevant set of resources from large cat
 Presented research on an **AI Multi-Agent Orchestration System** in an English oral session. Developed a system integrating five specialized agents: **RAG**, **Web Operation**, **IoT**, **Scheduler**, and **Orchestrator**. Combining long- and short-term memory improved the overall evaluation score by about **1.7×**.
 
 → [Presentation slides](https://project-kk.com/static/research/NCSP-Presentation-EN.pdf)
+
+### RAG System Optimization — Joint Research at Manaable Inc.
+**Patent pending | FIT 2025 (Forum on Information Technology)**
+
+The three-person team organized the work into three stages: masking personally identifiable information in Q&A data, comparing multiple LLMs on consecutive masked data, and evaluating storage formats for RAG. As project lead, I coordinated implementation, design, and validation across the team, maintained code and experiment records in GitHub, reviewed changes, and aligned the overall approach. We presented the findings at FIT 2025, demonstrating improved response reliability, and co-filed a patent based on the research.
+
+→ [FIT 2025 presentation slides](https://project-kk.com/static/research/FIT発表資料.pdf)
 
 ## Activities
 
@@ -393,11 +395,6 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 - 「報告書作成時間の最小化」を目標に、報告負担を4段階に分解。ユーザーストーリーと優先順位を整理し、日次スプリントでレビューを受けて課題・機能を見直しながら、報告テンプレート、履歴からのAI下書き、音声入力、担当者・期限設定と進捗確認ができるタスク機能、画像へのAI説明付与をチームで開発・デモ。
 - AIをコード生成だけでなく実装・検証の高速化に活用し、ユーザー課題の発見から要件定義・実装・検証まで一貫したプロダクト開発を経験。
 
-**Manaable 株式会社** — 共同研究員 / プロジェクトリーダー
-- **RAGシステム最適化の共同研究**: 共同研究のチーム開発では、Q&Aデータの個人情報部分のマスキング、連続した複数のマスキング済みデータを複数LLMで比較する検証、RAG用データ保存形式の検討という3ステップに分け、それぞれを1人ずつ担当して開発を進めた。自分はプロジェクトリードとして、これまでのRAGチャット開発の経験を活かし、3人それぞれの実装・設計・検証方針を横断的にサポートした。GitHubを使ってコードと実験内容をバージョン管理し、各担当の変更内容を確認しながら、チーム全体の実装方針をそろえた。
-- **特許出願中**: 本研究の成果をもとに特許を共同出願。
-- **研究成果の発表**: FIT 2025（第24回情報科学技術フォーラム）にて本研究の成果を発表し、回答精度の向上を実証。 → [発表資料](https://project-kk.com/static/research/FIT発表資料.pdf)
-
 **Manaable 株式会社** — ソフトウェアエンジニアインターン
 - 共同研究終了後、その成果を実際のプロダクトに落とし込むためにインターンとして参加。カスタマーサポートチーム向けの社内AIエージェントシステムを**AWS上**で設計・開発。
 - Jira上に蓄積された操作マニュアルをMarkdown形式に**変換・構造化**し、BM25とベクトル検索を組み合わせた**ハイブリッド検索RAGパイプライン**を構築。**gpt-5.1-mini**を用いた**プロンプト設計**を重ね、チャットUIから自然言語で問い合わせに回答できるシステムを実装。
@@ -438,6 +435,13 @@ Memory / Skill / Tool / Agentを共通のリソースモデルで扱い、大規
 「AIマルチエージェント・オーケストレーションシステム」に関する研究成果を英語で口頭発表しました。RAG、Web操作、IoT、Scheduler、Orchestratorの5種類の専門エージェントを統合したシステムを開発し、長期・短期メモリを組み合わせた構成で総合評価スコアを約**1.7倍**に改善しました。
 
 → [発表資料](https://project-kk.com/static/research/NCSP-Presentation-EN.pdf)
+
+### RAGシステム最適化 — Manaable 株式会社との共同研究
+**特許出願中 | FIT 2025（第24回情報科学技術フォーラム）**
+
+Q&Aデータの個人情報マスキング、マスキング済みデータを複数LLMで比較する検証、RAG向けデータ保存形式の評価の3段階に分けて研究しました。3名のチームのプロジェクトリードとして、各メンバーの実装・設計・検証を支援し、GitHubでコードと実験内容を管理・レビューして全体方針をそろえました。研究成果をFIT 2025で発表し、回答精度の向上を実証しました。また、本研究の成果をもとに特許を共同出願しました。
+
+→ [FIT 2025発表資料](https://project-kk.com/static/research/FIT発表資料.pdf)
 
 ## 活動歴
 
