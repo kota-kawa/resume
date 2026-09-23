@@ -16,20 +16,18 @@
 
 ## Summary
 
-Software Engineer aiming to bring **Autonomous AI Agents** into real-world deployment by leveraging frontend and backend development experience.
+Software engineer and master's student at Keio University Graduate School of Media and Governance (SFC), researching AI agents while building and operating production web services.
 
-**Core Strength: AI × Design × English**
+My focus is the system design that connects LLMs to real applications. I work on selecting the right Memory, Skills, Tools, and Agents; safely executing external tools; managing conversational and user context; recovering from LLM and API failures; controlling inference cost and usage; and making AI features reliable in production.
 
-My strength lies in the combination of AI, design, and English communication. These three elements allow me to transform technology into tangible solutions at a high level.
+My current work spans three areas:
+- **Production AI applications**: Designing, building, and improving deployed services such as [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI).
+- **AI agent infrastructure**: Developing [Marmo-Core](https://github.com/kota-kawa/Marmo-Core), an open-source library for managing Memory, Skills, Tools, and Agents.
+- **AI agent research**: Studying Object Routing, which selects executable resource sets from large collections for AI agents.
 
-**Beyond Engineering: A Business-Minded Builder**
+Through internships and independently operated services, I have worked across problem discovery, requirements definition, design, implementation, testing, code review, production deployment, and evaluation using real usage data.
 
-My value isn't just writing code — it's thinking through the business behind it: where real-world demand exists, what it costs to run and sustain a service, and how to turn that into a viable product. This makes me well-suited to launching new ventures from zero to one, owning the full range from **hackathon-speed prototyping to stable, reliable production operation** (as shown by my live services still running today).
-
-**Experience:**
-- Developed a **Multi-Agent Orchestration System** (integrating Browser-Agent, **IoT-Agent**, etc.) to bridge digital tasks with real-world physical feedback.
-- Optimized **long/short-term memory** management, improving task success rates by **1.7x**.
-- Presented research findings in an English oral session at **NCSP'26** (Honolulu, Hawaii).
+For my undergraduate thesis, I built a multi-agent orchestration system integrating specialized agents for RAG, browser automation, scheduling, and IoT. Combining long- and short-term memory improved the overall evaluation score by about **1.7×**. I presented the research in English at **NCSP'26** in Honolulu, Hawaii.
 
 ## Key Projects (recommended order)
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
@@ -231,20 +229,18 @@ I integrate AI tools across the full workflow — from research to documentation
 
 ## サマリー
 
-これまでのフロントエンド/バックエンド開発経験を活かし、**自律型AIエージェント**の社会実装を目指すソフトウェアエンジニア。
+慶應義塾大学大学院SFCでAIエージェントを研究する傍ら、AIシステムの研究から本番Webサービスの設計・開発・運用まで取り組むソフトウェアエンジニアです。
 
-**強み：AI × デザイン × 英語**
+関心の中心は、LLMそのものだけでなく、LLMを実用的なアプリケーションにつなぐシステム設計です。必要なMemory / Skill / Tool / Agentの選択、安全な外部ツール実行、会話やユーザーコンテキストの管理、LLM・外部APIの障害からの復旧、推論コストや利用量の制御などに取り組み、AI機能を本番環境で安定して運用できる形にします。
 
-AIとデザイン、そして英語でのコミュニケーション。これら3つの要素を高い次元で組み合わせ、技術を形にできることが私の強みです。
+現在は、次の3領域を軸に活動しています。
+- **本番AIアプリケーション**：[ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)など、公開・運用中のAIサービスの設計・開発・改善。
+- **AIエージェント基盤**：Memory / Skill / Tool / Agentを統一的に扱うOSSライブラリ[Marmo-Core](https://github.com/kota-kawa/Marmo-Core)の開発。
+- **AIエージェント研究**：大規模なリソース群から実行可能なリソース集合を選択するObject Routingの研究。
 
-**エンジニアリングを超えて：ビジネス視点を持つ開発者**
+インターンや個人サービスを通じて、課題発見・要件定義・設計・実装・テスト・コードレビュー・本番デプロイ・実利用データに基づく評価まで経験しています。
 
-私の価値は、ただコードを書くことではなく、その先にあるビジネスを考えられることにあります。世の中のどこに本当の需要があるのか、サービスの運用・維持にどれだけのコストがかかるのか、それをいかに成立するプロダクトへ落とし込むかまでを見据えます。だからこそゼロからの**新規事業の立ち上げ**を得意とし、**ハッカソン的な素早いプロトタイピングから、安定した本番運用まで**を一気通貫で担えます（現在も稼働を続ける各サービスがその実績です）。
-
-**エピソード：**
-- **マルチエージェント・オーケストレーションシステム**を開発（Browser-Agentや**IoT-Agent**等を統合）。Web完結に留まらず、ハードウェアを介した実世界へのフィードバックまでを実現。
-- **長期・短期メモリの最適化**により、タスク成功率を**1.7倍**に改善。
-- 国際会議 **NCSP'26**（ハワイ）にて、本成果を英語で口頭発表。
+学部の卒業研究では、RAG・ブラウザ操作・スケジューリング・IoTなどの専門エージェントを統合するマルチエージェントシステムを開発しました。長期・短期メモリを組み合わせた構成で総合評価スコアを約**1.7倍**に改善し、研究成果を**NCSP'26**（米国・ホノルル）で英語口頭発表しました。
 
 ## 主要プロジェクト（おすすめ順）
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
