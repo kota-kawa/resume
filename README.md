@@ -2,19 +2,19 @@
 
 # Resume — Kota Kawagoe
 
-## Download
+## 📄 Download
 - 📄 Resume (PDF): [JP](https://project-kk.com/static/pdf/resume-jp.pdf) | [EN](https://project-kk.com/static/pdf/resume-en.pdf)
 - 🌐 Portfolio: <https://project-kk.com/>
 - 💼 LinkedIn: <https://www.linkedin.com/in/kota-kawa/>
 - ✉️ Email: kota7kawagoe@gmail.com
 
-## Live Services
+## 🚀 Live Services
 - **ChatCore-AI**: <https://chatcore-ai.com/> (Production AI Chat Platform & Prompt Sharing)
 - **FS-QR**: <https://fs-qr.net/> (File Sharing & QR)
 
 ### **Looking for: Roles in AI Application Engineering or Backend Systems.**
 
-## Summary
+## 👤 Summary
 
 Software engineer and master's student at Keio University Graduate School of Media and Governance (SFC), researching AI agents while building and operating production web services.
 
@@ -26,7 +26,7 @@ My current work spans two areas:
 
 Through internships and independently operated services, I have worked across problem discovery, requirements definition, design, implementation, testing, code review, production deployment, and evaluation using real usage data.
 
-## Key Projects (recommended order)
+## 🧩 Key Projects (recommended order)
 ### 1) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (Production AI Chat Platform)
 - Summary: A production AI chat platform built with FastAPI and Next.js and deployed at chatcore-ai.com. Implements streaming responses from multiple LLMs, web research and tool use, Tasks and Skills, persistent context, prompt sharing, and generative UI. Designed for production operation with Redis-backed session management, usage and cost controls, SSE error recovery, testing, and CI/CD.
 - Demo: <https://chatcore-ai.com/>
@@ -125,9 +125,36 @@ ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study 
 
 **Solution**: Identified that the health check within the deployment script was too superficial (only checking if the container was up) or missing a sufficient "warm-up" wait. I improved the deployment flow by adding a robust health check loop that polls the specific application endpoint (e.g., `/health`) of the new container. Only after receiving a successful 200 OK response from the application itself does the script update the nginx configuration and reload the service. This ensured that traffic is only routed to fully initialized instances, eliminating the momentary 500 errors. The experience highlighted that **"container ready" does not mean "application ready"** and reinforced the need for application-level health validation in CI/CD pipelines.
 
+### 8. Recovering Long LLM Streams Without Losing or Duplicating Output
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | Python / FastAPI / SSE / Redis / LLM APIs | Solo
+
+**Challenge**: Long chats involving web research and multiple tool calls could hit output limits or fail mid-stream because of transient API errors. Retrying the whole request risked repeating text already shown to the user or executing tools twice, while partial answers could be lost.
+
+**Solution**: Separated recovery by whether a step had been shown to the user. Buffered each unshown research step per attempt and discarded it before a safe retry. For streamed final answers, passed the generated text back as context and requested only a continuation, with a retry limit. Detected overlap when a model restarted from the beginning to prevent duplicate text. If generation still failed, preserved the partial answer and notified the client with an `incomplete` status.
+
+This led me to design streaming recovery around **what output or side effects have already reached the user or external systems**, as well as whether a request can be retried.
+
+### 9. Provider-Specific Tool Calling Schemas Causing Chat Failures
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | Python / FastAPI / OpenAI-compatible APIs / Anthropic / Tool Calling | Solo
+
+**Challenge**: Reusing the same tool definition across LLM providers caused failures when some OpenAI-compatible providers strictly validated generated arguments against JSON Schema. For example, a model could return the common language code `ja` while the search API required `jp`; missing required fields or extra fields could also stop the entire turn.
+
+**Solution**: Relaxed constraints such as `enum` and strict `required` fields in the provider-facing schema, then centralized validation and normalization in the application, including language codes and date ranges, with safe defaults where possible. Classified provider tool-call rejections separately from API failures and retried only the affected step without the tool, allowing the conversation to continue.
+
+This showed that **tool schemas should guide model output, while the application owns authoritative validation and normalization**.
+
+### 10. Low Prompt Cache Hits — Reducing Cost Through Prompt Structure
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | LLM APIs / Prompt Engineering / Cost Optimization | Solo
+
+**Challenge**: Long chats repeatedly sent the same history to LLMs, increasing input costs, yet prompt caches from OpenAI, Anthropic, and Groq rarely hit. Dynamic values such as the current time and per-step `TurnState` appeared near the start of the prompt, breaking the matching prefix and invalidating the cache for everything after them.
+
+**Solution**: Reordered prompts as fixed instructions, conversation history, changing turn state, and the latest user input. Kept tool definitions stable within a turn where possible. Encapsulated provider-specific cache behavior in the LLM adapter and included cache read/write price differences in usage tracking.
+
+This reinforced that **LLM cost optimization depends on prompt structure and the placement of changing content, as well as model choice and token count**.
+
 </details>
 
-## Skills
+## 🛠️ Skills
 | Category | Technologies |
 | :--- | :--- |
 | **Programming Languages** | Python, TypeScript, SQL |
@@ -152,26 +179,24 @@ I integrate AI tools across the full workflow — from research to documentation
 </details>
 
 
-## Experience
+## 💼 Experience
 **GMO Media** — AI Engineering Intern
-- Developed chat functionality for the existing **AI butler** while preserving its choice-based flow. Focused on AI dialogue control, prompt design, and reliability; implemented adaptive conversations for changing goals or missing information, progress display and state recovery, duplicate-submission prevention and retries, and usage and cost controls.
-- Completed the end-to-end development cycle through production deployment as part of a team, using dedicated branches and code reviews in the production repository.
-- **Job-side concurrency control**: Without changing the infrastructure configuration, limited simultaneous execution by counting active chat turns. When the limit was reached, the job was re-enqueued after 10 seconds without holding the thread, reserving capacity for email delivery and LINE Webhooks.
-- **AI feature evaluation grounded in real usage data**: Analyzed usage history from the choice-based AI butler and worked with the team to define a KPI/KGI framework for comparing completion and action-execution rates between the choice-based flow and the new chat flow. Prepared MySQL aggregation SQL with a 48-hour evaluation rule.
+- **AI butler chat feature**: Added chat while preserving the existing choice-based flow. Owned conversation control, prompt design, and reliability; implemented support for changing goals and missing information, progress display and state recovery, duplicate-submission prevention and retries, and usage and cost limits.
+- **Team development and production delivery**: Worked in the production repository on dedicated branches, participated in code reviews, and carried the feature through production deployment.
+- **Chat processing concurrency control**: Kept infrastructure unchanged and capped concurrent chat turns. At the limit, released the worker thread and re-enqueued the chat job after 10 seconds, reserving capacity for email delivery and LINE webhooks.
+- **Evaluation using real usage data**: Analyzed choice-based AI butler usage and defined, with the team, KPIs/KGIs comparing completion and action-execution rates across choice-based and chat flows. Prepared MySQL aggregation SQL with a 48-hour evaluation rule.
 
 **kubell** — Summer Intern
-- Through interviews with model users in the construction industry, organized their operational challenges and identified the burden and inconsistency of entering field reports as the highest-priority issue among a wide range of needs.
-- Aimed to minimize report-writing time by breaking the reporting burden into four stages. Wrote and prioritized user stories, then reviewed and refined the problem and features in daily sprints. As a team, built report templates, AI-generated drafts from chat history, voice input, task management with assignees, deadlines, and progress tracking, and AI-generated image descriptions; then demoed the product.
-- Used AI not merely for code generation but also to accelerate implementation and verification, gaining end-to-end product development experience from discovering user problems through requirements definition, implementation, and validation.
+- **Problem discovery**: Interviewed model users in the construction industry, synthesized their operational challenges, and prioritized the burden and inconsistent quality of field-report entry.
+- **Requirements and team development**: Targeted shorter report-writing time by breaking the workflow into four stages and prioritizing user stories. Refined the problem and features through daily sprint reviews, then built and demoed report templates, AI drafts from chat history, voice input, task management with assignees, deadlines, and progress tracking, and AI-generated image descriptions.
+- **AI-assisted delivery**: Used AI to accelerate implementation and validation as well as code generation, contributing end-to-end from user-problem discovery and requirements definition through implementation and validation.
 
 **Manaable Inc.** — Software Engineering Intern
-- After completing the joint research, joined as an intern to bring its findings into production; designed and developed an in-house AI agent system for the customer support team on **AWS**.
-- Converted and **structured** Jira operations manuals into Markdown, then built a **hybrid RAG pipeline** (BM25 + vector search) with **gpt-5.1-mini**; iterated on **prompt design** to deliver accurate natural language Q&A via a chat UI.
-- Extended beyond simple RAG chat to a full **customer support agent** with: automatic Jira ticket creation via Jira API integration, and auto-generation of customer-facing email drafts alongside RAG answers.
-- Ran daily discussions with the customer support team to iteratively refine **requirements and response quality** end-to-end.
-- **Branch-based workflow & PR reviews**: Developed each feature on a dedicated `feature/*` or `fix/*` branch; opened **Pull Requests** with clear descriptions before merging, and acted as reviewer for teammates' PRs — leaving structured feedback to maintain code quality and consistency across the codebase.
+- **System design and development**: Joined as an intern after the joint research to bring its findings into production, designing and developing an internal AI agent for the customer support team on **AWS**.
+- **Hybrid RAG pipeline**: Converted and structured Jira operations manuals into Markdown, then built a **BM25 + vector search** pipeline. Refined prompts for **gpt-5.1-mini** and delivered natural-language Q&A through a chat UI.
+- **Workflow integration and iteration**: Added automatic ticket creation through the Jira API and customer-facing email drafts alongside RAG answers. Worked with the support team in daily discussions, iterating from requirements definition through response-quality improvement.
 
-## Education
+## 🎓 Education
 - **Keio University Graduate School, SFC (Shonan Fujisawa Campus)** — M.S. in Cyber Informatics, Graduate School of Media and Governance
   - Kanagawa, Japan | Apr 2026 –
 - **Kanagawa Institute of Technology** — B.S. in Information Network and Communication, Faculty of Information Technology
@@ -183,7 +208,7 @@ I integrate AI tools across the full workflow — from research to documentation
   - **Achievement**: **1st out of 30** in the **AI (Artificial Intelligence)** course final project — built a face recognition login system using OpenCV & TensorFlow.
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
-## Research
+## 🔬 Research
 
 ### Object Routing — Current Research
 **Research repository:** [Marmo-Core](https://github.com/kota-kawa/Marmo-Core)
@@ -207,13 +232,13 @@ Presented research on an **AI Multi-Agent Orchestration System** in an English o
 ### RAG System Optimization — Joint Research at Manaable Inc.
 **Patent pending | FIT 2025 (Forum on Information Technology)**
 
-The three-person team organized the work into three stages: masking personally identifiable information in Q&A data, comparing multiple LLMs on consecutive masked data, and evaluating storage formats for RAG. As project lead, I coordinated implementation, design, and validation across the team, maintained code and experiment records in GitHub, reviewed changes, and aligned the overall approach. We presented the findings at FIT 2025, demonstrating improved response reliability, and co-filed a patent based on the research.
+The research examined three areas: masking personally identifiable information in Q&A data, validating masked data with multiple LLMs, and evaluating storage formats for RAG. The findings, including improved answer accuracy, were presented at FIT 2025 and led to a co-filed patent.
 
 **FIT 2025 paper (F-029):** [On Database Structures for Retrieval-Augmented Generation in AI Chatbots](https://www.ieice.org/publications/conference-FIT-DVDs/FIT2025/data/html/program/pdf/F-029.pdf)
 
 **Presentation slides:** [FIT 2025 presentation](https://project-kk.com/static/research/FIT発表資料.pdf)
 
-## Activities
+## 🏆 Activities
 
 ### Matsuo Lab (The University of Tokyo) Programs & Competitions (2024–2025)
 - **LLM Course Final Project & Competition**: Developed fine-tuned models using **LoRA SFT** and **DPO**, achieving a **top 4% (70 / 1800) ranking**. Featured model: [Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3).
@@ -223,11 +248,11 @@ The three-person team organized the work into three stages: masking personally i
 ### Gemini 3 Tokyo Hackathon 2026
 Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
 
-## Language
+## 🌐 Language
 - **Japanese**: Native
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
-## Notes
+## 📝 Notes
 - Last updated: 2026-09-19
 - License: All rights reserved
 
@@ -236,19 +261,19 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 
 # Resume（職務経歴/履歴書） — 川越 航太
 
-## ダウンロード
+## 📄 ダウンロード
 - 📄 Resume（PDF）：[JP](https://project-kk.com/static/pdf/resume-jp.pdf) | [EN](https://project-kk.com/static/pdf/resume-en.pdf)
 - 🌐 Portfolio：<https://project-kk.com/>
 - 💼 LinkedIn：<https://www.linkedin.com/in/kota-kawa/>
 - ✉️ Email：kota7kawagoe@gmail.com
 
-## 実際に動いているサービス
+## 🚀 実際に動いているサービス
 - **ChatCore-AI**: <https://chatcore-ai.com/> (本番運用AIチャットプラットフォーム & プロンプト共有)
 - **FS-QR**: <https://fs-qr.net/> (ファイル共有 & QR)
 
 ### **志望：AIアプリケーションエンジニア / バックエンドシステム開発。**
 
-## サマリー
+## 👤 サマリー
 
 慶應義塾大学大学院SFCでAIエージェントを研究する傍ら、AIシステムの研究から本番Webサービスの設計・開発・運用まで取り組むソフトウェアエンジニアです。
 
@@ -260,7 +285,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 
 インターンや個人サービスを通じて、課題発見・要件定義・設計・実装・テスト・コードレビュー・本番デプロイ・実利用データに基づく評価まで経験しています。
 
-## 主要プロジェクト（おすすめ順）
+## 🧩 主要プロジェクト（おすすめ順）
 ### 1) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (本番運用AIチャットプラットフォーム)
 - 概要：FastAPIとNext.jsで構築し、実際に公開・運用しているAIチャットプラットフォーム。複数LLMのストリーミング応答、Web調査・ツール利用、Task / Skill、永続コンテキスト、プロンプト共有、生成UIを実装。Redisによるセッション管理、利用量・コスト制御、SSE障害時の復旧、テスト、CI/CDまで含め、本番運用を前提に設計・改善。
 - デモ：<https://chatcore-ai.com/>
@@ -359,9 +384,36 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 
 **解決策**: デプロイスクリプトに、アプリケーションレベルでのヘルスチェック待ち処理を追加した。単にコンテナの起動を待つのではなく、アプリケーションが提供する特定のヘルスチェックエンドポイント（`/health`など）に対してポーリングを行い、実際に200 OKが返ってくることを確認してからnginxの向き先を切り替えるようにフローを改善した。これにより、完全に準備が整ったインスタンスのみにトラフィックが流れるようになり、切り替え時のエラーを完全に解消できた。**「コンテナの起動」と「アプリケーションの準備完了」は別物である**という教訓を得るとともに、CI/CDパイプラインにおける実用的なヘルスチェックの重要性を再認識した。
 
+### 8. 長時間LLM生成の途中切れ・再試行・重複実行への対処
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | Python / FastAPI / SSE / Redis / LLM API | 個人開発
+
+**苦労したこと**: Web検索や複数回のツール利用を伴う長時間のチャットでは、出力上限や一時的なAPI障害により生成が途中で止まることがあった。リクエスト全体を再実行すると、ユーザーに表示済みの文章やツール呼び出しが重複し、途中までの回答が失われる場合もあった。
+
+**解決策**: ユーザーへの表示前後で回復方法を分けた。未表示の調査ステップは試行単位でバッファし、失敗時に破棄して安全に再実行。表示を始めた最終回答は、生成済み本文を履歴として渡して続きだけを回数制限付きで生成し、先頭から再生成された場合は重複部分を検出して除去した。完了できない場合も途中までの本文を保存し、クライアントへ`incomplete`状態を通知した。
+
+ストリーミングの障害回復では、再試行の可否に加え、**ユーザーや外部システムに出た出力・副作用をどこまで戻せるか**を考慮して設計する必要があると学んだ。
+
+### 9. LLMプロバイダごとのTool Calling仕様差によるチャット失敗
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | Python / FastAPI / OpenAI互換API / Anthropic / Tool Calling | 個人開発
+
+**苦労したこと**: 同じTool定義を複数プロバイダへ渡したところ、一部のOpenAI互換プロバイダが生成引数をJSON Schemaで厳格に検証し、形式のわずかな違いでチャット全体が失敗した。例えば検索APIが`jp`を要求する言語指定で、モデルが一般的な`ja`を返すと拒否された。必須項目の欠落や余分な項目でも同様にターンが停止する可能性があった。
+
+**解決策**: Adapter層では`enum`や厳格な`required`などの制約を緩め、Tool Schemaをモデルへの誘導として扱った。入力検証・正規化はアプリケーション側に集約し、言語コードや期間指定を整え、不正値には可能な範囲で安全な既定値を適用した。プロバイダによるTool Call拒否は通常のAPI障害と分けて扱い、該当ステップだけToolなしで再実行して会話を継続できるようにした。
+
+この経験から、**モデルへのTool Schemaとアプリケーション側の厳密な入力検証を分離すること**が可用性のために重要だと学んだ。
+
+### 10. Prompt Cacheの低い命中率 — プロンプト構造によるコスト最適化
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | LLM API / プロンプト設計 / コスト最適化 | 個人開発
+
+**苦労したこと**: 長い会話では同じ履歴を繰り返しLLMへ送るため入力コストが増える一方、OpenAI・Anthropic・GroqのPrompt Cacheがほとんど命中しなかった。現在時刻や各ステップで変わる`TurnState`をプロンプトの先頭近くに置いていたため、キャッシュが必要とするprefix一致が崩れ、その後の内容も再利用されなかった。
+
+**解決策**: プロンプトを「固定指示 → 会話履歴 → 変化するターン状態 → 最新のユーザー入力」の順に再構成し、可能な範囲で1ターン中のTool定義も固定した。プロバイダごとのキャッシュ方式をLLM Adapter層に集約し、キャッシュ読み書きの料金差も利用量計測に反映した。
+
+この経験から、**LLMのコストはモデルやトークン数だけでなく、変化する情報をプロンプトのどこに置くかにも左右される**と学んだ。
+
 </details>
 
-## スキル
+## 🛠️ スキル
 | カテゴリ | 技術 |
 | :--- | :--- |
 | **プログラミング言語** | Python, TypeScript, SQL |
@@ -385,26 +437,24 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 
 </details>
 
-## 経験
+## 💼 経験
 **GMOメディア** — AIエンジニアインターン
-- 既存の選択式フローと共存する**AI執事**のチャット機能を開発。AI会話制御・プロンプト・堅牢性を担当し、希望変更や情報不足に対応する対話、進捗表示・状態復元、二重送信防止・エラー時の再試行、利用上限・コスト制御を実装。
-- 本番環境のリポジトリで、専用ブランチを切ったチーム開発とコードレビューを行い、本番環境へのデプロイまでの一連の開発工程を完走。
-- **ジョブ側での同時実行数制御**: インフラ構成には手を入れず、実行中のチャットターン数を数えて同時実行数に上限を設定。上限到達時はスレッドを保持せず、10秒後に再エンキューすることで、メール送信やLINE Webhook用の実行枠を確保。
-- **実利用データに基づくAI機能の評価設計**: 選択式AI執事の利用履歴を分析し、チャット導入後の完了率・アクション実行率を比較するKPI/KGIをチームで定義。48時間の判定ルールを含むMySQL集計SQLを整備。
+- **AI執事のチャット機能**：既存の選択式フローを保ちながらチャット機能を追加。会話制御・プロンプト・堅牢性を担当し、希望変更や情報不足への対応、進捗表示・状態復元、二重送信防止・エラー時の再試行、利用上限・コスト制御を実装。
+- **チーム開発・本番リリース**：本番リポジトリで専用ブランチを使ってチーム開発し、コードレビューを経て本番デプロイまで担当。
+- **チャット処理の同時実行制御**：インフラ設定を変えず、実行中のチャットターン数に上限を設定。上限到達時はワーカースレッドを解放してジョブを10秒後にキューへ戻し、メール送信・LINE Webhook用の処理枠を確保。
+- **実利用データによる効果測定**：選択式AI執事の利用履歴を分析し、選択式とチャット式の完了率・アクション実行率を比較するKPI/KGIをチームで定義。48時間の判定ルールを組み込んだMySQL集計SQLを整備。
 
 **kubell** — サマーインターン
-- 建設業のモデルユーザーへのヒアリングから業務課題を整理し、幅広い課題の中から「現場からの報告業務」の入力負担・品質のばらつきを重点課題として特定。
-- 「報告書作成時間の最小化」を目標に、報告負担を4段階に分解。ユーザーストーリーと優先順位を整理し、日次スプリントでレビューを受けて課題・機能を見直しながら、報告テンプレート、履歴からのAI下書き、音声入力、担当者・期限設定と進捗確認ができるタスク機能、画像へのAI説明付与をチームで開発・デモ。
-- AIをコード生成だけでなく実装・検証の高速化に活用し、ユーザー課題の発見から要件定義・実装・検証まで一貫したプロダクト開発を経験。
+- **課題発見**：建設業のモデルユーザーへのヒアリングから業務課題を整理し、現場報告の入力負担と品質のばらつきを優先課題として特定。
+- **要件定義・チーム開発**：「報告書作成時間の最小化」を目標に、報告業務を4段階に分解。ユーザーストーリーと優先度を整理し、日次スプリントのレビューを通じて課題・機能を見直しながら、報告テンプレート、履歴からのAI下書き、音声入力、担当者・期限・進捗を管理するタスク機能、画像へのAI説明付与をチームで開発・デモ。
+- **AI活用・一貫開発**：AIをコード生成だけでなく実装・検証の効率化にも活用し、課題発見から要件定義・実装・検証まで一貫して経験。
 
 **Manaable 株式会社** — ソフトウェアエンジニアインターン
-- 共同研究終了後、その成果を実際のプロダクトに落とし込むためにインターンとして参加。カスタマーサポートチーム向けの社内AIエージェントシステムを**AWS上**で設計・開発。
-- Jira上に蓄積された操作マニュアルをMarkdown形式に**変換・構造化**し、BM25とベクトル検索を組み合わせた**ハイブリッド検索RAGパイプライン**を構築。**gpt-5.1-mini**を用いた**プロンプト設計**を重ね、チャットUIから自然言語で問い合わせに回答できるシステムを実装。
-- 単純なRAGチャットにとどまらず、Jira API連携による問い合わせチケットの自動起票、RAG回答に加えた顧客向けメール文案の自動生成まで機能を拡張した**カスタマーサポートエージェント**として開発。
-- 実際にカスタマーサポートチームに使ってもらいながら、毎日ディスカッションを重ねて**要件定義から応答品質の改善**までを反復的に実施。
-- **ブランチ戦略・PRレビュー**: 機能ごとに `feature/*` / `fix/*` ブランチを切って開発し、変更内容を明記した **Pull Request** を通じてコードレビューを実施。レビュアーとしてもチームメンバーのPRに構造的なフィードバックを行い、マージ前のコード品質と実装方針の一貫性を担保した。
+- **設計・開発**：共同研究の成果をプロダクト化するためインターンに参加し、AWS上でカスタマーサポート向け社内AIエージェントを設計・開発。
+- **ハイブリッドRAG**：Jiraの操作マニュアルをMarkdown化・構造化し、BM25とベクトル検索を組み合わせたパイプラインを構築。`gpt-5.1-mini`のプロンプトを調整し、チャットUIで自然言語の問い合わせに回答。
+- **機能拡張・改善**：Jira APIによる問い合わせチケットの自動起票と、RAG回答に添える顧客向けメール文案の生成を実装。サポートチームと毎日議論し、要件定義から応答品質まで反復改善。
 
-## 学歴
+## 🎓 学歴
 - **慶應義塾大学大学院 湘南藤沢キャンパス（SFC）** — 政策・メディア研究科 サイバーインフォマティクス専攻 修士課程
   - 神奈川県 | 2026年4月 –
 - **神奈川工科大学** — 情報学部 情報ネットワークコミュニケーション学科 学士
@@ -417,7 +467,7 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
   - **実績**: **AI（人工知能）** 授業の最終プロジェクトでクラス**1位**（30人中）。OpenCV・TensorFlowで顔認証ログインシステムを開発。
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
-## 研究
+## 🔬 研究
 
 ### Object Routing（現在の研究）
 **研究リポジトリ：** [Marmo-Core](https://github.com/kota-kawa/Marmo-Core)
@@ -441,13 +491,13 @@ Memory / Skill / Tool / Agentを共通のリソースモデルで扱い、大規
 ### RAGシステム最適化 — Manaable 株式会社との共同研究
 **特許出願中 | FIT 2025（第24回情報科学技術フォーラム）**
 
-Q&Aデータの個人情報マスキング、マスキング済みデータを複数LLMで比較する検証、RAG向けデータ保存形式の評価の3段階に分けて研究しました。3名のチームのプロジェクトリードとして、各メンバーの実装・設計・検証を支援し、GitHubでコードと実験内容を管理・レビューして全体方針をそろえました。研究成果をFIT 2025で発表し、回答精度の向上を実証しました。また、本研究の成果をもとに特許を共同出願しました。
+Q&Aデータの個人情報マスキング、マスキング済みデータの複数LLMによる検証、RAG向けデータ保存形式の評価を実施しました。回答精度の向上を含む研究成果をFIT 2025で発表し、成果をもとに特許を共同出願しました。
 
 **FIT 2025論文（F-029）：** [RAG として AIChatBot に与えるデータベースの構造に関する一考察](https://www.ieice.org/publications/conference-FIT-DVDs/FIT2025/data/html/program/pdf/F-029.pdf)
 
 **発表資料：** [FIT 2025発表資料](https://project-kk.com/static/research/FIT発表資料.pdf)
 
-## 活動歴
+## 🏆 活動歴
 
 ### 松尾研究室（東京大学）関連プログラム・コンペティション（2024年–2025年）
 - **LLM講座 最終プロジェクト & コンペティション**: LoRA SFTおよびDPOを用いたモデルを開発し、コンペティションにて上位4% (70 / 1800) に入賞。開発モデル：[Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
@@ -457,11 +507,11 @@ Q&Aデータの個人情報マスキング、マスキング済みデータを�
 ### Gemini 3 東京ハッカソン 2026
 **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させました。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
 
-## 語学
+## 🌐 語学
 - **日本語**: ネイティブ
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
-## 補足
+## 📝 補足
 - 最終更新：2026-09-19
 - ライセンス：All rights reserved
 </details>
