@@ -186,7 +186,7 @@ I integrate AI tools across the full workflow — from research to documentation
 ## Research
 
 ### Object Routing — Current Research
-**Repository:** `Object-Routing-Research`
+**Research repository:** [Marmo-Core](https://github.com/kota-kawa/Marmo-Core)
 
 I study how AI agents can select a task-relevant set of resources from large catalogs. Memory, Skills, Tools, and Agents are represented through a common resource model. Beyond retrieval relevance, routing must account for whether the selected resources are necessary and can be executed safely, considering dependencies, conflicts, and permissions.
 
@@ -418,7 +418,7 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 ## 研究
 
 ### Object Routing（現在の研究）
-**リポジトリ：** `Object-Routing-Research`
+**研究リポジトリ：** [Marmo-Core](https://github.com/kota-kawa/Marmo-Core)
 
 Memory / Skill / Tool / Agentを共通のリソースモデルで扱い、大規模なカタログからタスク実行に必要なリソース集合を選択するObject Routingを研究しています。検索精度に加え、選択したリソースを安全に実行できるかを、依存関係・競合制約・実行権限まで含めて判断します。
 
