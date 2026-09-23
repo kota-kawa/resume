@@ -27,18 +27,18 @@ My current work spans two areas:
 Through internships and independently operated services, I have worked across problem discovery, requirements definition, design, implementation, testing, code review, production deployment, and evaluation using real usage data.
 
 ## Key Projects (recommended order)
-### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
-- Summary: An LLM-powered browser automation agent wrapping `browser_use` with a **FastAPI** backend and **noVNC** web interface. Supports natural language control and WebArena benchmarking. WebArena Shopping task success rate: 32.6% (N=187; max steps=40; retries=4; same prompt setting).
-- Tech: Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
-
-### 2) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (Production AI Chat Platform)
+### 1) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (Production AI Chat Platform)
 - Summary: A production AI chat platform built with FastAPI and Next.js and deployed at chatcore-ai.com. Implements streaming responses from multiple LLMs, web research and tool use, Tasks and Skills, persistent context, prompt sharing, and generative UI. Designed for production operation with Redis-backed session management, usage and cost controls, SSE error recovery, testing, and CI/CD.
 - Demo: <https://chatcore-ai.com/>
 - Tech: Python, FastAPI, Next.js, React, TypeScript, PostgreSQL, Redis, Docker, Nginx, GitHub Actions, OpenAI/Anthropic/Groq APIs.
 
-### 3) [Marmo-Core](https://github.com/kota-kawa/Marmo-Core) — (AI-Agent Resource Kernel)
+### 2) [Marmo-Core](https://github.com/kota-kawa/Marmo-Core) — (AI-Agent Resource Kernel)
 - Summary: A lightweight Python kernel for registering, retrieving, selecting, and safely executing AI-agent resources. Includes policy-gated execution, audit trails, deterministic mock runs, CLI tooling, and OpenAI-compatible/Anthropic LLM providers.
 - Tech: Python, resource registry, policy layer, lexical/HyDE retrieval, CLI, OpenAI/Anthropic APIs.
+
+### 3) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
+- Summary: An LLM-powered browser automation agent wrapping `browser_use` with a **FastAPI** backend and **noVNC** web interface. Supports natural language control and WebArena benchmarking. WebArena Shopping task success rate: 32.6% (N=187; max steps=40; retries=4; same prompt setting).
+- Tech: Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
 <details>
   <summary><b>Other Projects (Click to expand)</b></summary>
@@ -209,7 +209,9 @@ Presented research on an **AI Multi-Agent Orchestration System** in an English o
 
 The three-person team organized the work into three stages: masking personally identifiable information in Q&A data, comparing multiple LLMs on consecutive masked data, and evaluating storage formats for RAG. As project lead, I coordinated implementation, design, and validation across the team, maintained code and experiment records in GitHub, reviewed changes, and aligned the overall approach. We presented the findings at FIT 2025, demonstrating improved response reliability, and co-filed a patent based on the research.
 
-→ [FIT 2025 presentation slides](https://project-kk.com/static/research/FIT発表資料.pdf)
+**FIT 2025 paper (F-029):** [On Database Structures for Retrieval-Augmented Generation in AI Chatbots](https://www.ieice.org/publications/conference-FIT-DVDs/FIT2025/data/html/program/pdf/F-029.pdf)
+
+**Presentation slides:** [FIT 2025 presentation](https://project-kk.com/static/research/FIT発表資料.pdf)
 
 ## Activities
 
@@ -259,18 +261,18 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 インターンや個人サービスを通じて、課題発見・要件定義・設計・実装・テスト・コードレビュー・本番デプロイ・実利用データに基づく評価まで経験しています。
 
 ## 主要プロジェクト（おすすめ順）
-### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
-- 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作とWebArenaベンチマーク評価に対応。WebArena Shoppingタスク成功率: 32.6% (N=187, 最大ステップ数=40, リトライ回数=4, 同一プロンプト設定)。
-- 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
-
-### 2) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (本番運用AIチャットプラットフォーム)
+### 1) [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) — (本番運用AIチャットプラットフォーム)
 - 概要：FastAPIとNext.jsで構築し、実際に公開・運用しているAIチャットプラットフォーム。複数LLMのストリーミング応答、Web調査・ツール利用、Task / Skill、永続コンテキスト、プロンプト共有、生成UIを実装。Redisによるセッション管理、利用量・コスト制御、SSE障害時の復旧、テスト、CI/CDまで含め、本番運用を前提に設計・改善。
 - デモ：<https://chatcore-ai.com/>
 - 技術：Python, FastAPI, Next.js, React, TypeScript, PostgreSQL, Redis, Docker, Nginx, GitHub Actions, OpenAI / Anthropic / Groq.
 
-### 3) [Marmo-Core](https://github.com/kota-kawa/Marmo-Core) — (AIエージェント向けリソースカーネル)
+### 2) [Marmo-Core](https://github.com/kota-kawa/Marmo-Core) — (AIエージェント向けリソースカーネル)
 - 概要：AIエージェント向けリソースの登録・検索・選択・安全な実行を担う軽量なPythonカーネル。ポリシーによる実行制御、監査ログ、決定論的なモック実行、CLIツール、OpenAI互換／Anthropic LLMプロバイダーを備える。
 - 技術：Python, リソースレジストリ, ポリシーレイヤー, Lexical/HyDE検索, CLI, OpenAI/Anthropic API.
+
+### 3) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
+- 概要：`browser_use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作とWebArenaベンチマーク評価に対応。WebArena Shoppingタスク成功率: 32.6% (N=187, 最大ステップ数=40, リトライ回数=4, 同一プロンプト設定)。
+- 技術：Python, FastAPI, Docker, `browser_use`, noVNC, Gemini/OpenAI/Anthropic.
 
 <details>
   <summary><b>その他のプロジェクト（クリックで展開）</b></summary>
@@ -441,7 +443,9 @@ Memory / Skill / Tool / Agentを共通のリソースモデルで扱い、大規
 
 Q&Aデータの個人情報マスキング、マスキング済みデータを複数LLMで比較する検証、RAG向けデータ保存形式の評価の3段階に分けて研究しました。3名のチームのプロジェクトリードとして、各メンバーの実装・設計・検証を支援し、GitHubでコードと実験内容を管理・レビューして全体方針をそろえました。研究成果をFIT 2025で発表し、回答精度の向上を実証しました。また、本研究の成果をもとに特許を共同出願しました。
 
-→ [FIT 2025発表資料](https://project-kk.com/static/research/FIT発表資料.pdf)
+**FIT 2025論文（F-029）：** [RAG として AIChatBot に与えるデータベースの構造に関する一考察](https://www.ieice.org/publications/conference-FIT-DVDs/FIT2025/data/html/program/pdf/F-029.pdf)
+
+**発表資料：** [FIT 2025発表資料](https://project-kk.com/static/research/FIT発表資料.pdf)
 
 ## 活動歴
 
