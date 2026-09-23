@@ -79,16 +79,18 @@ Through internships and independently operated services, I have worked across pr
 
 **Solution**: Rather than having the LLM calculate dates by reasoning, I separated responsibilities: the LLM's role was narrowed to interpreting the user's natural language intent (e.g. identifying "next Friday" as a target weekday), while all actual date arithmetic was delegated to dedicated deterministic functions that always return the correct result. This made date handling reliable regardless of which model was used. Validated via a benchmark of 9 models (OpenAI, Anthropic, Gemini, Groq) across 10 tasks — a mid-tier model outperformed several frontier models, confirming that **reliability through design beats relying solely on model capability**.
 
-### 2. Production-Only nginx Proxy Bugs — SSE Buffering & WebSocket Upgrade
-([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI), [FS-QR](https://github.com/kota-kawa/fs-qr)) | Python / FastAPI / Next.js / Redis / nginx / Docker | Solo
+### 2. Production Failures — nginx Proxy Behavior and Deployment Readiness
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI), [FS-QR](https://github.com/kota-kawa/fs-qr)) | Python / FastAPI / Next.js / Redis / nginx / Docker / GitHub Actions | Solo
 
-Encountered two separate production failures caused by the same root pattern: **nginx sits between client and server in production but is bypassed in local dev**, making the bugs invisible until deployment.
+Production exposed failures that local development did not: nginx changed how streaming and persistent connections behaved, and the deployment switch sent traffic to an application before it was ready.
 
 **SSE (ChatCore-AI)**: Token-by-token LLM streaming worked locally but arrived as a single block in production. nginx's default response buffering was swallowing the stream. Fixed with `proxy_buffering off` and `X-Accel-Buffering: no`.
 
 **WebSocket (FS-QR)**: Real-time text sync across clients worked locally but WebSocket connections failed to establish in production. nginx defaults to HTTP/1.0, which drops the `Upgrade` header required for the WebSocket handshake. Fixed by adding a `location` block with `proxy_http_version 1.1`, `proxy_set_header Upgrade $http_upgrade`, `proxy_set_header Connection "upgrade"`, and extended timeouts. Also adopted Redis Pub/Sub to broadcast updates across multiple instances.
 
-Hitting the same class of bug twice — different protocols, different projects — made the underlying pattern stick: **always validate streaming and persistent-connection features behind a production-equivalent nginx proxy, not just locally**.
+**Blue-Green deployment (ChatCore-AI)**: Switching nginx traffic when the new Docker container was running occasionally caused brief 500 errors because the application was still starting. Added a deployment health-check loop that waits for a 200 response from the application endpoint before updating nginx and reloading it.
+
+These failures led me to validate streaming and persistent connections through a production-equivalent proxy and to check application readiness before routing traffic to a new instance.
 
 ### 3. OSS Internal State Corruption — Residual Events Polluting the Next Task
 ([Browser-Agent](https://github.com/kota-kawa/Browser-Agent)) | Python / FastAPI / Docker / browser_use / noVNC | Solo
@@ -97,35 +99,7 @@ Hitting the same class of bug twice — different protocols, different projects 
 
 **Solution**: The library provided no public API to reset its internal state between tasks, so I read through its source code directly to understand the internal structure, then implemented a cleanup routine that ran after each task completed. Since the internals differed across library versions, I also added version-aware fallback logic so the cleanup worked regardless of which version was installed. The experience reinforced the importance of **reading library source code rather than relying solely on documentation** when hitting the edge of a public API.
 
-### 4. LLM-Generated Content Self-Contradiction — Dual-LLM Verification Loop
-([Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)) | Python / FastAPI / React / Gemini / Nano Banana / Docker | Solo (7-hour hackathon)
-
-**Challenge**: Had Gemini generate the mystery case (characters, alibis, evidence, timeline), then act as Game Master responding to player questions. The problem: Gemini would contradict its own generated case — for example, accurately revealing the culprit's alibi, or having a lying character speak the truth — making the game unsolvable.
-
-**Solution**: Within the 7-hour hackathon constraint, implemented a two-stage response pipeline: generate the answer first, then pass it through a separate verification step where a second LLM call cross-checks the answer against the original case data and corrects any contradictions before delivery. Also added automatic retry logic on case generation to reject structurally malformed outputs. The key insight: **LLMs cannot reliably self-censor based on structured data they generated earlier in the same context** — a verification layer outside the generation call is necessary.
-
-### 5. Shell Script Execute Permission Error Causing GitHub Actions CD Failure
-([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | GitHub Actions / Docker / Linux / Bash | Solo
-
-**Challenge**: The automated deployment pipeline via GitHub Actions kept failing at the step that invoked the deploy script (`./deploy.sh`). The script ran without issue when executed manually on the server with `bash deploy.sh`, so the error was not caught during local testing. The CI/CD runner was exiting with a "Permission denied" error, and the root cause was not immediately obvious because the file existed and the content was correct.
-
-**Solution**: The issue was that the execute permission bit (`+x`) had not been set in git's index — only the file content was tracked, not the permission. Running `chmod +x deploy.sh` locally changes the filesystem but is not recorded by git unless explicitly staged with `git update-index --chmod=+x deploy.sh`. After staging and committing that change, GitHub Actions correctly inherited the execute bit and the deployment succeeded. The distinction between **filesystem permissions and git-tracked permissions** is easy to miss precisely because local `bash script.sh` invocations bypass the execute bit entirely, making the problem invisible until the CI runner tries direct execution.
-
-### 6. Face-Recognition Login Accuracy — The Bottleneck Was the Data, Not Model Capacity
-ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study abroad)
-
-**Challenge**: Built a face-recognition login system with ResNet and TensorFlow, but recognition accuracy fell short of expectations. My first instinct was that the model lacked representational power, so I **added hidden layers to increase network capacity**. Accuracy barely improved — and increasing capacity against a limited dataset risked overfitting, pushing in the wrong direction entirely.
-
-**Solution**: I reframed the plateau as a problem of **insufficient training data volume and diversity**, not model expressiveness. By applying data augmentation — rotating the face images and adjusting their brightness — I introduced variation in camera angle and lighting conditions into the training set. The model became robust to those variations and recognition accuracy improved. The lesson: **don't equate "low accuracy" with "make the model bigger"** — first determine whether the bottleneck lies on the model side (expressiveness) or the data side (volume and diversity).
-
-### 7. Blue-Green Deployment Timing Issue — Momentary 500 Errors During Switch
-([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | GitHub Actions / Docker / nginx / Linux | Solo
-
-**Challenge**: Implemented Blue-Green deployment using GitHub Actions and nginx to achieve zero-downtime updates. However, during the deployment switch, users occasionally encountered 500 errors for a split second. The automation script was switching the nginx traffic to the new "Green" environment before the container's application process was fully ready to accept connections, even though the container itself was "running" from Docker's perspective.
-
-**Solution**: Identified that the health check within the deployment script was too superficial (only checking if the container was up) or missing a sufficient "warm-up" wait. I improved the deployment flow by adding a robust health check loop that polls the specific application endpoint (e.g., `/health`) of the new container. Only after receiving a successful 200 OK response from the application itself does the script update the nginx configuration and reload the service. This ensured that traffic is only routed to fully initialized instances, eliminating the momentary 500 errors. The experience highlighted that **"container ready" does not mean "application ready"** and reinforced the need for application-level health validation in CI/CD pipelines.
-
-### 8. Recovering Long LLM Streams Without Losing or Duplicating Output
+### 4. Recovering Long LLM Streams Without Losing or Duplicating Output
 ([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | Python / FastAPI / SSE / Redis / LLM APIs | Solo
 
 **Challenge**: Long chats involving web research and multiple tool calls could hit output limits or fail mid-stream because of transient API errors. Retrying the whole request risked repeating text already shown to the user or executing tools twice, while partial answers could be lost.
@@ -134,7 +108,7 @@ ResNet / TensorFlow / Keras / Python | Solo (AI coursework project during study 
 
 This led me to design streaming recovery around **what output or side effects have already reached the user or external systems**, as well as whether a request can be retried.
 
-### 9. Provider-Specific Tool Calling Schemas Causing Chat Failures
+### 5. Provider-Specific Tool Calling Schemas Causing Chat Failures
 ([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | Python / FastAPI / OpenAI-compatible APIs / Anthropic / Tool Calling | Solo
 
 **Challenge**: Reusing the same tool definition across LLM providers caused failures when some OpenAI-compatible providers strictly validated generated arguments against JSON Schema. For example, a model could return the common language code `ja` while the search API required `jp`; missing required fields or extra fields could also stop the entire turn.
@@ -143,7 +117,7 @@ This led me to design streaming recovery around **what output or side effects ha
 
 This showed that **tool schemas should guide model output, while the application owns authoritative validation and normalization**.
 
-### 10. Low Prompt Cache Hits — Reducing Cost Through Prompt Structure
+### 6. Low Prompt Cache Hits — Reducing Cost Through Prompt Structure
 ([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | LLM APIs / Prompt Engineering / Cost Optimization | Solo
 
 **Challenge**: Long chats repeatedly sent the same history to LLMs, increasing input costs, yet prompt caches from OpenAI, Anthropic, and Groq rarely hit. Dynamic values such as the current time and per-step `TurnState` appeared near the start of the prompt, breaking the matching prefix and invalidating the cache for everything after them.
@@ -338,16 +312,18 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 
 **解決策**: LLMに日付を計算させるのをやめ、役割を分離した。LLMの担当はユーザーの自然言語の意図を読み取ること（「来週の金曜」がどの曜日を指すかを判断すること）に限定し、実際の日付計算は常に正しい結果を返す専用の決定論的な関数群に委ねる設計に変更した。これによりどのモデルを使っても日付処理が安定するようになった。OpenAI・Anthropic・Gemini・Groqの9モデルで10タスクのベンチマーク評価を実施し、中堅モデルが複数のフロンティアモデルを上回る精度を出せることも確認。**「モデルの性能だけに頼らず、設計で信頼性を担保する」** という判断の正しさを実証できた。
 
-### 2. 本番環境特有のnginxプロキシ問題 — SSEバッファリングとWebSocketアップグレード
-([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI), [FS-QR](https://github.com/kota-kawa/fs-qr)) | Python / FastAPI / Next.js / Redis / nginx / Docker | 個人開発
+### 2. 本番環境で発覚した障害 — nginxの通信設定とデプロイ時の準備確認
+([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI), [FS-QR](https://github.com/kota-kawa/fs-qr)) | Python / FastAPI / Next.js / Redis / nginx / Docker / GitHub Actions | 個人開発
 
-異なるプロジェクトで同じ根本パターンの障害を2度経験した。**ローカル開発ではnginxを経由しないため発覚せず、本番デプロイ後に初めて顕在化する問題**という共通構造だった。
+ローカル開発では見つからなかった障害が本番環境で発生した。nginxを経由することでストリーミングと持続接続の動作が変わり、デプロイ時にはアプリケーションの準備完了前に通信を切り替えていた。
 
 **SSE（ChatCore-AI）**: LLMのトークン逐次配信をSSEで実装したところ、本番環境ではレスポンスがバッファリングされ全文一括表示になった。原因はnginxのデフォルトのレスポンスバッファリング。`proxy_buffering off`と`X-Accel-Buffering: no`の追加で解決。
 
 **WebSocket（FS-QR）**: テキストのリアルタイム同期をWebSocketで実装したところ、本番環境でWebSocket接続が確立できなかった。nginxがデフォルトでHTTP/1.0を使用しており、WebSocketハンドシェイクに必要な`Upgrade`ヘッダーが転送されていなかったことが原因。`location`ブロックに`proxy_http_version 1.1`・`proxy_set_header Upgrade $http_upgrade`・`proxy_set_header Connection "upgrade"`・タイムアウト延長を追加して解決。複数インスタンス間のブロードキャストにはRedis Pub/Subを採用した。
 
-異なるプロトコル・異なるプロジェクトで同じクラスのバグを踏んだことで、**ストリーミングや持続接続の機能は本番相当のnginx構成で検証する**という習慣が身についた。
+**Blue-Greenデプロイ（ChatCore-AI）**: 新しいDockerコンテナの起動を確認してnginxの向き先を切り替えたところ、アプリケーションの起動が完了しておらず、切り替え時に一瞬だけ500エラーが発生した。デプロイスクリプトにアプリケーションのエンドポイントが200を返すまで待つヘルスチェックを追加し、その後にnginxの設定を更新・再読み込みするようにした。
+
+これらの経験から、ストリーミングと持続接続は本番相当のプロキシ構成で検証し、新しいインスタンスへ通信を切り替える前にはアプリケーションの準備完了を確認するようにした。
 
 ### 3. OSSの内部状態汚染 — 前のタスクの残留状態が次タスクに干渉する問題
 ([Browser-Agent](https://github.com/kota-kawa/Browser-Agent)) | Python / FastAPI / Docker / browser_use / noVNC | 個人開発
@@ -356,35 +332,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 
 **解決策**: ライブラリには内部状態をリセットするための公開APIが存在しなかったため、ソースコードを直接読み込んで内部構造を把握し、タスク終了ごとに状態をリセットするクリーンアップ処理を独自実装した。さらにライブラリのバージョンによって内部構造が異なるため、バージョンに応じて動作を切り替えるフォールバックロジックも追加し、どのバージョンでも正常に動作するようにした。**公開APIの限界に当たったときはドキュメントではなくソースコードを読む** という判断の重要性を学んだ。
 
-### 4. LLMが自分で生成した内容に矛盾する問題 — 二重LLM検証ループ
-([Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)) | Python / FastAPI / React / Gemini / Nano Banana / Docker | 個人開発（7時間ハッカソン）
-
-**苦労したこと**: Geminiにミステリーの事件データ（登場人物・アリバイ・証拠・タイムライン）を生成させ、そのデータをもとにゲームマスターとして回答させたところ、Geminiが自分で生成した事件と矛盾した回答を返す問題が多発した。例えば犯人のアリバイを正確に話してしまう、嘘つき設定のキャラクターが正直に答えてしまうなど、ゲームとして成立しなくなるケースが続出した。
-
-**解決策**: 7時間というハッカソンの制約の中で、二段構えの回答パイプラインを実装した。①まず通常通り回答を生成し、②別のLLM呼び出しで回答と事件データを照合して矛盾を検出・修正してからプレイヤーに届ける。また、事件データ生成時に構造的に不正な出力を自動的に検出してやり直す仕組みも追加した。この経験から、**LLMは同じコンテキスト内で自分が生成した情報を参照して自己検閲することが苦手** であり、生成と検証を別の呼び出しに分離する設計が有効だという知見を得た。
-
-### 5. デプロイ用シェルスクリプトの実行権限問題によるGitHub Actions CDの失敗
-([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | GitHub Actions / Docker / Linux / Bash | 個人開発
-
-**苦労したこと**: GitHub Actionsによる自動デプロイパイプラインが、デプロイスクリプト（`./deploy.sh`）の呼び出しステップで毎回失敗するという問題が発生した。ローカルで`bash deploy.sh`と実行すると問題なく動作するためエラーの原因が掴めず、CIランナー上での"Permission denied"エラーを見てもすぐにはピンとこなかった。
-
-**解決策**: 原因は、実行権限（`+x`）のビットがgitのインデックスに記録されていなかったことだった。ローカルで`chmod +x deploy.sh`を実行してもgitはファイルの内容だけを追跡しており、権限ビットは`git update-index --chmod=+x deploy.sh`で明示的にステージングしなければgitに反映されない。この変更をコミットすることで、GitHub ActionsのランナーにもCHMOD後の実行権限が正しく継承され、デプロイが成功するようになった。ローカルでの`bash script.sh`実行は実行権限ビットをそもそも要求しないため問題が顕在化せず、**「ファイルシステムのパーミション」と「gitが追跡するパーミション」の違い**がCIランナーによる直接実行で初めて露見するという構造を学んだ。
-
-### 6. 顔認証ログインの精度不足 — モデルの容量ではなく学習データがボトルネックだった
-ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロジェクト）
-
-**苦労したこと**: ResNetとTensorFlowで顔認証ログインシステムを構築したが、認証精度が想定より上がらなかった。最初の打ち手として**モデルの表現力が足りないと考え、隠れ層を追加してネットワークの容量を増やした**。しかし精度はほとんど改善せず、むしろ限られた学習データに対して容量だけを増やすことは過学習を招きかねない逆効果の方向だった。
-
-**解決策**: 精度の頭打ちはモデルの表現力ではなく**学習データの量と多様性の不足**側にあると切り分けた。顔画像を回転させたり明るさを調整したりしてデータ拡張（Data Augmentation）を行い、撮影角度や照明条件のばらつきを学習データに与えたところ、モデルがそれらの変動に対して頑健になり認証精度が向上した。この経験から、**「精度が低い＝モデルを大きくする」と短絡せず、ボトルネックがモデル側（表現力）にあるのかデータ側（量・多様性）にあるのかをまず切り分ける**という判断の重要性を学んだ。
-
-### 7. Blue-Greenデプロイの切り替えタイミング不備による瞬間的な500エラー
-([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | GitHub Actions / Docker / nginx / Linux | 個人開発
-
-**苦労したこと**: ゼロダウンタイムでの更新を目指し、GitHub Actionsとnginxを組み合わせたBlue-Greenデプロイを導入した。しかし、デプロイの切り替え時に一瞬だけ500エラーが発生するという問題に直面した。原因を調査したところ、Dockerコンテナ自体は起動しているものの、その内部でアプリケーションプロセスが完全に立ち上がりリクエストを受け付けられる状態になる前に、nginxの向き先を新しい（Green）環境に切り替えてしまっていたことが判明した。
-
-**解決策**: デプロイスクリプトに、アプリケーションレベルでのヘルスチェック待ち処理を追加した。単にコンテナの起動を待つのではなく、アプリケーションが提供する特定のヘルスチェックエンドポイント（`/health`など）に対してポーリングを行い、実際に200 OKが返ってくることを確認してからnginxの向き先を切り替えるようにフローを改善した。これにより、完全に準備が整ったインスタンスのみにトラフィックが流れるようになり、切り替え時のエラーを完全に解消できた。**「コンテナの起動」と「アプリケーションの準備完了」は別物である**という教訓を得るとともに、CI/CDパイプラインにおける実用的なヘルスチェックの重要性を再認識した。
-
-### 8. 長時間LLM生成の途中切れ・再試行・重複実行への対処
+### 4. 長時間LLM生成の途中切れ・再試行・重複実行への対処
 ([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | Python / FastAPI / SSE / Redis / LLM API | 個人開発
 
 **苦労したこと**: Web検索や複数回のツール利用を伴う長時間のチャットでは、出力上限や一時的なAPI障害により生成が途中で止まることがあった。リクエスト全体を再実行すると、ユーザーに表示済みの文章やツール呼び出しが重複し、途中までの回答が失われる場合もあった。
@@ -393,7 +341,7 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 
 ストリーミングの障害回復では、再試行の可否に加え、**ユーザーや外部システムに出た出力・副作用をどこまで戻せるか**を考慮して設計する必要があると学んだ。
 
-### 9. LLMプロバイダごとのTool Calling仕様差によるチャット失敗
+### 5. LLMプロバイダごとのTool Calling仕様差によるチャット失敗
 ([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | Python / FastAPI / OpenAI互換API / Anthropic / Tool Calling | 個人開発
 
 **苦労したこと**: 同じTool定義を複数プロバイダへ渡したところ、一部のOpenAI互換プロバイダが生成引数をJSON Schemaで厳格に検証し、形式のわずかな違いでチャット全体が失敗した。例えば検索APIが`jp`を要求する言語指定で、モデルが一般的な`ja`を返すと拒否された。必須項目の欠落や余分な項目でも同様にターンが停止する可能性があった。
@@ -402,7 +350,7 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 
 この経験から、**モデルへのTool Schemaとアプリケーション側の厳密な入力検証を分離すること**が可用性のために重要だと学んだ。
 
-### 10. Prompt Cacheの低い命中率 — プロンプト構造によるコスト最適化
+### 6. Prompt Cacheの低い命中率 — プロンプト構造によるコスト最適化
 ([ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)) | LLM API / プロンプト設計 / コスト最適化 | 個人開発
 
 **苦労したこと**: 長い会話では同じ履歴を繰り返しLLMへ送るため入力コストが増える一方、OpenAI・Anthropic・GroqのPrompt Cacheがほとんど命中しなかった。現在時刻や各ステップで変わる`TurnState`をプロンプトの先頭近くに置いていたため、キャッシュが必要とするprefix一致が崩れ、その後の内容も再利用されなかった。
@@ -440,7 +388,7 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
 ## 💼 経験
 **GMOメディア** — AIエンジニアインターン
 - **AI執事のチャット機能**：既存の選択式フローを保ちながらチャット機能を追加。会話制御・プロンプト・堅牢性を担当し、希望変更や情報不足への対応、進捗表示・状態復元、二重送信防止・エラー時の再試行、利用上限・コスト制御を実装。
-- **チーム開発・本番リリース**：本番リポジトリで専用ブランチを使ってチーム開発し、コードレビューを経て本番デプロイまで担当。
+- **チーム開発・本番リリース**：本番リポジトリで専用ブランチを使ってチーム開発し、コードレビューを経て本番デプロイまで完走。
 - **チャット処理の同時実行制御**：インフラ設定を変えず、実行中のチャットターン数に上限を設定。上限到達時はワーカースレッドを解放してジョブを10秒後にキューへ戻し、メール送信・LINE Webhook用の処理枠を確保。
 - **実利用データによる効果測定**：選択式AI執事の利用履歴を分析し、選択式とチャット式の完了率・アクション実行率を比較するKPI/KGIをチームで定義。48時間の判定ルールを組み込んだMySQL集計SQLを整備。
 
