@@ -159,14 +159,14 @@ I integrate AI tools across the full workflow — from research to documentation
 
 ## Experience
 **GMO Media** — AI Engineering Intern
-- Added a chat-based interaction format to an existing **AI butler** that supports users with course creation and operational questions.
-- Developed the feature as a team in the production repository using dedicated branches and collaborative code reviews, and deployed it to the production environment.
+- Developed chat functionality for the existing **AI butler** while preserving its choice-based flow. Focused on AI dialogue control, prompt design, and reliability; implemented adaptive conversations for changing goals or missing information, progress display and state recovery, duplicate-submission prevention and retries, and usage and cost controls.
+- Completed the end-to-end development cycle through production deployment as part of a team, using dedicated branches and code reviews in the production repository.
 - **Job-side concurrency control**: Without changing the infrastructure configuration, limited simultaneous execution by counting active chat turns. When the limit was reached, the job was re-enqueued after 10 seconds without holding the thread, reserving capacity for email delivery and LINE Webhooks.
-- Used real usage data to identify issues and implemented conversation control, state management, error recovery, and cost control for free-form AI chat. Designed beyond answer quality to include failure recovery, usage limits, coexistence with existing systems, and continuous evaluation through KPI/KGI definitions and aggregation SQL, productizing the AI feature.
+- **AI feature evaluation grounded in real usage data**: Analyzed usage history from the choice-based AI butler and worked with the team to define a KPI/KGI framework for comparing completion and action-execution rates between the choice-based flow and the new chat flow. Prepared MySQL aggregation SQL with a 48-hour evaluation rule.
 
 **kubell** — Summer Intern
 - Through interviews with model users in the construction industry, organized their operational challenges and identified the burden and inconsistency of entering field reports as the highest-priority issue among a wide range of needs.
-- Created and prioritized user stories, then repeatedly implemented, reviewed, and retrospected in short sprints. As a team, developed MVPs including AI-assisted report drafting, voice input, and image-based information utilization.
+- Aimed to minimize report-writing time by breaking the reporting burden into four stages. Wrote and prioritized user stories, then reviewed and refined the problem and features in daily sprints. As a team, built report templates, AI-generated drafts from chat history, voice input, task management with assignees, deadlines, and progress tracking, and AI-generated image descriptions; then demoed the product.
 - Used AI not merely for code generation but also to accelerate implementation and verification, gaining end-to-end product development experience from discovering user problems through requirements definition, implementation, and validation.
 
 **Manaable Inc.** — Joint Researcher / Project Lead
@@ -174,7 +174,7 @@ I integrate AI tools across the full workflow — from research to documentation
 - **Patent Pending**: Co-filed a patent based on findings from this research.
 - **Publication**: Presented research findings at **FIT 2025 (Forum on Information Technology)**, demonstrating measurable improvements in response reliability. → [Presentation Slides](https://project-kk.com/static/research/FIT発表資料.pdf)
 
-**Manaable Inc.** — Software Engineering Intern (2 months)
+**Manaable Inc.** — Software Engineering Intern
 - After completing the joint research, joined as an intern to bring its findings into production; designed and developed an in-house AI agent system for the customer support team on **AWS**.
 - Converted and **structured** Jira operations manuals into Markdown, then built a **hybrid RAG pipeline** (BM25 + vector search) with **gpt-5.1-mini**; iterated on **prompt design** to deliver accurate natural language Q&A via a chat UI.
 - Extended beyond simple RAG chat to a full **customer support agent** with: automatic Jira ticket creation via Jira API integration, and auto-generation of customer-facing email drafts alongside RAG answers.
