@@ -20,14 +20,11 @@ Software engineer and master's student at Keio University Graduate School of Med
 
 My focus is the system design that connects LLMs to real applications. I work on selecting the right Memory, Skills, Tools, and Agents; safely executing external tools; managing conversational and user context; recovering from LLM and API failures; controlling inference cost and usage; and making AI features reliable in production.
 
-My current work spans three areas:
+My current work spans two areas:
 - **Production AI applications**: Designing, building, and improving deployed services such as [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI).
-- **AI agent infrastructure**: Developing [Marmo-Core](https://github.com/kota-kawa/Marmo-Core), an open-source library for managing Memory, Skills, Tools, and Agents.
-- **AI agent research**: Studying Object Routing, which selects executable resource sets from large collections for AI agents.
+- **AI agent research**: Studying Object Routing, which selects executable resource sets from large collections for AI agents, and developing [Marmo-Core](https://github.com/kota-kawa/Marmo-Core), an open-source library for managing Memory, Skills, Tools, and Agents.
 
 Through internships and independently operated services, I have worked across problem discovery, requirements definition, design, implementation, testing, code review, production deployment, and evaluation using real usage data.
-
-For my undergraduate thesis, I built a multi-agent orchestration system integrating specialized agents for RAG, browser automation, scheduling, and IoT. Combining long- and short-term memory improved the overall evaluation score by about **1.7×**. I presented the research in English at **NCSP'26** in Honolulu, Hawaii.
 
 ## Key Projects (recommended order)
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
@@ -191,17 +188,37 @@ I integrate AI tools across the full workflow — from research to documentation
   - **Achievement**: **1st out of 30** in the **AI (Artificial Intelligence)** course final project — built a face recognition login system using OpenCV & TensorFlow.
   - **Relevant Coursework**: Artificial Intelligence, Intro to HCI/UX, Design I & II, Applied Computer Science.
 
+## Research
+
+### Object Routing — Current Research
+**Repository:** `Object-Routing-Research`
+
+I study how AI agents can select a task-relevant set of resources from large catalogs. Memory, Skills, Tools, and Agents are represented through a common resource model. Beyond retrieval relevance, routing must account for whether the selected resources are necessary and can be executed safely, considering dependencies, conflicts, and permissions.
+
+- **Retrieval and ranking:** BM25, embedding, and hybrid retrieval, with HyDE and LLM reranking.
+- **Execution-aware selection:** Selecting resources while accounting for dependencies, conflicts, and execution permissions.
+- **Fallback decisions:** Abstaining when no suitable resource exists and requesting elevated permissions when required access is missing.
+- **Scale:** Hierarchical routing for catalogs of up to 100,000 resources.
+
+### NCSP'26
+**2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems**
+
+**Mar 2026 | Honolulu, Hawaii**
+
+Presented research on an **AI Multi-Agent Orchestration System** in an English oral session. Developed a system integrating five specialized agents: **RAG**, **Web Operation**, **IoT**, **Scheduler**, and **Orchestrator**. Combining long- and short-term memory improved the overall evaluation score by about **1.7×**.
+
+→ [Presentation slides](https://project-kk.com/static/research/NCSP-Presentation-EN.pdf)
+
 ## Activities
-- **Matsuo Lab (The University of Tokyo) Programs & Competitions** (2024 - 2025)
-  - **LLM Course Final Project & Competition**: Developed fine-tuned models using **LoRA SFT** and **DPO**, achieving a **top 4% (70 / 1800) ranking**. Featured model: [Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3).
-  - **LLM Competition 2025**: As the team's training data lead, built and published a high-difficulty synthetic dataset for mathematical reasoning ([difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)).
-  - **Specialized Courses**: Took courses including AI Management (PwC joint), LLM, GCI (Data Science), Deep Learning, and Deep Generative Models.
-- **NCSP'26 (2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems)** (Mar 2026)
-  - Presented research on an **AI Multi-Agent Orchestration System** in an English oral session (Honolulu, Hawaii).
-  - Developed a system integrating 5 specialized agents: **RAG**, **Web Operation**, **IoT**, **Scheduler**, and **Orchestrator**.
-  - Presentation Material: → [NCSP-Presentation-EN.pdf](https://project-kk.com/static/research/NCSP-Presentation-EN.pdf)
-- **Gemini 3 Tokyo Hackathon 2026** (2026)
-  - Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
+
+### Matsuo Lab (The University of Tokyo) Programs & Competitions (2024–2025)
+- **LLM Course Final Project & Competition**: Developed fine-tuned models using **LoRA SFT** and **DPO**, achieving a **top 4% (70 / 1800) ranking**. Featured model: [Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3).
+- **LLM Competition 2025**: As the team's training data lead, built and published a high-difficulty synthetic dataset for mathematical reasoning ([difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)).
+- **Specialized Courses**: Took courses including AI Management (PwC joint), LLM, GCI (Data Science), Deep Learning, and Deep Generative Models.
+
+### Gemini 3 Tokyo Hackathon 2026
+Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
+
 ## Language
 - **Japanese**: Native
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
@@ -233,14 +250,11 @@ I integrate AI tools across the full workflow — from research to documentation
 
 関心の中心は、LLMそのものだけでなく、LLMを実用的なアプリケーションにつなぐシステム設計です。必要なMemory / Skill / Tool / Agentの選択、安全な外部ツール実行、会話やユーザーコンテキストの管理、LLM・外部APIの障害からの復旧、推論コストや利用量の制御などに取り組み、AI機能を本番環境で安定して運用できる形にします。
 
-現在は、次の3領域を軸に活動しています。
+現在は、次の2領域を軸に活動しています。
 - **本番AIアプリケーション**：[ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)など、公開・運用中のAIサービスの設計・開発・改善。
-- **AIエージェント基盤**：Memory / Skill / Tool / Agentを統一的に扱うOSSライブラリ[Marmo-Core](https://github.com/kota-kawa/Marmo-Core)の開発。
-- **AIエージェント研究**：大規模なリソース群から実行可能なリソース集合を選択するObject Routingの研究。
+- **AIエージェント研究**：大規模なリソース群から実行可能なリソース集合を選択するObject Routingの研究と、Memory / Skill / Tool / Agentを統一的に扱うOSSライブラリ[Marmo-Core](https://github.com/kota-kawa/Marmo-Core)の開発。
 
 インターンや個人サービスを通じて、課題発見・要件定義・設計・実装・テスト・コードレビュー・本番デプロイ・実利用データに基づく評価まで経験しています。
-
-学部の卒業研究では、RAG・ブラウザ操作・スケジューリング・IoTなどの専門エージェントを統合するマルチエージェントシステムを開発しました。長期・短期メモリを組み合わせた構成で総合評価スコアを約**1.7倍**に改善し、研究成果を**NCSP'26**（米国・ホノルル）で英語口頭発表しました。
 
 ## 主要プロジェクト（おすすめ順）
 ### 1) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
@@ -404,17 +418,37 @@ ResNet / TensorFlow / Keras / Python | 個人開発（留学先のAI授業プロ
   - **実績**: **AI（人工知能）** 授業の最終プロジェクトでクラス**1位**（30人中）。OpenCV・TensorFlowで顔認証ログインシステムを開発。
   - **主要履修科目**: 人工知能 (AI), HCI/UX, デザイン I & II, コンピュータ応用。
 
+## 研究
+
+### Object Routing（現在の研究）
+**リポジトリ：** `Object-Routing-Research`
+
+Memory / Skill / Tool / Agentを共通のリソースモデルで扱い、大規模なカタログからタスク実行に必要なリソース集合を選択するObject Routingを研究しています。検索精度に加え、選択したリソースを安全に実行できるかを、依存関係・競合制約・実行権限まで含めて判断します。
+
+- **候補検索・ランキング**：BM25、Embedding、Hybrid Retrieval、HyDE、LLM Reranking
+- **実行可能な集合の選択**：依存関係・競合制約・実行権限を考慮したリソース選択
+- **適切な候補がない場合の判断**：該当するリソースがなければ棄権し、必要な権限が不足していれば権限昇格を要求
+- **大規模化**：最大10万件規模のカタログを対象とする階層ルーティング
+
+### NCSP'26
+**2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems**
+
+**2026年3月 | Honolulu, Hawaii**
+
+「AIマルチエージェント・オーケストレーションシステム」に関する研究成果を英語で口頭発表しました。RAG、Web操作、IoT、Scheduler、Orchestratorの5種類の専門エージェントを統合したシステムを開発し、長期・短期メモリを組み合わせた構成で総合評価スコアを約**1.7倍**に改善しました。
+
+→ [発表資料](https://project-kk.com/static/research/NCSP-Presentation-EN.pdf)
+
 ## 活動歴
-- **松尾研究室（東京大学）関連プログラム・コンペティション** (2024年 - 2025年)
-  - **LLM講座 最終プロジェクト & コンペティション**: LoRA SFTおよびDPOを用いたモデルを開発し、コンペティションにて上位4% (70 / 1800) に入賞。開発モデル：[Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
-  - **LLMコンペ2025**: チーム内で学習データ作成を担当し、数学的推論向け高難度合成データセットを構築・公開（[difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)）。
-  - **専門講座受講**: AI経営講座（PwC共同開催）、LLM講座、GCI (データサイエンス基礎)、深層学習、深層生成モデル。
-- **NCSP'26 (2026 RISP International Workshop on Nonlinear Circuits, Communications and Systems)**（2026年3月）
-  - ハワイ・ホノルルで開催された国際会議にて、「AIマルチエージェント・オーケストレーションシステム」に関する研究成果を英語で口頭発表。
-  - 5種の専門エージェント（**RAG**、**Web操作**、**IoT**、**Scheduler**、**Orchestrator**）を統合した自律型システムを開発。
-  - 発表した資料：→ [NCSP-Presentation-EN.pdf](https://project-kk.com/static/research/NCSP-Presentation-EN.pdf)
-- **Gemini 3 東京ハッカソン 2026** (2026年)
-  - **Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させた。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
+
+### 松尾研究室（東京大学）関連プログラム・コンペティション（2024年–2025年）
+- **LLM講座 最終プロジェクト & コンペティション**: LoRA SFTおよびDPOを用いたモデルを開発し、コンペティションにて上位4% (70 / 1800) に入賞。開発モデル：[Llama-3.1-8B-Instruct-Freedom_v3](https://huggingface.co/kota-kawa/Llama-3.1-8B-Instruct-Freedom_v3)
+- **LLMコンペ2025**: チーム内で学習データ作成を担当し、数学的推論向け高難度合成データセットを構築・公開（[difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)）。
+- **専門講座受講**: AI経営講座（PwC共同開催）、LLM講座、GCI (データサイエンス基礎)、深層学習、深層生成モデル。
+
+### Gemini 3 東京ハッカソン 2026
+**Gemini** と **Nano Banana** を活用したミステリゲームを、7時間の制限時間以内に完成させました。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
+
 ## 語学
 - **日本語**: ネイティブ
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
