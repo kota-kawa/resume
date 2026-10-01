@@ -156,18 +156,18 @@ I integrate AI tools across the full workflow — from research to documentation
 
 
 ## 💼 Experience
-**GMO Media** — AI Engineering Intern
+**GMO Media** — Software Engineering Intern | Sep 2026
 - **AI butler chat feature**: Added a free-form chat mode alongside the existing choice-based flow. Owned conversation control, prompt design, and reliability; implemented support for changing goals and missing information, progress display and state recovery, duplicate-submission prevention and retries, and usage and cost limits.
 - **Team development and production delivery**: Worked in the production repository on dedicated branches, participated in code reviews, and carried the feature through production deployment.
 - **Chat processing concurrency control**: Kept infrastructure unchanged and capped concurrent chat turns. At the limit, released the worker thread and re-enqueued the chat job after 10 seconds, reserving capacity for email delivery and LINE webhooks.
 - **Evaluation using real usage data**: Analyzed choice-based AI butler usage and defined, with the team, KPIs/KGIs comparing completion and action-execution rates across choice-based and chat flows. Prepared MySQL aggregation SQL with a 48-hour evaluation rule.
 
-**kubell** — Summer Intern
+**kubell** — Engineering Summer Intern | Sep 2026
 - **Problem discovery**: Interviewed representative users in the construction industry, synthesized their operational challenges, and prioritized the burden and inconsistent quality of field-report entry.
 - **Requirements and team development**: Targeted shorter report-writing time by breaking the workflow into four stages and prioritizing user stories. Refined the problem and features through daily sprint reviews, then built and demoed report templates, AI drafts from chat history, voice input, task management with assignees, deadlines, and progress tracking, and AI-generated image descriptions.
 - **AI-assisted delivery**: Used AI to accelerate implementation and validation as well as code generation, contributing end-to-end from user-problem discovery and requirements definition through implementation and validation.
 
-**Manaable Inc.** — Software Engineering Intern
+**Manaable Inc.** — AI Engineering Intern | Jan–Mar 2026
 - **System design and development**: After the joint research, joined as an intern to bring its findings into production, designing and developing an internal AI agent on **AWS** for the customer support team.
 - **Hybrid RAG pipeline**: Converted and structured Jira operations manuals into Markdown, then built a **BM25 + vector search** pipeline. Refined prompts for **gpt-5.1-mini** and delivered natural-language Q&A through a chat UI.
 - **Workflow integration and iteration**: Added automatic ticket creation through the Jira API and customer-facing email drafts alongside RAG answers. Worked with the support team in daily discussions, iterating from requirements definition through response-quality improvement.
@@ -229,7 +229,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## 📝 Notes
-- Last updated: 2026-09-23
+- Last updated: 2026-10-01
 - License: All rights reserved
 
 <details>
@@ -390,18 +390,18 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 </details>
 
 ## 💼 経験
-**GMOメディア** — AIエンジニアインターン
+**GMOメディア** — ソフトウェアエンジニアインターン（2026年9月）
 - **AI執事のチャット機能**：既存の選択式フローを保ちながらチャット機能を追加。会話制御・プロンプト・堅牢性を担当し、希望変更や情報不足への対応、進捗表示・状態復元、二重送信防止・エラー時の再試行、利用上限・コスト制御を実装。
 - **チーム開発・本番リリース**：本番リポジトリで専用ブランチを使ってチーム開発し、コードレビューを経て本番デプロイまで完走。
 - **チャット処理の同時実行制御**：インフラ設定を変えず、実行中のチャットターン数に上限を設定。上限到達時はワーカースレッドを解放してジョブを10秒後にキューへ戻し、メール送信・LINE Webhook用の処理枠を確保。
 - **実利用データによる効果測定**：選択式AI執事の利用履歴を分析し、選択式とチャット式の完了率・アクション実行率を比較するKPI/KGIをチームで定義。48時間の判定ルールを組み込んだMySQL集計SQLを整備。
 
-**kubell** — サマーインターン
+**kubell** — エンジニアサマーインターン（2026年9月）
 - **課題発見**：建設業のモデルユーザーへのヒアリングから業務課題を整理し、現場報告の入力負担と品質のばらつきを優先課題として特定。
 - **要件定義・チーム開発**：「報告書作成時間の最小化」を目標に、報告業務を4段階に分解。ユーザーストーリーと優先度を整理し、日次スプリントのレビューを通じて課題・機能を見直しながら、報告テンプレート、履歴からのAI下書き、音声入力、担当者・期限・進捗を管理するタスク機能、画像へのAI説明付与をチームで開発・デモ。
 - **AI活用・一貫開発**：AIをコード生成だけでなく実装・検証の効率化にも活用し、課題発見から要件定義・実装・検証まで一貫して経験。
 
-**Manaable 株式会社** — ソフトウェアエンジニアインターン
+**Manaable 株式会社** — AIエンジニアインターン（2026年1月〜3月）
 - **設計・開発**：共同研究の成果をプロダクト化するためインターンに参加し、AWS上でカスタマーサポート向け社内AIエージェントを設計・開発。
 - **ハイブリッドRAG**：Jiraの操作マニュアルをMarkdown化・構造化し、BM25とベクトル検索を組み合わせたパイプラインを構築。`gpt-5.1-mini`のプロンプトを調整し、チャットUIで自然言語の問い合わせに回答。
 - **機能拡張・改善**：Jira APIによる問い合わせチケットの自動起票と、RAG回答に添える顧客向けメール文案の生成を実装。サポートチームと毎日議論し、要件定義から応答品質まで反復改善。
@@ -463,6 +463,6 @@ Q&Aデータの個人情報マスキング、マスキング済みデータの�
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 📝 補足
-- 最終更新：2026-09-23
+- 最終更新：2026-10-01
 - ライセンス：All rights reserved
 </details>
