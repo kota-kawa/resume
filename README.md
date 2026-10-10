@@ -5,6 +5,7 @@
 ## 📄 Download
 - 📄 Resume (PDF): [JP](https://project-kk.com/static/pdf/resume-jp.pdf) | [EN](https://project-kk.com/static/pdf/resume-en.pdf)
 - 🌐 Portfolio: <https://project-kk.com/>
+- 📝 Blog: <https://blog.project-kk.com/>
 - 💼 LinkedIn: <https://www.linkedin.com/in/kota-kawa/>
 - ✉️ Email: kota7kawagoe@gmail.com
 
@@ -240,6 +241,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 ## 📄 ダウンロード
 - 📄 Resume（PDF）：[JP](https://project-kk.com/static/pdf/resume-jp.pdf) | [EN](https://project-kk.com/static/pdf/resume-en.pdf)
 - 🌐 Portfolio：<https://project-kk.com/>
+- 📝 ブログ：<https://blog.project-kk.com/>
 - 💼 LinkedIn：<https://www.linkedin.com/in/kota-kawa/>
 - ✉️ Email：kota7kawagoe@gmail.com
 
