@@ -11,6 +11,7 @@
 
 ## 🚀 Live Services
 - **ChatCore-AI**: <https://chatcore-ai.com/> (Production AI Chat Platform & Prompt Sharing)
+- **relua**: <https://relua.net/> (Job-Hunting Info Search, Updated by AI via MCP)
 - **FS-QR**: <https://fs-qr.net/> (File Sharing & QR)
 
 ### **Looking for: Roles in AI Application Engineering or Backend Systems.**
@@ -22,7 +23,7 @@ Software engineer and master's student at Keio University Graduate School of Med
 My focus is the system design that connects LLMs to real applications. I work on selecting the right Memory, Skills, Tools, and Agents; safely executing external tools; managing conversational and user context; recovering from LLM and API failures; controlling inference cost and usage; and making AI features reliable in production.
 
 My current work spans two areas:
-- **Production AI applications**: Designing, building, and improving deployed services such as [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI).
+- **Production AI applications**: Designing, building, and improving deployed services such as [ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI) and [relua](https://github.com/kota-kawa/relua).
 - **AI agent research**: Studying Object Routing, which selects executable resource sets from large collections for AI agents, and developing [Marmo-Core](https://github.com/kota-kawa/Marmo-Core), an open-source library for managing Memory, Skills, Tools, and Agents.
 
 Through internships and independently operated services, I have worked across problem discovery, requirements definition, design, implementation, testing, code review, production deployment, and evaluation using real usage data.
@@ -37,7 +38,12 @@ Through internships and independently operated services, I have worked across pr
 - Summary: A lightweight Python kernel for registering, retrieving, selecting, and safely executing AI-agent resources. Includes policy-gated execution, audit trails, deterministic mock runs, CLI tooling, and OpenAI-compatible/Anthropic LLM providers.
 - Tech: Python, resource registry, policy layer, lexical/HyDE retrieval, CLI, OpenAI/Anthropic APIs.
 
-### 3) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
+### 3) [relua](https://github.com/kota-kawa/relua) — (Job-Hunting Info Database Updated by AI via MCP)
+- Summary: A job-hunting information service, deployed at relua.net, for searching internships, full-time openings, and events without logging in. Operators register and update data from ChatGPT or Claude through 40 MCP tools; the server treats AI input as untrusted and applies master-value validation, an official-source allowlist, two-tier duplicate detection, `request_id` idempotency, optimistic locking, and audit logging to every write. Includes a self-built OAuth 2.1 authorization server (dynamic client registration, PKCE, refresh-token rotation), about 430 automated tests, and deployment with automatic rollback on failed health checks.
+- Demo: <https://relua.net/>
+- Tech: Python, FastAPI, MCP Python SDK, OAuth 2.1, Next.js, React, TypeScript, PostgreSQL, Redis, Docker, nginx, GitHub Actions.
+
+### 4) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (LLM-powered Browser Automation with Web UI)
 - Summary: An LLM-powered browser automation agent wrapping `browser-use` with a **FastAPI** backend and **noVNC** web interface. Supports natural language control and WebArena benchmarking. WebArena Shopping task success rate: 32.6% (N=187; max steps=40; retries=4; same prompt setting).
 - Tech: Python, FastAPI, Docker, `browser-use`, noVNC, Gemini/OpenAI/Anthropic.
 
@@ -135,7 +141,7 @@ This reinforced that **LLM cost optimization depends on prompt structure and the
 | **Programming Languages** | Python, TypeScript, SQL |
 | **Web / Application Frameworks** | FastAPI, React, Next.js, Tailwind CSS |
 | **Data Stores** | PostgreSQL, Redis |
-| **AI / LLM Engineering** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
+| **AI / LLM Engineering** | RAG, Multi-Agent Systems, MCP, LangChain, LangGraph, browser-use |
 | **Infrastructure** | Docker, AWS (EC2, VPC, Systems Manager), Linux, nginx |
 | **Development / Testing** | Git, GitHub Actions, pytest |
 | **IoT / Hardware** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
@@ -230,7 +236,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## 📝 Notes
-- Last updated: 2026-10-01
+- Last updated: 2026-10-12
 - License: All rights reserved
 
 <details>
@@ -247,6 +253,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 
 ## 🚀 実際に動いているサービス
 - **ChatCore-AI**: <https://chatcore-ai.com/> (本番運用AIチャットプラットフォーム & プロンプト共有)
+- **relua**: <https://relua.net/> (就活情報の横断検索、MCP経由でAIが更新)
 - **FS-QR**: <https://fs-qr.net/> (ファイル共有 & QR)
 
 ### **志望：AIアプリケーションエンジニア / バックエンドシステム開発。**
@@ -258,7 +265,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 関心の中心は、LLMそのものだけでなく、LLMを実用的なアプリケーションにつなぐシステム設計です。必要なMemory / Skill / Tool / Agentの選択、安全な外部ツール実行、会話やユーザーコンテキストの管理、LLM・外部APIの障害からの復旧、推論コストや利用量の制御などに取り組み、AI機能を本番環境で安定して運用できる形にします。
 
 現在は、次の2領域を軸に活動しています。
-- **本番AIアプリケーション**：[ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)など、公開・運用中のAIサービスの設計・開発・改善。
+- **本番AIアプリケーション**：[ChatCore-AI](https://github.com/kota-kawa/ChatCore-AI)や[relua](https://github.com/kota-kawa/relua)など、公開・運用中のAIサービスの設計・開発・改善。
 - **AIエージェント研究**：大規模なリソース群から実行可能なリソース集合を選択するObject Routingの研究と、Memory / Skill / Tool / Agentを統一的に扱うOSSライブラリ[Marmo-Core](https://github.com/kota-kawa/Marmo-Core)の開発。
 
 インターンや個人サービスを通じて、課題発見・要件定義・設計・実装・テスト・コードレビュー・本番デプロイ・実利用データに基づく評価まで経験しています。
@@ -273,7 +280,12 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 - 概要：AIエージェント向けリソースの登録・検索・選択・安全な実行を担う軽量なPythonカーネル。ポリシーによる実行制御、監査ログ、決定論的なモック実行、CLIツール、OpenAI互換／Anthropic LLMプロバイダーを備える。
 - 技術：Python, リソースレジストリ, ポリシーレイヤー, Lexical/HyDE検索, CLI, OpenAI/Anthropic API.
 
-### 3) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
+### 3) [relua](https://github.com/kota-kawa/relua) — (MCP経由でAIが更新する就活情報データベース)
+- 概要：インターン・本選考・イベントの募集情報をログインなしで横断検索できる就活情報サービス。relua.netで公開・運用中。募集データの登録・更新は、運営者がChatGPTやClaudeから40個のMCPツールで実施。サーバーはAIの入力を信用せず、固定値マスタ、公式ページのallowlist、2段階の重複判定、`request_id`による冪等化、楽観ロック、監査ログを全書き込みに適用。動的クライアント登録・PKCE・リフレッシュトークンのローテーションに対応したOAuth 2.1認可サーバーを自前で実装し、約430件の自動テストと、ヘルスチェック失敗時に自動で戻すデプロイを備える。
+- デモ：<https://relua.net/>
+- 技術：Python, FastAPI, MCP Python SDK, OAuth 2.1, Next.js, React, TypeScript, PostgreSQL, Redis, Docker, nginx, GitHub Actions.
+
+### 4) [Browser-Agent](https://github.com/kota-kawa/Browser-Agent) — (Web UI付きブラウザ自動化エージェント)
 - 概要：`browser-use`を**FastAPI**と**noVNC**でラップした、Web UI付きブラウザ自動化エージェント。自然言語による操作とWebArenaベンチマーク評価に対応。WebArena Shoppingタスク成功率: 32.6% (N=187, 最大ステップ数=40, リトライ回数=4, 同一プロンプト設定)。
 - 技術：Python, FastAPI, Docker, `browser-use`, noVNC, Gemini/OpenAI/Anthropic.
 
@@ -371,7 +383,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 | **プログラミング言語** | Python, TypeScript, SQL |
 | **Web / アプリケーションフレームワーク** | FastAPI, React, Next.js, Tailwind CSS |
 | **データストア** | PostgreSQL, Redis |
-| **AI / LLM エンジニアリング** | RAG, Multi-Agent Systems, LangChain, LangGraph, browser-use |
+| **AI / LLM エンジニアリング** | RAG, Multi-Agent Systems, MCP, LangChain, LangGraph, browser-use |
 | **インフラ** | Docker, AWS (EC2, VPC, Systems Manager), Linux, nginx |
 | **開発・テスト** | Git, GitHub Actions, pytest |
 | **IoT / ハードウェア** | NVIDIA Jetson Orin Nano, Raspberry Pi 4/Pico W |
@@ -465,6 +477,6 @@ Q&Aデータの個人情報マスキング、マスキング済みデータの�
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 📝 補足
-- 最終更新：2026-10-01
+- 最終更新：2026-10-12
 - ライセンス：All rights reserved
 </details>
