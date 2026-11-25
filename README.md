@@ -228,6 +228,13 @@ The research examined three areas: masking personally identifiable information i
 - **LLM Competition 2025**: As the team's training data lead, built and published a high-difficulty synthetic dataset for mathematical reasoning ([difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)).
 - **Specialized Courses**: Took courses including AI Management (PwC joint), LLM, GCI (Data Science), Deep Learning, and Deep Generative Models.
 
+### SFC Tech 2026 — Research Exhibition (Nov 2026)
+- **Event**: Participated in **SFC Tech 2026** (Nov 24, 2026, Keio University Mita Campus), an inaugural urban research showcase organized by Keio Research Institute at SFC, the Keio SFC Academic Society, and KGRI, featuring 16 live technology research exhibits and panel discussions.
+- **Exhibit**: Presented **Object Routing** ([Marmo-Core](https://github.com/kota-kawa/Marmo-Core)), an OS-kernel-inspired resource management and routing approach for AI agents that unifies **Memory, Skill, Tool, and Agent** metadata, performs cross-resource retrieval and constraint-aware set selection (dependencies, conflicts, permissions, abstention/escalation), and enforces a three-stage policy gateway, alongside an interactive live demo and research poster.
+
+### LayerX 2nd Autonomous AI Agent Hackathon (Nov 2026)
+Participated in LayerX's 2-day solo-development hackathon for students (**自律型AI Agentハッカソン**, Nov 21–22, 2026, LayerX HQ in Tokyo), building an autonomous AI agent application with feedback from LayerX engineers.
+
 ### Gemini 3 Tokyo Hackathon 2026
 Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
 
@@ -236,7 +243,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 - **English**: Professional Proficiency (TOEIC 715, 1-year academic study in US)
 
 ## 📝 Notes
-- Last updated: 2026-10-12
+- Last updated: 2026-11-25
 - License: All rights reserved
 
 <details>
@@ -469,6 +476,13 @@ Q&Aデータの個人情報マスキング、マスキング済みデータの�
 - **LLMコンペ2025**: チーム内で学習データ作成を担当し、数学的推論向け高難度合成データセットを構築・公開（[difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)）。
 - **専門講座受講**: AI経営講座（PwC共同開催）、LLM講座、GCI (データサイエンス基礎)、深層学習、深層生成モデル。
 
+### SFC Tech 2026 — 研究展示（2026年11月）
+- **イベント概要**：慶應義塾大学SFC研究所・慶應SFC学会・KGRI主催により2026年11月24日に三田キャンパス北別館で初開催された、SFCの最先端テクノロジー研究を広く発信する都市型研究発信イベント（動くシステム・プロトタイプを含む16件の研究展示およびパネルディスカッションを実施）。
+- **展示内容**：OSカーネルの仕組みに着想を得たAIエージェント向けリソース管理・ルーティング手法 **Object Routing**（[Marmo-Core](https://github.com/kota-kawa/Marmo-Core)）を出展。**Memory / Skill / Tool / Agent** の4種のリソースを統一メタデータで管理し、横断検索・依存関係や競合・権限を考慮した制約付き集合選択（不適時の棄権・権限昇格要求を含む）および三段階ポリシーゲートウェイによる実行制御を、インタラクティブデモとポスターで実演・紹介。
+
+### LayerX 第2回学生向け「自律型AI Agentハッカソン」（2026年11月）
+株式会社LayerX本社オフィスにて2026年11月21日〜22日の2日間で開催された、次世代のAI Builder発掘・育成を目的とする学生向け個人開発ハッカソンに参加し、現役エンジニアからのフィードバックを受けながら自律型AI Agentアプリケーションを構築・発表しました。
+
 ### Gemini 3 東京ハッカソン 2026
 **Gemini** と **Nano Banana** を活用したミステリーゲームを、7時間の制限時間以内に完成させました。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
 
@@ -477,6 +491,6 @@ Q&Aデータの個人情報マスキング、マスキング済みデータの�
 - **英語**: ビジネスレベル (TOEIC 715, 米国大学での1年間の留学経験)
 
 ## 📝 補足
-- 最終更新：2026-10-12
+- 最終更新：2026-11-25
 - ライセンス：All rights reserved
 </details>
