@@ -194,7 +194,7 @@ I integrate AI tools across the full workflow — from research to documentation
 ## 🔬 Research
 
 ### Object Routing — Current Research
-**Research repository:** [Marmo-Core](https://github.com/kota-kawa/Marmo-Core)
+**Open-source implementation:** [Marmo-Core](https://github.com/kota-kawa/Marmo-Core)
 
 I study how AI agents can select a task-relevant set of resources from large catalogs. Memory, Skills, Tools, and Agents are represented through a common resource model. Beyond retrieval relevance, routing must account for whether the selected resources are necessary and can be executed safely, considering dependencies, conflicts, and permissions.
 
@@ -202,6 +202,8 @@ I study how AI agents can select a task-relevant set of resources from large cat
 - **Execution-aware selection:** Selecting resources while accounting for dependencies, conflicts, and execution permissions.
 - **Fallback decisions:** Abstaining when no suitable resource exists and requesting elevated permissions when required access is missing.
 - **Scale:** Hierarchical routing for catalogs of up to 100,000 resources.
+
+**Research exhibition.** Presented Object Routing at Keio University's [SFC Tech 2026](https://www.tech.sfc.keio.ac.jp/) (Nov 24, 2026, Mita Campus). A poster and live demo showed how the system selects compatible resources and applies policy checks for activation, execution, and output.
 
 ### NCSP'26
 **2026 RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing**
@@ -228,12 +230,8 @@ The research examined three areas: masking personally identifiable information i
 - **LLM Competition 2025**: As the team's training data lead, built and published a high-difficulty synthetic dataset for mathematical reasoning ([difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)).
 - **Specialized Courses**: Took courses including AI Management (PwC joint), LLM, GCI (Data Science), Deep Learning, and Deep Generative Models.
 
-### SFC Tech 2026 — Research Exhibition (Nov 2026)
-- **Event**: Participated in **SFC Tech 2026** (Nov 24, 2026, Keio University Mita Campus), an inaugural urban research showcase organized by Keio Research Institute at SFC, the Keio SFC Academic Society, and KGRI, featuring 16 live technology research exhibits and panel discussions.
-- **Exhibit**: Presented **Object Routing** ([Marmo-Core](https://github.com/kota-kawa/Marmo-Core)), an OS-kernel-inspired resource management and routing approach for AI agents that unifies **Memory, Skill, Tool, and Agent** metadata, performs cross-resource retrieval and constraint-aware set selection (dependencies, conflicts, permissions, abstention/escalation), and enforces a three-stage policy gateway, alongside an interactive live demo and research poster.
-
-### LayerX 2nd Autonomous AI Agent Hackathon (Nov 2026)
-Participated in LayerX's 2-day solo-development hackathon for students (**自律型AI Agentハッカソン**, Nov 21–22, 2026, LayerX HQ in Tokyo), building an autonomous AI agent application with feedback from LayerX engineers.
+### LayerX's 2nd Autonomous AI Agent Hackathon (Nov 2026)
+LayerX's two-day student hackathon (Nov 21–22, 2026) combined interviews with LayerX employees, mentoring by tech leads, and individual development of AI agent prototypes. The event concluded with presentations and live demos. I developed **Eventa** independently and presented it in the final session. [Official announcement](https://layerx.co.jp/news/20260915-2/)
 
 ### Gemini 3 Tokyo Hackathon 2026
 Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-hour time limit. → [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
@@ -442,7 +440,7 @@ Completed a mystery game powered by **Gemini** and **Nano Banana** within the 7-
 ## 🔬 研究
 
 ### Object Routing（現在の研究）
-**研究リポジトリ：** [Marmo-Core](https://github.com/kota-kawa/Marmo-Core)
+**OSS実装** [Marmo-Core](https://github.com/kota-kawa/Marmo-Core)
 
 Memory / Skill / Tool / Agentを共通のリソースモデルで扱い、大規模なカタログからタスク実行に必要なリソース集合を選択するObject Routingを研究しています。検索精度に加え、選択したリソースを安全に実行できるかを、依存関係・競合制約・実行権限まで含めて判断します。
 
@@ -450,6 +448,8 @@ Memory / Skill / Tool / Agentを共通のリソースモデルで扱い、大規
 - **実行可能な集合の選択**：依存関係・競合制約・実行権限を考慮したリソース選択
 - **適切な候補がない場合の判断**：該当するリソースがなければ棄権し、必要な権限が不足していれば権限昇格を要求
 - **大規模化**：最大10万件規模のカタログを対象とする階層ルーティング
+
+**研究展示**　慶應義塾大学の研究展示イベント [SFC Tech 2026](https://www.tech.sfc.keio.ac.jp/)（2026年11月24日、三田キャンパス）で Object Routing を出展しました。依存関係や競合、権限を考慮したリソース選択と、利用可否・実行許可・出力検査の3段階のポリシー判定を、ポスターと実演デモで紹介しました。
 
 ### NCSP'26
 **2026 RISP International Workshop on Nonlinear Circuits, Communications and Signal Processing**
@@ -476,12 +476,8 @@ Q&Aデータの個人情報マスキング、マスキング済みデータの�
 - **LLMコンペ2025**: チーム内で学習データ作成を担当し、数学的推論向け高難度合成データセットを構築・公開（[difficult_math_deepseek_llama](https://huggingface.co/datasets/kota-kawa/difficult_math_deepseek_llama)）。
 - **専門講座受講**: AI経営講座（PwC共同開催）、LLM講座、GCI (データサイエンス基礎)、深層学習、深層生成モデル。
 
-### SFC Tech 2026 — 研究展示（2026年11月）
-- **イベント概要**：慶應義塾大学SFC研究所・慶應SFC学会・KGRI主催により2026年11月24日に三田キャンパス北別館で初開催された、SFCの最先端テクノロジー研究を広く発信する都市型研究発信イベント（動くシステム・プロトタイプを含む16件の研究展示およびパネルディスカッションを実施）。
-- **展示内容**：OSカーネルの仕組みに着想を得たAIエージェント向けリソース管理・ルーティング手法 **Object Routing**（[Marmo-Core](https://github.com/kota-kawa/Marmo-Core)）を出展。**Memory / Skill / Tool / Agent** の4種のリソースを統一メタデータで管理し、横断検索・依存関係や競合・権限を考慮した制約付き集合選択（不適時の棄権・権限昇格要求を含む）および三段階ポリシーゲートウェイによる実行制御を、インタラクティブデモとポスターで実演・紹介。
-
 ### LayerX 第2回学生向け「自律型AI Agentハッカソン」（2026年11月）
-株式会社LayerX本社オフィスにて2026年11月21日〜22日の2日間で開催された、次世代のAI Builder発掘・育成を目的とする学生向け個人開発ハッカソンに参加し、現役エンジニアからのフィードバックを受けながら自律型AI Agentアプリケーションを構築・発表しました。
+LayerX主催の2日間の学生向けハッカソン（2026年11月21〜22日）では、社員へのヒアリングやテックリードとのメンタリングを交えながら、AIエージェントのプロトタイプを個人で開発し、最終発表でデモを行う形式でした。私は **Eventa** を個人で開発し、最終発表で紹介しました。 [主催者の開催告知](https://layerx.co.jp/news/20260915-2/)
 
 ### Gemini 3 東京ハッカソン 2026
 **Gemini** と **Nano Banana** を活用したミステリーゲームを、7時間の制限時間以内に完成させました。→ [Gemini3-Hackathon-Mystery-Game](https://github.com/kota-kawa/Gemini3-Hackathon-Mystery-Game)
